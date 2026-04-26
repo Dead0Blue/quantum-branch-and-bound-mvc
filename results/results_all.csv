@@ -1,0 +1,451 @@
+family,params,seed,n,m,solver_type,preprocessing_enabled,propagation_enabled,lower_bound_type,optimal_cover_size,runtime_seconds,nodes_explored,nodes_pruned,max_depth,forced_assignments,preprocessing_reductions,vertices_removed_by_preprocessing,root_lower_bound,finished
+erdos_renyi,"n=10, p=0.2",42,10,11,baseline,False,False,trivial,5,0.000868,251,121,10,0,0,0,0,True
+erdos_renyi,"n=10, p=0.2",42,10,11,improved,True,True,maximal_matching,5,7.4e-05,3,1,1,4,11,7,4,True
+erdos_renyi,"n=10, p=0.2",123,10,11,baseline,False,False,trivial,4,0.00034,93,41,10,0,0,0,0,True
+erdos_renyi,"n=10, p=0.2",123,10,11,improved,True,True,maximal_matching,4,2.2e-05,1,0,0,0,10,6,4,True
+erdos_renyi,"n=10, p=0.2",256,10,9,baseline,False,False,trivial,4,0.001282,405,197,10,0,0,0,0,True
+erdos_renyi,"n=10, p=0.2",256,10,9,improved,True,True,maximal_matching,4,1.6e-05,1,0,0,0,10,6,4,True
+erdos_renyi,"n=10, p=0.2",789,10,5,baseline,False,False,trivial,3,0.000878,281,134,10,0,0,0,0,True
+erdos_renyi,"n=10, p=0.2",789,10,5,improved,True,True,maximal_matching,3,2.2e-05,1,0,0,0,10,7,3,True
+erdos_renyi,"n=10, p=0.2",1024,10,10,baseline,False,False,trivial,5,0.001462,409,200,10,0,0,0,0,True
+erdos_renyi,"n=10, p=0.2",1024,10,10,improved,True,True,maximal_matching,5,2e-05,1,0,0,0,10,5,5,True
+erdos_renyi,"n=10, p=0.3",42,10,17,baseline,False,False,trivial,6,0.000934,239,116,10,0,0,0,0,True
+erdos_renyi,"n=10, p=0.3",42,10,17,improved,True,True,maximal_matching,6,9.3e-05,5,2,2,8,11,6,4,True
+erdos_renyi,"n=10, p=0.3",123,10,14,baseline,False,False,trivial,5,0.000426,119,55,10,0,0,0,0,True
+erdos_renyi,"n=10, p=0.3",123,10,14,improved,True,True,maximal_matching,5,4.4e-05,3,1,1,2,9,5,4,True
+erdos_renyi,"n=10, p=0.3",256,10,13,baseline,False,False,trivial,5,0.000945,279,135,10,0,0,0,0,True
+erdos_renyi,"n=10, p=0.3",256,10,13,improved,True,True,maximal_matching,5,2.4e-05,1,0,0,0,10,5,5,True
+erdos_renyi,"n=10, p=0.3",789,10,9,baseline,False,False,trivial,4,0.000909,301,145,10,0,0,0,0,True
+erdos_renyi,"n=10, p=0.3",789,10,9,improved,True,True,maximal_matching,4,1.8e-05,1,0,0,0,10,6,4,True
+erdos_renyi,"n=10, p=0.3",1024,10,11,baseline,False,False,trivial,5,0.001299,415,203,10,0,0,0,0,True
+erdos_renyi,"n=10, p=0.3",1024,10,11,improved,True,True,maximal_matching,5,1.7e-05,1,0,0,0,10,5,5,True
+erdos_renyi,"n=10, p=0.5",42,10,21,baseline,False,False,trivial,6,0.001206,223,108,10,0,0,0,0,True
+erdos_renyi,"n=10, p=0.5",42,10,21,improved,True,True,maximal_matching,6,0.000171,5,2,2,11,12,6,4,True
+erdos_renyi,"n=10, p=0.5",123,10,25,baseline,False,False,trivial,6,0.000585,123,58,10,0,0,0,0,True
+erdos_renyi,"n=10, p=0.5",123,10,25,improved,True,True,maximal_matching,6,0.000128,7,3,3,14,7,4,4,True
+erdos_renyi,"n=10, p=0.5",256,10,25,baseline,False,False,trivial,7,0.000781,175,85,10,0,0,0,0,True
+erdos_renyi,"n=10, p=0.5",256,10,25,improved,True,True,maximal_matching,7,0.000222,9,4,4,20,16,11,5,True
+erdos_renyi,"n=10, p=0.5",789,10,24,baseline,False,False,trivial,6,0.000736,171,82,10,0,0,0,0,True
+erdos_renyi,"n=10, p=0.5",789,10,24,improved,True,True,maximal_matching,6,0.000117,7,3,3,16,9,6,4,True
+erdos_renyi,"n=10, p=0.5",1024,10,21,baseline,False,False,trivial,7,0.00093,239,117,10,0,0,0,0,True
+erdos_renyi,"n=10, p=0.5",1024,10,21,improved,True,True,maximal_matching,7,0.000139,9,4,4,17,13,7,4,True
+erdos_renyi,"n=15, p=0.2",42,15,20,baseline,False,False,trivial,7,0.010886,2249,1117,15,0,0,0,0,True
+erdos_renyi,"n=15, p=0.2",42,15,20,improved,True,True,maximal_matching,7,3.7e-05,1,0,0,0,15,8,7,True
+erdos_renyi,"n=15, p=0.2",123,15,27,baseline,False,False,trivial,8,0.007765,1239,613,15,0,0,0,0,True
+erdos_renyi,"n=15, p=0.2",123,15,27,improved,True,True,maximal_matching,8,0.000142,5,2,2,9,27,15,6,True
+erdos_renyi,"n=15, p=0.2",256,15,23,baseline,False,False,trivial,7,0.012085,2289,1137,15,0,0,0,0,True
+erdos_renyi,"n=15, p=0.2",256,15,23,improved,True,True,maximal_matching,7,0.000103,3,1,1,5,19,11,6,True
+erdos_renyi,"n=15, p=0.2",789,15,18,baseline,False,False,trivial,7,0.007727,1597,791,15,0,0,0,0,True
+erdos_renyi,"n=15, p=0.2",789,15,18,improved,True,True,maximal_matching,7,0.000123,3,1,1,3,19,11,6,True
+erdos_renyi,"n=15, p=0.2",1024,15,21,baseline,False,False,trivial,7,0.012244,2469,1227,15,0,0,0,0,True
+erdos_renyi,"n=15, p=0.2",1024,15,21,improved,True,True,maximal_matching,7,6.6e-05,1,0,0,0,15,8,7,True
+erdos_renyi,"n=15, p=0.3",42,15,38,baseline,False,False,trivial,9,0.006821,1043,516,15,0,0,0,0,True
+erdos_renyi,"n=15, p=0.3",42,15,38,improved,True,True,maximal_matching,9,0.000264,9,4,4,21,22,13,7,True
+erdos_renyi,"n=15, p=0.3",123,15,35,baseline,False,False,trivial,9,0.007229,1135,562,15,0,0,0,0,True
+erdos_renyi,"n=15, p=0.3",123,15,35,improved,True,True,maximal_matching,9,0.000272,11,5,5,26,36,22,6,True
+erdos_renyi,"n=15, p=0.3",256,15,36,baseline,False,False,trivial,10,0.009109,1481,736,15,0,0,0,0,True
+erdos_renyi,"n=15, p=0.3",256,15,36,improved,True,True,maximal_matching,10,0.000405,11,5,5,25,24,13,7,True
+erdos_renyi,"n=15, p=0.3",789,15,26,baseline,False,False,trivial,8,0.00933,1789,888,15,0,0,0,0,True
+erdos_renyi,"n=15, p=0.3",789,15,26,improved,True,True,maximal_matching,8,0.000109,5,2,2,5,16,9,7,True
+erdos_renyi,"n=15, p=0.3",1024,15,28,baseline,False,False,trivial,9,0.011711,2249,1119,15,0,0,0,0,True
+erdos_renyi,"n=15, p=0.3",1024,15,28,improved,True,True,maximal_matching,9,0.000228,9,4,4,14,31,18,7,True
+erdos_renyi,"n=15, p=0.5",42,15,52,baseline,False,False,trivial,10,0.00718,953,472,15,0,0,0,0,True
+erdos_renyi,"n=15, p=0.5",42,15,52,improved,True,True,maximal_matching,10,0.000352,13,6,6,40,26,15,7,True
+erdos_renyi,"n=15, p=0.5",123,15,63,baseline,False,False,trivial,11,0.005732,671,332,15,0,0,0,0,True
+erdos_renyi,"n=15, p=0.5",123,15,63,improved,True,True,maximal_matching,11,0.000453,17,8,8,56,32,20,7,True
+erdos_renyi,"n=15, p=0.5",256,15,59,baseline,False,False,trivial,11,0.006837,733,363,15,0,0,0,0,True
+erdos_renyi,"n=15, p=0.5",256,15,59,improved,True,True,maximal_matching,11,0.000447,17,8,8,52,24,16,7,True
+erdos_renyi,"n=15, p=0.5",789,15,55,baseline,False,False,trivial,11,0.006401,767,380,15,0,0,0,0,True
+erdos_renyi,"n=15, p=0.5",789,15,55,improved,True,True,maximal_matching,11,0.000444,17,8,8,50,26,16,7,True
+erdos_renyi,"n=15, p=0.5",1024,15,51,baseline,False,False,trivial,10,0.006519,815,403,15,0,0,0,0,True
+erdos_renyi,"n=15, p=0.5",1024,15,51,improved,True,True,maximal_matching,10,0.00031,11,5,5,36,17,9,7,True
+erdos_renyi,"n=20, p=0.2",42,20,37,baseline,False,False,trivial,11,0.031676,4559,2271,20,0,0,0,0,True
+erdos_renyi,"n=20, p=0.2",42,20,37,improved,True,True,maximal_matching,11,0.0003,9,4,4,19,43,26,9,True
+erdos_renyi,"n=20, p=0.2",123,20,43,baseline,False,False,trivial,11,0.038953,5213,2598,20,0,0,0,0,True
+erdos_renyi,"n=20, p=0.2",123,20,43,improved,True,True,maximal_matching,11,0.000454,9,4,4,21,42,25,9,True
+erdos_renyi,"n=20, p=0.2",256,20,45,baseline,False,False,trivial,11,0.064283,8763,4373,20,0,0,0,0,True
+erdos_renyi,"n=20, p=0.2",256,20,45,improved,True,True,maximal_matching,11,0.000312,7,3,3,18,30,17,8,True
+erdos_renyi,"n=20, p=0.2",789,20,37,baseline,False,False,trivial,10,0.067334,9519,4750,20,0,0,0,0,True
+erdos_renyi,"n=20, p=0.2",789,20,37,improved,True,True,maximal_matching,10,0.000216,5,2,2,11,33,18,8,True
+erdos_renyi,"n=20, p=0.2",1024,20,40,baseline,False,False,trivial,12,0.050104,7239,3612,20,0,0,0,0,True
+erdos_renyi,"n=20, p=0.2",1024,20,40,improved,True,True,maximal_matching,12,0.000328,9,4,4,19,40,22,9,True
+erdos_renyi,"n=20, p=0.3",42,20,67,baseline,False,False,trivial,13,0.023464,2529,1258,20,0,0,0,0,True
+erdos_renyi,"n=20, p=0.3",42,20,67,improved,True,True,maximal_matching,13,0.000584,17,8,7,51,53,32,9,True
+erdos_renyi,"n=20, p=0.3",123,20,56,baseline,False,False,trivial,12,0.034688,4233,2109,20,0,0,0,0,True
+erdos_renyi,"n=20, p=0.3",123,20,56,improved,True,True,maximal_matching,12,0.00035,9,4,4,30,44,24,9,True
+erdos_renyi,"n=20, p=0.3",256,20,65,baseline,False,False,trivial,13,0.032274,3599,1793,20,0,0,0,0,True
+erdos_renyi,"n=20, p=0.3",256,20,65,improved,True,True,maximal_matching,13,0.000538,15,7,7,48,49,28,9,True
+erdos_renyi,"n=20, p=0.3",789,20,53,baseline,False,False,trivial,12,0.071159,8981,4483,20,0,0,0,0,True
+erdos_renyi,"n=20, p=0.3",789,20,53,improved,True,True,maximal_matching,12,0.00033,9,4,4,27,26,14,8,True
+erdos_renyi,"n=20, p=0.3",1024,20,58,baseline,False,False,trivial,13,0.046538,5611,2799,20,0,0,0,0,True
+erdos_renyi,"n=20, p=0.3",1024,20,58,improved,True,True,maximal_matching,13,0.000509,15,7,6,41,36,21,9,True
+erdos_renyi,"n=20, p=0.5",42,20,98,baseline,False,False,trivial,15,0.022439,2045,1018,20,0,0,0,0,True
+erdos_renyi,"n=20, p=0.5",42,20,98,improved,True,True,maximal_matching,15,0.001454,23,11,11,89,57,34,10,True
+erdos_renyi,"n=20, p=0.5",123,20,101,baseline,False,False,trivial,15,0.020149,1659,825,20,0,0,0,0,True
+erdos_renyi,"n=20, p=0.5",123,20,101,improved,True,True,maximal_matching,15,0.000894,21,10,10,89,45,27,10,True
+erdos_renyi,"n=20, p=0.5",256,20,102,baseline,False,False,trivial,15,0.018745,1623,807,20,0,0,0,0,True
+erdos_renyi,"n=20, p=0.5",256,20,102,improved,True,True,maximal_matching,15,0.000958,23,11,11,91,48,27,9,True
+erdos_renyi,"n=20, p=0.5",789,20,105,baseline,False,False,trivial,15,0.021313,1813,902,20,0,0,0,0,True
+erdos_renyi,"n=20, p=0.5",789,20,105,improved,True,True,maximal_matching,15,0.000889,21,10,10,91,30,16,9,True
+erdos_renyi,"n=20, p=0.5",1024,20,104,baseline,False,False,trivial,15,0.023824,2151,1071,20,0,0,0,0,True
+erdos_renyi,"n=20, p=0.5",1024,20,104,improved,True,True,maximal_matching,15,0.000943,23,11,11,95,50,30,10,True
+erdos_renyi,"n=25, p=0.2",42,25,57,baseline,False,False,trivial,14,0.463905,49865,24922,25,0,0,0,0,True
+erdos_renyi,"n=25, p=0.2",42,25,57,improved,True,True,maximal_matching,14,0.000303,7,3,3,13,32,16,10,True
+erdos_renyi,"n=25, p=0.2",123,25,68,baseline,False,False,trivial,13,0.256505,25417,12697,25,0,0,0,0,True
+erdos_renyi,"n=25, p=0.2",123,25,68,improved,True,True,maximal_matching,13,0.000243,5,2,2,12,30,17,12,True
+erdos_renyi,"n=25, p=0.2",256,25,63,baseline,False,False,trivial,14,0.331021,35685,17832,25,0,0,0,0,True
+erdos_renyi,"n=25, p=0.2",256,25,63,improved,True,True,maximal_matching,14,0.000452,9,4,4,28,46,25,12,True
+erdos_renyi,"n=25, p=0.2",789,25,62,baseline,False,False,trivial,15,0.592545,65745,32863,25,0,0,0,0,True
+erdos_renyi,"n=25, p=0.2",789,25,62,improved,True,True,maximal_matching,15,0.000656,15,6,7,36,75,41,11,True
+erdos_renyi,"n=25, p=0.2",1024,25,63,baseline,False,False,trivial,15,0.407528,42989,21485,25,0,0,0,0,True
+erdos_renyi,"n=25, p=0.2",1024,25,63,improved,True,True,maximal_matching,15,0.000467,11,5,5,29,59,32,11,True
+erdos_renyi,"n=25, p=0.3",42,25,105,baseline,False,False,trivial,17,0.214131,17081,8533,25,0,0,0,0,True
+erdos_renyi,"n=25, p=0.3",42,25,105,improved,True,True,maximal_matching,17,0.001231,29,13,11,98,88,51,12,True
+erdos_renyi,"n=25, p=0.3",123,25,93,baseline,False,False,trivial,16,0.216919,18119,9051,25,0,0,0,0,True
+erdos_renyi,"n=25, p=0.3",123,25,93,improved,True,True,maximal_matching,16,0.000797,15,7,7,59,74,39,12,True
+erdos_renyi,"n=25, p=0.3",256,25,94,baseline,False,False,trivial,17,0.17779,13521,6753,25,0,0,0,0,True
+erdos_renyi,"n=25, p=0.3",256,25,94,improved,True,True,maximal_matching,17,0.00098,21,10,10,72,71,39,11,True
+erdos_renyi,"n=25, p=0.3",789,25,91,baseline,False,False,trivial,17,0.319763,29517,14751,25,0,0,0,0,True
+erdos_renyi,"n=25, p=0.3",789,25,91,improved,True,True,maximal_matching,17,0.001318,19,9,9,63,47,25,12,True
+erdos_renyi,"n=25, p=0.3",1024,25,89,baseline,False,False,trivial,17,0.327423,29183,14584,25,0,0,0,0,True
+erdos_renyi,"n=25, p=0.3",1024,25,89,improved,True,True,maximal_matching,17,0.001095,25,12,9,81,98,54,11,True
+erdos_renyi,"n=25, p=0.5",42,25,151,baseline,False,False,trivial,19,0.112768,7245,3617,25,0,0,0,0,True
+erdos_renyi,"n=25, p=0.5",42,25,151,improved,True,True,maximal_matching,19,0.001584,31,14,15,138,59,34,12,True
+erdos_renyi,"n=25, p=0.5",123,25,162,baseline,False,False,trivial,20,0.080585,4935,2463,25,0,0,0,0,True
+erdos_renyi,"n=25, p=0.5",123,25,162,improved,True,True,maximal_matching,20,0.001686,33,16,15,157,75,43,12,True
+erdos_renyi,"n=25, p=0.5",256,25,154,baseline,False,False,trivial,19,0.067551,4283,2136,25,0,0,0,0,True
+erdos_renyi,"n=25, p=0.5",256,25,154,improved,True,True,maximal_matching,19,0.001659,33,15,16,146,45,27,11,True
+erdos_renyi,"n=25, p=0.5",789,25,165,baseline,False,False,trivial,20,0.074374,4485,2238,25,0,0,0,0,True
+erdos_renyi,"n=25, p=0.5",789,25,165,improved,True,True,maximal_matching,20,0.001765,33,16,16,155,40,24,12,True
+erdos_renyi,"n=25, p=0.5",1024,25,161,baseline,False,False,trivial,19,0.076447,4691,2340,25,0,0,0,0,True
+erdos_renyi,"n=25, p=0.5",1024,25,161,improved,True,True,maximal_matching,19,0.001798,29,14,14,147,45,26,12,True
+barabasi_albert,"n=10, m=1",42,10,9,baseline,False,False,trivial,3,0.00042,105,46,10,0,0,0,0,True
+barabasi_albert,"n=10, m=1",42,10,9,improved,True,True,maximal_matching,3,2e-05,1,0,0,0,10,7,3,True
+barabasi_albert,"n=10, m=1",123,10,9,baseline,False,False,trivial,3,0.000658,197,92,10,0,0,0,0,True
+barabasi_albert,"n=10, m=1",123,10,9,improved,True,True,maximal_matching,3,1.6e-05,1,0,0,0,10,7,3,True
+barabasi_albert,"n=10, m=1",256,10,9,baseline,False,False,trivial,5,0.000859,255,123,10,0,0,0,0,True
+barabasi_albert,"n=10, m=1",256,10,9,improved,True,True,maximal_matching,5,1.9e-05,1,0,0,0,10,5,5,True
+barabasi_albert,"n=10, m=1",789,10,9,baseline,False,False,trivial,4,0.000451,141,65,10,0,0,0,0,True
+barabasi_albert,"n=10, m=1",789,10,9,improved,True,True,maximal_matching,4,1.8e-05,1,0,0,0,10,6,4,True
+barabasi_albert,"n=10, m=1",1024,10,9,baseline,False,False,trivial,5,0.000704,223,107,10,0,0,0,0,True
+barabasi_albert,"n=10, m=1",1024,10,9,improved,True,True,maximal_matching,5,1.8e-05,1,0,0,0,10,5,5,True
+barabasi_albert,"n=10, m=2",42,10,16,baseline,False,False,trivial,5,0.000637,171,81,10,0,0,0,0,True
+barabasi_albert,"n=10, m=2",42,10,16,improved,True,True,maximal_matching,5,4.8e-05,3,1,1,6,12,7,4,True
+barabasi_albert,"n=10, m=2",123,10,16,baseline,False,False,trivial,5,0.000644,175,83,10,0,0,0,0,True
+barabasi_albert,"n=10, m=2",123,10,16,improved,True,True,maximal_matching,5,1.8e-05,1,0,0,0,10,5,5,True
+barabasi_albert,"n=10, m=2",256,10,16,baseline,False,False,trivial,5,0.000518,139,65,10,0,0,0,0,True
+barabasi_albert,"n=10, m=2",256,10,16,improved,True,True,maximal_matching,5,4.6e-05,3,1,1,7,11,7,4,True
+barabasi_albert,"n=10, m=2",789,10,16,baseline,False,False,trivial,4,0.000348,95,42,10,0,0,0,0,True
+barabasi_albert,"n=10, m=2",789,10,16,improved,True,True,maximal_matching,4,4.4e-05,3,1,1,8,10,7,3,True
+barabasi_albert,"n=10, m=2",1024,10,16,baseline,False,False,trivial,6,0.001076,251,122,10,0,0,0,0,True
+barabasi_albert,"n=10, m=2",1024,10,16,improved,True,True,maximal_matching,6,0.000194,5,2,2,6,11,6,4,True
+barabasi_albert,"n=10, m=3",42,10,21,baseline,False,False,trivial,6,0.000858,197,95,10,0,0,0,0,True
+barabasi_albert,"n=10, m=3",42,10,21,improved,True,True,maximal_matching,6,8.4e-05,5,2,2,11,10,6,4,True
+barabasi_albert,"n=10, m=3",123,10,21,baseline,False,False,trivial,6,0.000617,151,72,10,0,0,0,0,True
+barabasi_albert,"n=10, m=3",123,10,21,improved,True,True,maximal_matching,6,0.000113,7,3,3,14,15,10,4,True
+barabasi_albert,"n=10, m=3",256,10,21,baseline,False,False,trivial,5,0.001242,211,101,10,0,0,0,0,True
+barabasi_albert,"n=10, m=3",256,10,21,improved,True,True,maximal_matching,5,8e-05,3,1,1,8,10,6,5,True
+barabasi_albert,"n=10, m=3",789,10,21,baseline,False,False,trivial,5,0.000889,183,87,10,0,0,0,0,True
+barabasi_albert,"n=10, m=3",789,10,21,improved,True,True,maximal_matching,5,6.4e-05,3,1,1,5,11,6,4,True
+barabasi_albert,"n=10, m=3",1024,10,21,baseline,False,False,trivial,6,0.000869,211,102,10,0,0,0,0,True
+barabasi_albert,"n=10, m=3",1024,10,21,improved,True,True,maximal_matching,6,8.4e-05,5,2,2,8,13,7,5,True
+barabasi_albert,"n=15, m=1",42,15,14,baseline,False,False,trivial,6,0.004195,901,442,15,0,0,0,0,True
+barabasi_albert,"n=15, m=1",42,15,14,improved,True,True,maximal_matching,6,2.4e-05,1,0,0,0,15,9,6,True
+barabasi_albert,"n=15, m=1",123,15,14,baseline,False,False,trivial,4,0.002682,637,308,15,0,0,0,0,True
+barabasi_albert,"n=15, m=1",123,15,14,improved,True,True,maximal_matching,4,2.1e-05,1,0,0,0,15,11,4,True
+barabasi_albert,"n=15, m=1",256,15,14,baseline,False,False,trivial,7,0.006032,1215,600,15,0,0,0,0,True
+barabasi_albert,"n=15, m=1",256,15,14,improved,True,True,maximal_matching,7,2.9e-05,1,0,0,0,15,8,7,True
+barabasi_albert,"n=15, m=1",789,15,14,baseline,False,False,trivial,5,0.00254,545,263,15,0,0,0,0,True
+barabasi_albert,"n=15, m=1",789,15,14,improved,True,True,maximal_matching,5,3.7e-05,1,0,0,0,15,10,5,True
+barabasi_albert,"n=15, m=1",1024,15,14,baseline,False,False,trivial,6,0.003772,875,429,15,0,0,0,0,True
+barabasi_albert,"n=15, m=1",1024,15,14,improved,True,True,maximal_matching,6,2.6e-05,1,0,0,0,15,9,6,True
+barabasi_albert,"n=15, m=2",42,15,26,baseline,False,False,trivial,6,0.002324,447,215,15,0,0,0,0,True
+barabasi_albert,"n=15, m=2",42,15,26,improved,True,True,maximal_matching,6,0.000197,3,1,1,10,18,12,5,True
+barabasi_albert,"n=15, m=2",123,15,26,baseline,False,False,trivial,6,0.004015,627,305,15,0,0,0,0,True
+barabasi_albert,"n=15, m=2",123,15,26,improved,True,True,maximal_matching,6,3.5e-05,1,0,0,0,15,9,6,True
+barabasi_albert,"n=15, m=2",256,15,26,baseline,False,False,trivial,7,0.002694,519,252,15,0,0,0,0,True
+barabasi_albert,"n=15, m=2",256,15,26,improved,True,True,maximal_matching,7,0.000164,3,1,1,8,20,14,5,True
+barabasi_albert,"n=15, m=2",789,15,26,baseline,False,False,trivial,7,0.005625,995,490,15,0,0,0,0,True
+barabasi_albert,"n=15, m=2",789,15,26,improved,True,True,maximal_matching,7,7.3e-05,3,1,1,11,17,11,6,True
+barabasi_albert,"n=15, m=2",1024,15,26,baseline,False,False,trivial,8,0.004715,825,406,15,0,0,0,0,True
+barabasi_albert,"n=15, m=2",1024,15,26,improved,True,True,maximal_matching,8,0.000112,3,1,1,6,20,11,6,True
+barabasi_albert,"n=15, m=3",42,15,36,baseline,False,False,trivial,8,0.003316,545,266,15,0,0,0,0,True
+barabasi_albert,"n=15, m=3",42,15,36,improved,True,True,maximal_matching,8,0.000194,5,2,2,16,24,14,6,True
+barabasi_albert,"n=15, m=3",123,15,36,baseline,False,False,trivial,8,0.003199,529,258,15,0,0,0,0,True
+barabasi_albert,"n=15, m=3",123,15,36,improved,True,True,maximal_matching,8,0.000126,5,2,2,18,22,14,6,True
+barabasi_albert,"n=15, m=3",256,15,36,baseline,False,False,trivial,8,0.004248,679,333,15,0,0,0,0,True
+barabasi_albert,"n=15, m=3",256,15,36,improved,True,True,maximal_matching,8,9e-05,3,1,1,11,17,10,5,True
+barabasi_albert,"n=15, m=3",789,15,36,baseline,False,False,trivial,9,0.004725,781,385,15,0,0,0,0,True
+barabasi_albert,"n=15, m=3",789,15,36,improved,True,True,maximal_matching,9,0.000175,7,3,3,16,25,14,6,True
+barabasi_albert,"n=15, m=3",1024,15,36,baseline,False,False,trivial,9,0.004795,611,300,15,0,0,0,0,True
+barabasi_albert,"n=15, m=3",1024,15,36,improved,True,True,maximal_matching,9,0.00022,9,4,4,25,22,14,6,True
+barabasi_albert,"n=20, m=1",42,20,19,baseline,False,False,trivial,6,0.005749,1021,497,20,0,0,0,0,True
+barabasi_albert,"n=20, m=1",42,20,19,improved,True,True,maximal_matching,6,3.1e-05,1,0,0,0,20,14,6,True
+barabasi_albert,"n=20, m=1",123,20,19,baseline,False,False,trivial,6,0.028653,4791,2382,20,0,0,0,0,True
+barabasi_albert,"n=20, m=1",123,20,19,improved,True,True,maximal_matching,6,4e-05,1,0,0,0,20,14,6,True
+barabasi_albert,"n=20, m=1",256,20,19,baseline,False,False,trivial,8,0.015205,2659,1318,20,0,0,0,0,True
+barabasi_albert,"n=20, m=1",256,20,19,improved,True,True,maximal_matching,8,3.9e-05,1,0,0,0,20,12,8,True
+barabasi_albert,"n=20, m=1",789,20,19,baseline,False,False,trivial,7,0.01355,2389,1182,20,0,0,0,0,True
+barabasi_albert,"n=20, m=1",789,20,19,improved,True,True,maximal_matching,7,3.8e-05,1,0,0,0,20,13,7,True
+barabasi_albert,"n=20, m=1",1024,20,19,baseline,False,False,trivial,7,0.013745,2483,1229,20,0,0,0,0,True
+barabasi_albert,"n=20, m=1",1024,20,19,improved,True,True,maximal_matching,7,3.6e-05,1,0,0,0,20,13,7,True
+barabasi_albert,"n=20, m=2",42,20,36,baseline,False,False,trivial,7,0.004233,621,298,20,0,0,0,0,True
+barabasi_albert,"n=20, m=2",42,20,36,improved,True,True,maximal_matching,7,9.3e-05,3,1,1,13,25,18,5,True
+barabasi_albert,"n=20, m=2",123,20,36,baseline,False,False,trivial,9,0.043744,6007,2993,20,0,0,0,0,True
+barabasi_albert,"n=20, m=2",123,20,36,improved,True,True,maximal_matching,9,4.4e-05,1,0,0,0,20,11,9,True
+barabasi_albert,"n=20, m=2",256,20,36,baseline,False,False,trivial,8,0.007944,1145,561,20,0,0,0,0,True
+barabasi_albert,"n=20, m=2",256,20,36,improved,True,True,maximal_matching,8,9.8e-05,3,1,1,10,28,20,6,True
+barabasi_albert,"n=20, m=2",789,20,36,baseline,False,False,trivial,9,0.024765,3523,1751,20,0,0,0,0,True
+barabasi_albert,"n=20, m=2",789,20,36,improved,True,True,maximal_matching,9,0.000102,3,1,1,13,25,15,8,True
+barabasi_albert,"n=20, m=2",1024,20,36,baseline,False,False,trivial,10,0.024693,3567,1774,20,0,0,0,0,True
+barabasi_albert,"n=20, m=2",1024,20,36,improved,True,True,maximal_matching,10,0.000132,3,1,1,9,29,16,7,True
+barabasi_albert,"n=20, m=3",42,20,51,baseline,False,False,trivial,10,0.016529,2025,1003,20,0,0,0,0,True
+barabasi_albert,"n=20, m=3",42,20,51,improved,True,True,maximal_matching,10,0.000188,5,2,2,21,34,22,8,True
+barabasi_albert,"n=20, m=3",123,20,51,baseline,False,False,trivial,11,0.035216,4163,2073,20,0,0,0,0,True
+barabasi_albert,"n=20, m=3",123,20,51,improved,True,True,maximal_matching,11,0.000273,7,3,3,26,36,22,8,True
+barabasi_albert,"n=20, m=3",256,20,51,baseline,False,False,trivial,11,0.022803,2779,1381,20,0,0,0,0,True
+barabasi_albert,"n=20, m=3",256,20,51,improved,True,True,maximal_matching,11,0.000176,5,2,2,17,26,14,7,True
+barabasi_albert,"n=20, m=3",789,20,51,baseline,False,False,trivial,11,0.01983,2419,1201,20,0,0,0,0,True
+barabasi_albert,"n=20, m=3",789,20,51,improved,True,True,maximal_matching,11,0.000224,5,2,2,14,31,17,8,True
+barabasi_albert,"n=20, m=3",1024,20,51,baseline,False,False,trivial,11,0.027631,3351,1667,20,0,0,0,0,True
+barabasi_albert,"n=20, m=3",1024,20,51,improved,True,True,maximal_matching,11,0.000395,9,4,4,30,39,23,8,True
+barabasi_albert,"n=25, m=1",42,25,24,baseline,False,False,trivial,7,0.024272,3551,1758,25,0,0,0,0,True
+barabasi_albert,"n=25, m=1",42,25,24,improved,True,True,maximal_matching,7,4.3e-05,1,0,0,0,25,18,7,True
+barabasi_albert,"n=25, m=1",123,25,24,baseline,False,False,trivial,7,0.117941,17897,8931,25,0,0,0,0,True
+barabasi_albert,"n=25, m=1",123,25,24,improved,True,True,maximal_matching,7,4e-05,1,0,0,0,25,18,7,True
+barabasi_albert,"n=25, m=1",256,25,24,baseline,False,False,trivial,10,0.119966,17903,8937,25,0,0,0,0,True
+barabasi_albert,"n=25, m=1",256,25,24,improved,True,True,maximal_matching,10,4.3e-05,1,0,0,0,25,15,10,True
+barabasi_albert,"n=25, m=1",789,25,24,baseline,False,False,trivial,9,0.094698,14475,7222,25,0,0,0,0,True
+barabasi_albert,"n=25, m=1",789,25,24,improved,True,True,maximal_matching,9,4.1e-05,1,0,0,0,25,16,9,True
+barabasi_albert,"n=25, m=1",1024,25,24,baseline,False,False,trivial,8,0.094899,11439,5703,25,0,0,0,0,True
+barabasi_albert,"n=25, m=1",1024,25,24,improved,True,True,maximal_matching,8,4.6e-05,1,0,0,0,25,17,8,True
+barabasi_albert,"n=25, m=2",42,25,46,baseline,False,False,trivial,8,0.060011,6621,3294,25,0,0,0,0,True
+barabasi_albert,"n=25, m=2",42,25,46,improved,True,True,maximal_matching,8,0.000122,3,1,1,16,32,23,7,True
+barabasi_albert,"n=25, m=2",123,25,46,baseline,False,False,trivial,9,0.085632,9927,4948,25,0,0,0,0,True
+barabasi_albert,"n=25, m=2",123,25,46,improved,True,True,maximal_matching,9,6.2e-05,1,0,0,0,25,16,9,True
+barabasi_albert,"n=25, m=2",256,25,46,baseline,False,False,trivial,9,0.020502,2467,1218,25,0,0,0,0,True
+barabasi_albert,"n=25, m=2",256,25,46,improved,True,True,maximal_matching,9,0.000198,3,1,1,12,36,26,6,True
+barabasi_albert,"n=25, m=2",789,25,46,baseline,False,False,trivial,13,0.37617,43969,21973,25,0,0,0,0,True
+barabasi_albert,"n=25, m=2",789,25,46,improved,True,True,maximal_matching,13,0.000175,5,2,2,17,34,19,10,True
+barabasi_albert,"n=25, m=2",1024,25,46,baseline,False,False,trivial,11,0.03435,4051,2012,25,0,0,0,0,True
+barabasi_albert,"n=25, m=2",1024,25,46,improved,True,True,maximal_matching,11,0.000129,3,1,1,9,39,25,8,True
+barabasi_albert,"n=25, m=3",42,25,66,baseline,False,False,trivial,12,0.08806,8371,4173,25,0,0,0,0,True
+barabasi_albert,"n=25, m=3",42,25,66,improved,True,True,maximal_matching,12,0.000239,5,2,2,25,45,28,10,True
+barabasi_albert,"n=25, m=3",123,25,66,baseline,False,False,trivial,14,0.192444,18801,9390,25,0,0,0,0,True
+barabasi_albert,"n=25, m=3",123,25,66,improved,True,True,maximal_matching,14,0.00042,11,5,5,35,48,29,11,True
+barabasi_albert,"n=25, m=3",256,25,66,baseline,False,False,trivial,13,0.129604,12541,6259,25,0,0,0,0,True
+barabasi_albert,"n=25, m=3",256,25,66,improved,True,True,maximal_matching,13,0.000289,7,3,3,22,42,24,10,True
+barabasi_albert,"n=25, m=3",789,25,66,baseline,False,False,trivial,12,0.087199,8201,4088,25,0,0,0,0,True
+barabasi_albert,"n=25, m=3",789,25,66,improved,True,True,maximal_matching,12,0.000262,3,1,1,10,36,21,8,True
+barabasi_albert,"n=25, m=3",1024,25,66,baseline,False,False,trivial,14,0.096299,9501,4740,25,0,0,0,0,True
+barabasi_albert,"n=25, m=3",1024,25,66,improved,True,True,maximal_matching,14,0.000624,11,4,5,38,76,45,10,True
+watts_strogatz,"n=10, k=4, p=0.1",42,10,20,baseline,False,False,trivial,7,0.000824,193,94,10,0,0,0,0,True
+watts_strogatz,"n=10, k=4, p=0.1",42,10,20,improved,True,True,maximal_matching,7,0.000201,15,7,5,21,18,11,4,True
+watts_strogatz,"n=10, k=4, p=0.1",123,10,20,baseline,False,False,trivial,6,0.000826,199,96,10,0,0,0,0,True
+watts_strogatz,"n=10, k=4, p=0.1",123,10,20,improved,True,True,maximal_matching,6,8.8e-05,5,2,2,11,14,8,4,True
+watts_strogatz,"n=10, k=4, p=0.1",256,10,20,baseline,False,False,trivial,6,0.000963,237,115,10,0,0,0,0,True
+watts_strogatz,"n=10, k=4, p=0.1",256,10,20,improved,True,True,maximal_matching,6,0.000108,7,3,3,13,14,8,5,True
+watts_strogatz,"n=10, k=4, p=0.1",789,10,20,baseline,False,False,trivial,7,0.000841,199,97,10,0,0,0,0,True
+watts_strogatz,"n=10, k=4, p=0.1",789,10,20,improved,True,True,maximal_matching,7,0.000147,11,5,4,19,16,9,5,True
+watts_strogatz,"n=10, k=4, p=0.1",1024,10,20,baseline,False,False,trivial,7,0.00078,199,97,10,0,0,0,0,True
+watts_strogatz,"n=10, k=4, p=0.1",1024,10,20,improved,True,True,maximal_matching,7,0.000147,11,5,4,19,16,9,5,True
+watts_strogatz,"n=10, k=4, p=0.3",42,10,20,baseline,False,False,trivial,6,0.000644,155,74,10,0,0,0,0,True
+watts_strogatz,"n=10, k=4, p=0.3",42,10,20,improved,True,True,maximal_matching,6,8.1e-05,5,2,2,11,12,7,5,True
+watts_strogatz,"n=10, k=4, p=0.3",123,10,20,baseline,False,False,trivial,6,0.000643,159,76,10,0,0,0,0,True
+watts_strogatz,"n=10, k=4, p=0.3",123,10,20,improved,True,True,maximal_matching,6,0.000106,7,3,3,13,11,6,5,True
+watts_strogatz,"n=10, k=4, p=0.3",256,10,20,baseline,False,False,trivial,6,0.000901,199,96,10,0,0,0,0,True
+watts_strogatz,"n=10, k=4, p=0.3",256,10,20,improved,True,True,maximal_matching,6,0.00015,9,3,4,16,18,11,4,True
+watts_strogatz,"n=10, k=4, p=0.3",789,10,20,baseline,False,False,trivial,7,0.000845,209,102,10,0,0,0,0,True
+watts_strogatz,"n=10, k=4, p=0.3",789,10,20,improved,True,True,maximal_matching,7,0.000131,9,4,4,15,17,9,5,True
+watts_strogatz,"n=10, k=4, p=0.3",1024,10,20,baseline,False,False,trivial,7,0.000923,227,111,10,0,0,0,0,True
+watts_strogatz,"n=10, k=4, p=0.3",1024,10,20,improved,True,True,maximal_matching,7,0.000133,9,4,4,16,10,6,5,True
+watts_strogatz,"n=10, k=4, p=0.5",42,10,20,baseline,False,False,trivial,6,0.000793,177,85,10,0,0,0,0,True
+watts_strogatz,"n=10, k=4, p=0.5",42,10,20,improved,True,True,maximal_matching,6,8.7e-05,5,2,2,11,14,8,4,True
+watts_strogatz,"n=10, k=4, p=0.5",123,10,20,baseline,False,False,trivial,6,0.000898,217,105,10,0,0,0,0,True
+watts_strogatz,"n=10, k=4, p=0.5",123,10,20,improved,True,True,maximal_matching,6,8.5e-05,5,2,2,12,13,7,4,True
+watts_strogatz,"n=10, k=4, p=0.5",256,10,20,baseline,False,False,trivial,6,0.001157,293,143,10,0,0,0,0,True
+watts_strogatz,"n=10, k=4, p=0.5",256,10,20,improved,True,True,maximal_matching,6,0.000111,7,3,3,14,17,10,4,True
+watts_strogatz,"n=10, k=4, p=0.5",789,10,20,baseline,False,False,trivial,7,0.001168,271,133,10,0,0,0,0,True
+watts_strogatz,"n=10, k=4, p=0.5",789,10,20,improved,True,True,maximal_matching,7,0.000132,9,4,4,15,19,10,4,True
+watts_strogatz,"n=10, k=4, p=0.5",1024,10,20,baseline,False,False,trivial,6,0.000888,225,109,10,0,0,0,0,True
+watts_strogatz,"n=10, k=4, p=0.5",1024,10,20,improved,True,True,maximal_matching,6,0.000109,7,3,3,13,18,10,5,True
+watts_strogatz,"n=15, k=4, p=0.1",42,15,30,baseline,False,False,trivial,10,0.007281,1265,628,15,0,0,0,0,True
+watts_strogatz,"n=15, k=4, p=0.1",42,15,30,improved,True,True,maximal_matching,10,0.000262,13,6,5,23,28,14,7,True
+watts_strogatz,"n=15, k=4, p=0.1",123,15,30,baseline,False,False,trivial,10,0.007765,1369,680,15,0,0,0,0,True
+watts_strogatz,"n=15, k=4, p=0.1",123,15,30,improved,True,True,maximal_matching,10,0.000421,17,8,5,28,33,17,7,True
+watts_strogatz,"n=15, k=4, p=0.1",256,15,30,baseline,False,False,trivial,10,0.006606,1123,557,15,0,0,0,0,True
+watts_strogatz,"n=15, k=4, p=0.1",256,15,30,improved,True,True,maximal_matching,10,0.000303,13,6,5,24,22,11,7,True
+watts_strogatz,"n=15, k=4, p=0.1",789,15,30,baseline,False,False,trivial,10,0.005469,953,472,15,0,0,0,0,True
+watts_strogatz,"n=15, k=4, p=0.1",789,15,30,improved,True,True,maximal_matching,10,0.00034,17,8,6,30,31,16,7,True
+watts_strogatz,"n=15, k=4, p=0.1",1024,15,30,baseline,False,False,trivial,10,0.006121,1051,521,15,0,0,0,0,True
+watts_strogatz,"n=15, k=4, p=0.1",1024,15,30,improved,True,True,maximal_matching,10,0.000364,19,9,5,34,33,18,7,True
+watts_strogatz,"n=15, k=4, p=0.3",42,15,30,baseline,False,False,trivial,9,0.006132,1083,536,15,0,0,0,0,True
+watts_strogatz,"n=15, k=4, p=0.3",42,15,30,improved,True,True,maximal_matching,9,0.000175,7,3,3,17,31,17,6,True
+watts_strogatz,"n=15, k=4, p=0.3",123,15,30,baseline,False,False,trivial,10,0.009008,1589,790,15,0,0,0,0,True
+watts_strogatz,"n=15, k=4, p=0.3",123,15,30,improved,True,True,maximal_matching,10,0.000321,15,7,5,26,34,18,7,True
+watts_strogatz,"n=15, k=4, p=0.3",256,15,30,baseline,False,False,trivial,9,0.006372,1053,521,15,0,0,0,0,True
+watts_strogatz,"n=15, k=4, p=0.3",256,15,30,improved,True,True,maximal_matching,9,0.000224,9,4,4,16,28,16,7,True
+watts_strogatz,"n=15, k=4, p=0.3",789,15,30,baseline,False,False,trivial,9,0.005573,929,459,15,0,0,0,0,True
+watts_strogatz,"n=15, k=4, p=0.3",789,15,30,improved,True,True,maximal_matching,9,0.000232,9,4,4,18,22,12,7,True
+watts_strogatz,"n=15, k=4, p=0.3",1024,15,30,baseline,False,False,trivial,10,0.007378,1205,598,15,0,0,0,0,True
+watts_strogatz,"n=15, k=4, p=0.3",1024,15,30,improved,True,True,maximal_matching,10,0.000265,11,5,5,21,33,17,7,True
+watts_strogatz,"n=15, k=4, p=0.5",42,15,30,baseline,False,False,trivial,9,0.008194,1345,667,15,0,0,0,0,True
+watts_strogatz,"n=15, k=4, p=0.5",42,15,30,improved,True,True,maximal_matching,9,0.000181,7,3,3,15,31,17,7,True
+watts_strogatz,"n=15, k=4, p=0.5",123,15,30,baseline,False,False,trivial,9,0.008379,1461,725,15,0,0,0,0,True
+watts_strogatz,"n=15, k=4, p=0.5",123,15,30,improved,True,True,maximal_matching,9,0.000218,9,4,4,18,24,14,7,True
+watts_strogatz,"n=15, k=4, p=0.5",256,15,30,baseline,False,False,trivial,9,0.009067,1631,810,15,0,0,0,0,True
+watts_strogatz,"n=15, k=4, p=0.5",256,15,30,improved,True,True,maximal_matching,9,0.000221,9,4,4,18,39,22,7,True
+watts_strogatz,"n=15, k=4, p=0.5",789,15,30,baseline,False,False,trivial,9,0.007267,1225,607,15,0,0,0,0,True
+watts_strogatz,"n=15, k=4, p=0.5",789,15,30,improved,True,True,maximal_matching,9,0.000278,11,5,5,20,28,16,7,True
+watts_strogatz,"n=15, k=4, p=0.5",1024,15,30,baseline,False,False,trivial,8,0.009199,1569,778,15,0,0,0,0,True
+watts_strogatz,"n=15, k=4, p=0.5",1024,15,30,improved,True,True,maximal_matching,8,0.000192,7,3,3,13,21,12,7,True
+watts_strogatz,"n=20, k=4, p=0.1",42,20,40,baseline,False,False,trivial,12,0.038411,4847,2416,20,0,0,0,0,True
+watts_strogatz,"n=20, k=4, p=0.1",42,20,40,improved,True,True,maximal_matching,12,0.000442,15,7,5,28,33,18,9,True
+watts_strogatz,"n=20, k=4, p=0.1",123,20,40,baseline,False,False,trivial,12,0.044066,5889,2937,20,0,0,0,0,True
+watts_strogatz,"n=20, k=4, p=0.1",123,20,40,improved,True,True,maximal_matching,12,0.000363,11,5,5,24,26,14,10,True
+watts_strogatz,"n=20, k=4, p=0.1",256,20,40,baseline,False,False,trivial,13,0.047512,6339,3163,20,0,0,0,0,True
+watts_strogatz,"n=20, k=4, p=0.1",256,20,40,improved,True,True,maximal_matching,13,0.000827,27,13,6,51,75,38,10,True
+watts_strogatz,"n=20, k=4, p=0.1",789,20,40,baseline,False,False,trivial,13,0.040352,5267,2627,20,0,0,0,0,True
+watts_strogatz,"n=20, k=4, p=0.1",789,20,40,improved,True,True,maximal_matching,13,0.001087,45,21,8,72,67,36,10,True
+watts_strogatz,"n=20, k=4, p=0.1",1024,20,40,baseline,False,False,trivial,14,0.06113,6399,3194,20,0,0,0,0,True
+watts_strogatz,"n=20, k=4, p=0.1",1024,20,40,improved,True,True,maximal_matching,14,0.001512,69,34,8,104,90,48,10,True
+watts_strogatz,"n=20, k=4, p=0.3",42,20,40,baseline,False,False,trivial,12,0.056916,7283,3634,20,0,0,0,0,True
+watts_strogatz,"n=20, k=4, p=0.3",42,20,40,improved,True,True,maximal_matching,12,0.000361,9,4,4,20,51,26,9,True
+watts_strogatz,"n=20, k=4, p=0.3",123,20,40,baseline,False,False,trivial,12,0.053705,7255,3620,20,0,0,0,0,True
+watts_strogatz,"n=20, k=4, p=0.3",123,20,40,improved,True,True,maximal_matching,12,0.00029,9,4,4,20,38,19,9,True
+watts_strogatz,"n=20, k=4, p=0.3",256,20,40,baseline,False,False,trivial,12,0.038039,5385,2685,20,0,0,0,0,True
+watts_strogatz,"n=20, k=4, p=0.3",256,20,40,improved,True,True,maximal_matching,12,0.000451,13,6,5,27,50,27,9,True
+watts_strogatz,"n=20, k=4, p=0.3",789,20,40,baseline,False,False,trivial,12,0.033209,4397,2191,20,0,0,0,0,True
+watts_strogatz,"n=20, k=4, p=0.3",789,20,40,improved,True,True,maximal_matching,12,0.000297,9,4,4,20,24,12,10,True
+watts_strogatz,"n=20, k=4, p=0.3",1024,20,40,baseline,False,False,trivial,12,0.060345,8117,4051,20,0,0,0,0,True
+watts_strogatz,"n=20, k=4, p=0.3",1024,20,40,improved,True,True,maximal_matching,12,0.000598,11,5,5,22,37,19,10,True
+watts_strogatz,"n=20, k=4, p=0.5",42,20,40,baseline,False,False,trivial,12,0.057539,7787,3886,20,0,0,0,0,True
+watts_strogatz,"n=20, k=4, p=0.5",42,20,40,improved,True,True,maximal_matching,12,0.000336,9,4,4,19,29,15,10,True
+watts_strogatz,"n=20, k=4, p=0.5",123,20,40,baseline,False,False,trivial,11,0.0385,5271,2627,20,0,0,0,0,True
+watts_strogatz,"n=20, k=4, p=0.5",123,20,40,improved,True,True,maximal_matching,11,0.000323,9,4,4,18,29,17,9,True
+watts_strogatz,"n=20, k=4, p=0.5",256,20,40,baseline,False,False,trivial,12,0.047106,6321,3153,20,0,0,0,0,True
+watts_strogatz,"n=20, k=4, p=0.5",256,20,40,improved,True,True,maximal_matching,12,0.000443,13,6,5,26,56,30,9,True
+watts_strogatz,"n=20, k=4, p=0.5",789,20,40,baseline,False,False,trivial,12,0.058022,7739,3862,20,0,0,0,0,True
+watts_strogatz,"n=20, k=4, p=0.5",789,20,40,improved,True,True,maximal_matching,12,0.000313,9,4,4,19,41,22,9,True
+watts_strogatz,"n=20, k=4, p=0.5",1024,20,40,baseline,False,False,trivial,11,0.051282,7097,3540,20,0,0,0,0,True
+watts_strogatz,"n=20, k=4, p=0.5",1024,20,40,improved,True,True,maximal_matching,11,0.000279,7,3,3,15,21,11,8,True
+watts_strogatz,"n=25, k=4, p=0.1",42,25,50,baseline,False,False,trivial,17,0.318048,34129,17057,25,0,0,0,0,True
+watts_strogatz,"n=25, k=4, p=0.1",42,25,50,improved,True,True,maximal_matching,17,0.00247,91,45,9,161,165,87,12,True
+watts_strogatz,"n=25, k=4, p=0.1",123,25,50,baseline,False,False,trivial,16,0.454281,48057,24020,25,0,0,0,0,True
+watts_strogatz,"n=25, k=4, p=0.1",123,25,50,improved,True,True,maximal_matching,16,0.001106,31,15,7,58,109,56,12,True
+watts_strogatz,"n=25, k=4, p=0.1",256,25,50,baseline,False,False,trivial,16,0.347881,37963,18973,25,0,0,0,0,True
+watts_strogatz,"n=25, k=4, p=0.1",256,25,50,improved,True,True,maximal_matching,16,0.001317,41,20,8,84,71,37,12,True
+watts_strogatz,"n=25, k=4, p=0.1",789,25,50,baseline,False,False,trivial,17,0.357634,38843,19414,25,0,0,0,0,True
+watts_strogatz,"n=25, k=4, p=0.1",789,25,50,improved,True,True,maximal_matching,17,0.002335,79,39,9,137,164,85,12,True
+watts_strogatz,"n=25, k=4, p=0.1",1024,25,50,baseline,False,False,trivial,16,0.195776,21427,10705,25,0,0,0,0,True
+watts_strogatz,"n=25, k=4, p=0.1",1024,25,50,improved,True,True,maximal_matching,16,0.002055,59,28,9,103,118,62,12,True
+watts_strogatz,"n=25, k=4, p=0.3",42,25,50,baseline,False,False,trivial,15,0.349477,38713,19347,25,0,0,0,0,True
+watts_strogatz,"n=25, k=4, p=0.3",42,25,50,improved,True,True,maximal_matching,15,0.000769,17,7,7,38,108,56,12,True
+watts_strogatz,"n=25, k=4, p=0.3",123,25,50,baseline,False,False,trivial,15,0.324259,35897,17939,25,0,0,0,0,True
+watts_strogatz,"n=25, k=4, p=0.3",123,25,50,improved,True,True,maximal_matching,15,0.000728,17,8,6,35,78,40,11,True
+watts_strogatz,"n=25, k=4, p=0.3",256,25,50,baseline,False,False,trivial,16,0.366585,40427,20205,25,0,0,0,0,True
+watts_strogatz,"n=25, k=4, p=0.3",256,25,50,improved,True,True,maximal_matching,16,0.001519,51,24,9,79,150,81,12,True
+watts_strogatz,"n=25, k=4, p=0.3",789,25,50,baseline,False,False,trivial,16,0.450005,49269,24626,25,0,0,0,0,True
+watts_strogatz,"n=25, k=4, p=0.3",789,25,50,improved,True,True,maximal_matching,16,0.001112,29,14,7,60,89,46,12,True
+watts_strogatz,"n=25, k=4, p=0.3",1024,25,50,baseline,False,False,trivial,16,0.398496,40977,20480,25,0,0,0,0,True
+watts_strogatz,"n=25, k=4, p=0.3",1024,25,50,improved,True,True,maximal_matching,16,0.001028,29,14,7,56,89,46,12,True
+watts_strogatz,"n=25, k=4, p=0.5",42,25,50,baseline,False,False,trivial,14,0.338205,38151,19065,25,0,0,0,0,True
+watts_strogatz,"n=25, k=4, p=0.5",42,25,50,improved,True,True,maximal_matching,14,0.000412,9,4,4,22,74,40,11,True
+watts_strogatz,"n=25, k=4, p=0.5",123,25,50,baseline,False,False,trivial,15,0.258271,28501,14241,25,0,0,0,0,True
+watts_strogatz,"n=25, k=4, p=0.5",123,25,50,improved,True,True,maximal_matching,15,0.001147,25,11,7,46,122,63,12,True
+watts_strogatz,"n=25, k=4, p=0.5",256,25,50,baseline,False,False,trivial,14,0.228006,25923,12951,25,0,0,0,0,True
+watts_strogatz,"n=25, k=4, p=0.5",256,25,50,improved,True,True,maximal_matching,14,0.000443,9,4,4,20,42,22,11,True
+watts_strogatz,"n=25, k=4, p=0.5",789,25,50,baseline,False,False,trivial,15,0.399739,44477,22229,25,0,0,0,0,True
+watts_strogatz,"n=25, k=4, p=0.5",789,25,50,improved,True,True,maximal_matching,15,0.000529,13,6,5,30,74,40,12,True
+watts_strogatz,"n=25, k=4, p=0.5",1024,25,50,baseline,False,False,trivial,15,0.366238,42435,21208,25,0,0,0,0,True
+watts_strogatz,"n=25, k=4, p=0.5",1024,25,50,improved,True,True,maximal_matching,15,0.000682,19,9,5,33,81,43,11,True
+random_regular,"n=10, d=3",42,10,15,baseline,False,False,trivial,6,0.000956,261,127,10,0,0,0,0,True
+random_regular,"n=10, d=3",42,10,15,improved,True,True,maximal_matching,6,0.000101,7,3,3,8,13,8,4,True
+random_regular,"n=10, d=3",123,10,15,baseline,False,False,trivial,6,0.000908,245,119,10,0,0,0,0,True
+random_regular,"n=10, d=3",123,10,15,improved,True,True,maximal_matching,6,8.3e-05,5,2,2,6,15,8,4,True
+random_regular,"n=10, d=3",256,10,15,baseline,False,False,trivial,6,0.000953,259,126,10,0,0,0,0,True
+random_regular,"n=10, d=3",256,10,15,improved,True,True,maximal_matching,6,9.8e-05,7,3,3,8,13,7,4,True
+random_regular,"n=10, d=3",789,10,15,baseline,False,False,trivial,6,0.00098,229,111,10,0,0,0,0,True
+random_regular,"n=10, d=3",789,10,15,improved,True,True,maximal_matching,6,0.000124,7,3,3,9,18,10,4,True
+random_regular,"n=10, d=3",1024,10,15,baseline,False,False,trivial,6,0.000975,275,134,10,0,0,0,0,True
+random_regular,"n=10, d=3",1024,10,15,improved,True,True,maximal_matching,6,0.000121,9,4,3,10,17,10,4,True
+random_regular,"n=10, d=4",42,10,20,baseline,False,False,trivial,6,0.000793,197,95,10,0,0,0,0,True
+random_regular,"n=10, d=4",42,10,20,improved,True,True,maximal_matching,6,0.000134,9,3,4,15,14,9,4,True
+random_regular,"n=10, d=4",123,10,20,baseline,False,False,trivial,6,0.000845,213,103,10,0,0,0,0,True
+random_regular,"n=10, d=4",123,10,20,improved,True,True,maximal_matching,6,0.000107,7,3,3,12,16,9,4,True
+random_regular,"n=10, d=4",256,10,20,baseline,False,False,trivial,7,0.000879,223,109,10,0,0,0,0,True
+random_regular,"n=10, d=4",256,10,20,improved,True,True,maximal_matching,7,0.000146,11,5,4,17,16,9,4,True
+random_regular,"n=10, d=4",789,10,20,baseline,False,False,trivial,6,0.000824,209,101,10,0,0,0,0,True
+random_regular,"n=10, d=4",789,10,20,improved,True,True,maximal_matching,6,0.00013,9,4,4,15,16,10,4,True
+random_regular,"n=10, d=4",1024,10,20,baseline,False,False,trivial,7,0.000939,231,113,10,0,0,0,0,True
+random_regular,"n=10, d=4",1024,10,20,improved,True,True,maximal_matching,7,0.000178,13,6,4,18,15,8,5,True
+random_regular,"n=14, d=3",42,14,21,baseline,False,False,trivial,9,0.006549,1337,664,14,0,0,0,0,True
+random_regular,"n=14, d=3",42,14,21,improved,True,True,maximal_matching,9,0.00035,19,9,4,25,32,18,7,True
+random_regular,"n=14, d=3",123,14,21,baseline,False,False,trivial,8,0.006787,1317,653,14,0,0,0,0,True
+random_regular,"n=14, d=3",123,14,21,improved,True,True,maximal_matching,8,0.000259,13,5,4,17,40,21,7,True
+random_regular,"n=14, d=3",256,14,21,baseline,False,False,trivial,8,0.006402,1349,669,14,0,0,0,0,True
+random_regular,"n=14, d=3",256,14,21,improved,True,True,maximal_matching,8,0.000192,9,4,3,12,23,13,6,True
+random_regular,"n=14, d=3",789,14,21,baseline,False,False,trivial,8,0.0053,1069,529,14,0,0,0,0,True
+random_regular,"n=14, d=3",789,14,21,improved,True,True,maximal_matching,8,0.000194,9,4,3,12,41,22,7,True
+random_regular,"n=14, d=3",1024,14,21,baseline,False,False,trivial,8,0.006287,1287,638,14,0,0,0,0,True
+random_regular,"n=14, d=3",1024,14,21,improved,True,True,maximal_matching,8,0.00027,15,6,4,19,45,24,7,True
+random_regular,"n=14, d=4",42,14,28,baseline,False,False,trivial,9,0.005073,881,436,14,0,0,0,0,True
+random_regular,"n=14, d=4",42,14,28,improved,True,True,maximal_matching,9,0.000335,17,8,5,29,39,22,6,True
+random_regular,"n=14, d=4",123,14,28,baseline,False,False,trivial,9,0.004942,905,448,14,0,0,0,0,True
+random_regular,"n=14, d=4",123,14,28,improved,True,True,maximal_matching,9,0.00028,13,6,5,24,21,12,6,True
+random_regular,"n=14, d=4",256,14,28,baseline,False,False,trivial,9,0.00565,979,485,14,0,0,0,0,True
+random_regular,"n=14, d=4",256,14,28,improved,True,True,maximal_matching,9,0.000291,13,6,5,22,26,14,6,True
+random_regular,"n=14, d=4",789,14,28,baseline,False,False,trivial,9,0.004455,865,428,14,0,0,0,0,True
+random_regular,"n=14, d=4",789,14,28,improved,True,True,maximal_matching,9,0.000354,15,7,5,26,30,19,6,True
+random_regular,"n=14, d=4",1024,14,28,baseline,False,False,trivial,9,0.005517,1107,549,14,0,0,0,0,True
+random_regular,"n=14, d=4",1024,14,28,improved,True,True,maximal_matching,9,0.00027,13,6,5,22,25,14,6,True
+random_regular,"n=20, d=3",42,20,30,baseline,False,False,trivial,12,0.09332,14427,7206,20,0,0,0,0,True
+random_regular,"n=20, d=3",42,20,30,improved,True,True,maximal_matching,12,0.000614,19,9,5,27,89,47,9,True
+random_regular,"n=20, d=3",123,20,30,baseline,False,False,trivial,12,0.068073,10971,5478,20,0,0,0,0,True
+random_regular,"n=20, d=3",123,20,30,improved,True,True,maximal_matching,12,0.000673,19,9,5,26,96,51,9,True
+random_regular,"n=20, d=3",256,20,30,baseline,False,False,trivial,12,0.081774,13183,6584,20,0,0,0,0,True
+random_regular,"n=20, d=3",256,20,30,improved,True,True,maximal_matching,12,0.000673,23,11,4,33,89,49,9,True
+random_regular,"n=20, d=3",789,20,30,baseline,False,False,trivial,12,0.0714,11187,5586,20,0,0,0,0,True
+random_regular,"n=20, d=3",789,20,30,improved,True,True,maximal_matching,12,0.000488,17,8,4,23,84,43,8,True
+random_regular,"n=20, d=3",1024,20,30,baseline,False,False,trivial,11,0.07226,9901,4942,20,0,0,0,0,True
+random_regular,"n=20, d=3",1024,20,30,improved,True,True,maximal_matching,11,0.00032,9,4,3,12,25,13,9,True
+random_regular,"n=20, d=4",42,20,40,baseline,False,False,trivial,12,0.052691,6903,3444,20,0,0,0,0,True
+random_regular,"n=20, d=4",42,20,40,improved,True,True,maximal_matching,12,0.000665,21,9,6,38,96,51,9,True
+random_regular,"n=20, d=4",123,20,40,baseline,False,False,trivial,12,0.047546,6787,3386,20,0,0,0,0,True
+random_regular,"n=20, d=4",123,20,40,improved,True,True,maximal_matching,12,0.000439,13,6,5,24,41,21,9,True
+random_regular,"n=20, d=4",256,20,40,baseline,False,False,trivial,13,0.062171,9125,4556,20,0,0,0,0,True
+random_regular,"n=20, d=4",256,20,40,improved,True,True,maximal_matching,13,0.000902,33,15,8,57,126,70,9,True
+random_regular,"n=20, d=4",789,20,40,baseline,False,False,trivial,13,0.055882,7787,3887,20,0,0,0,0,True
+random_regular,"n=20, d=4",789,20,40,improved,True,True,maximal_matching,13,0.000923,35,16,9,57,102,54,9,True
+random_regular,"n=20, d=4",1024,20,40,baseline,False,False,trivial,12,0.068277,10029,5007,20,0,0,0,0,True
+random_regular,"n=20, d=4",1024,20,40,improved,True,True,maximal_matching,12,0.000588,19,9,5,35,66,36,9,True
+random_regular,"n=24, d=3",42,24,36,baseline,False,False,trivial,14,0.359489,49571,24776,24,0,0,0,0,True
+random_regular,"n=24, d=3",42,24,36,improved,True,True,maximal_matching,14,0.000746,23,10,6,31,106,54,12,True
+random_regular,"n=24, d=3",123,24,36,baseline,False,False,trivial,14,0.321663,43901,21941,24,0,0,0,0,True
+random_regular,"n=24, d=3",123,24,36,improved,True,True,maximal_matching,14,0.001167,29,14,5,41,133,73,11,True
+random_regular,"n=24, d=3",256,24,36,baseline,False,False,trivial,14,0.384138,51633,25807,24,0,0,0,0,True
+random_regular,"n=24, d=3",256,24,36,improved,True,True,maximal_matching,14,0.00111,35,16,6,50,175,90,11,True
+random_regular,"n=24, d=3",789,24,36,baseline,False,False,trivial,14,0.384464,51815,25898,24,0,0,0,0,True
+random_regular,"n=24, d=3",789,24,36,improved,True,True,maximal_matching,14,0.001372,25,11,6,34,121,63,11,True
+random_regular,"n=24, d=3",1024,24,36,baseline,False,False,trivial,14,0.4072,54927,27454,24,0,0,0,0,True
+random_regular,"n=24, d=3",1024,24,36,improved,True,True,maximal_matching,14,0.000941,29,13,6,38,148,77,10,True
+random_regular,"n=24, d=4",42,24,48,baseline,False,False,trivial,14,0.316842,39673,19827,24,0,0,0,0,True
+random_regular,"n=24, d=4",42,24,48,improved,True,True,maximal_matching,14,0.001285,33,15,7,61,133,74,11,True
+random_regular,"n=24, d=4",123,24,48,baseline,False,False,trivial,15,0.255684,31553,15768,24,0,0,0,0,True
+random_regular,"n=24, d=4",123,24,48,improved,True,True,maximal_matching,15,0.001544,47,22,8,87,164,88,10,True
+random_regular,"n=24, d=4",256,24,48,baseline,False,False,trivial,15,0.317378,39211,19597,24,0,0,0,0,True
+random_regular,"n=24, d=4",256,24,48,improved,True,True,maximal_matching,15,0.001323,37,18,7,68,159,83,10,True
+random_regular,"n=24, d=4",789,24,48,baseline,False,False,trivial,15,0.246016,29801,14892,24,0,0,0,0,True
+random_regular,"n=24, d=4",789,24,48,improved,True,True,maximal_matching,15,0.001407,41,19,9,78,207,114,12,True
+random_regular,"n=24, d=4",1024,24,48,baseline,False,False,trivial,15,0.28572,36197,18090,24,0,0,0,0,True
+random_regular,"n=24, d=4",1024,24,48,improved,True,True,maximal_matching,15,0.001278,33,16,7,62,139,75,12,True
+toy,toy_5,0,5,6,baseline,False,False,trivial,3,8.5e-05,31,14,5,0,0,0,0,True
+toy,toy_5,0,5,6,improved,True,True,maximal_matching,3,3e-05,3,1,1,3,5,3,2,True
+toy,toy_8,0,8,10,baseline,False,False,trivial,4,0.000424,139,66,8,0,0,0,0,True
+toy,toy_8,0,8,10,improved,True,True,maximal_matching,4,4e-05,3,1,1,3,11,6,3,True
+toy,toy_9_mvc_2,0,9,8,baseline,False,False,trivial,2,0.000236,75,31,9,0,0,0,0,True
+toy,toy_9_mvc_2,0,9,8,improved,True,True,maximal_matching,2,1.5e-05,1,0,0,0,9,7,2,True
+toy,toy_11_mvc_3,0,11,11,baseline,False,False,trivial,3,0.000431,105,45,11,0,0,0,0,True
+toy,toy_11_mvc_3,0,11,11,improved,True,True,maximal_matching,3,2e-05,1,0,0,0,11,8,3,True
+toy,toy_15_star,0,15,14,baseline,False,False,trivial,1,0.001445,265,119,15,0,0,0,0,True
+toy,toy_15_star,0,15,14,improved,True,True,maximal_matching,1,2.5e-05,1,0,0,0,15,14,1,True
