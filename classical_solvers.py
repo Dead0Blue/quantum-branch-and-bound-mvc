@@ -233,6 +233,15 @@ def trivial_lower_bound(state, graph):
     return 0  # no additional estimate beyond the selected count
 
 
+def choose_branching_vertex(unassigned, state, graph):
+    """
+    Choose the next vertex to branch on from the unassigned list.
+    Heuristic: pick the vertex with the highest residual degree.
+    """
+    return max(unassigned, key=lambda u: sum(
+        1 for w in graph.neighbors(u) if w not in state
+    ))
+
 # ──────────────────────────────────────────────────────────────────────
 # WP1.4 — Branch-and-bound solvers (baseline + improved)
 # ──────────────────────────────────────────────────────────────────────
@@ -442,9 +451,7 @@ def bb_mvc_improved(graph, timeout=300):
 
         # Choose vertex to branch on: pick vertex with highest residual degree
         # (heuristic: branching on high-degree vertex tends to reduce tree faster)
-        v = max(unassigned, key=lambda u: sum(
-            1 for w in graph.neighbors(u) if w not in state
-        ))
+        v = choose_branching_vertex(unassigned, state, graph)
 
         # Push exclude-branch first (DFS processes include-branch first)
         state_out = state.copy()

@@ -1,121 +1,361 @@
-family,params,seed,n,m,solver_type,preprocessing_enabled,propagation_enabled,lower_bound_type,optimal_cover_size,runtime_seconds,nodes_explored,nodes_pruned,max_depth,forced_assignments,preprocessing_reductions,vertices_removed_by_preprocessing,root_lower_bound,finished
-barabasi_albert,"n=10, m=1",42,10,9,baseline,False,False,trivial,3,0.00042,105,46,10,0,0,0,0,True
-barabasi_albert,"n=10, m=1",42,10,9,improved,True,True,maximal_matching,3,2e-05,1,0,0,0,10,7,3,True
-barabasi_albert,"n=10, m=1",123,10,9,baseline,False,False,trivial,3,0.000658,197,92,10,0,0,0,0,True
-barabasi_albert,"n=10, m=1",123,10,9,improved,True,True,maximal_matching,3,1.6e-05,1,0,0,0,10,7,3,True
-barabasi_albert,"n=10, m=1",256,10,9,baseline,False,False,trivial,5,0.000859,255,123,10,0,0,0,0,True
-barabasi_albert,"n=10, m=1",256,10,9,improved,True,True,maximal_matching,5,1.9e-05,1,0,0,0,10,5,5,True
-barabasi_albert,"n=10, m=1",789,10,9,baseline,False,False,trivial,4,0.000451,141,65,10,0,0,0,0,True
-barabasi_albert,"n=10, m=1",789,10,9,improved,True,True,maximal_matching,4,1.8e-05,1,0,0,0,10,6,4,True
-barabasi_albert,"n=10, m=1",1024,10,9,baseline,False,False,trivial,5,0.000704,223,107,10,0,0,0,0,True
-barabasi_albert,"n=10, m=1",1024,10,9,improved,True,True,maximal_matching,5,1.8e-05,1,0,0,0,10,5,5,True
-barabasi_albert,"n=10, m=2",42,10,16,baseline,False,False,trivial,5,0.000637,171,81,10,0,0,0,0,True
-barabasi_albert,"n=10, m=2",42,10,16,improved,True,True,maximal_matching,5,4.8e-05,3,1,1,6,12,7,4,True
-barabasi_albert,"n=10, m=2",123,10,16,baseline,False,False,trivial,5,0.000644,175,83,10,0,0,0,0,True
-barabasi_albert,"n=10, m=2",123,10,16,improved,True,True,maximal_matching,5,1.8e-05,1,0,0,0,10,5,5,True
-barabasi_albert,"n=10, m=2",256,10,16,baseline,False,False,trivial,5,0.000518,139,65,10,0,0,0,0,True
-barabasi_albert,"n=10, m=2",256,10,16,improved,True,True,maximal_matching,5,4.6e-05,3,1,1,7,11,7,4,True
-barabasi_albert,"n=10, m=2",789,10,16,baseline,False,False,trivial,4,0.000348,95,42,10,0,0,0,0,True
-barabasi_albert,"n=10, m=2",789,10,16,improved,True,True,maximal_matching,4,4.4e-05,3,1,1,8,10,7,3,True
-barabasi_albert,"n=10, m=2",1024,10,16,baseline,False,False,trivial,6,0.001076,251,122,10,0,0,0,0,True
-barabasi_albert,"n=10, m=2",1024,10,16,improved,True,True,maximal_matching,6,0.000194,5,2,2,6,11,6,4,True
-barabasi_albert,"n=10, m=3",42,10,21,baseline,False,False,trivial,6,0.000858,197,95,10,0,0,0,0,True
-barabasi_albert,"n=10, m=3",42,10,21,improved,True,True,maximal_matching,6,8.4e-05,5,2,2,11,10,6,4,True
-barabasi_albert,"n=10, m=3",123,10,21,baseline,False,False,trivial,6,0.000617,151,72,10,0,0,0,0,True
-barabasi_albert,"n=10, m=3",123,10,21,improved,True,True,maximal_matching,6,0.000113,7,3,3,14,15,10,4,True
-barabasi_albert,"n=10, m=3",256,10,21,baseline,False,False,trivial,5,0.001242,211,101,10,0,0,0,0,True
-barabasi_albert,"n=10, m=3",256,10,21,improved,True,True,maximal_matching,5,8e-05,3,1,1,8,10,6,5,True
-barabasi_albert,"n=10, m=3",789,10,21,baseline,False,False,trivial,5,0.000889,183,87,10,0,0,0,0,True
-barabasi_albert,"n=10, m=3",789,10,21,improved,True,True,maximal_matching,5,6.4e-05,3,1,1,5,11,6,4,True
-barabasi_albert,"n=10, m=3",1024,10,21,baseline,False,False,trivial,6,0.000869,211,102,10,0,0,0,0,True
-barabasi_albert,"n=10, m=3",1024,10,21,improved,True,True,maximal_matching,6,8.4e-05,5,2,2,8,13,7,5,True
-barabasi_albert,"n=15, m=1",42,15,14,baseline,False,False,trivial,6,0.004195,901,442,15,0,0,0,0,True
-barabasi_albert,"n=15, m=1",42,15,14,improved,True,True,maximal_matching,6,2.4e-05,1,0,0,0,15,9,6,True
-barabasi_albert,"n=15, m=1",123,15,14,baseline,False,False,trivial,4,0.002682,637,308,15,0,0,0,0,True
-barabasi_albert,"n=15, m=1",123,15,14,improved,True,True,maximal_matching,4,2.1e-05,1,0,0,0,15,11,4,True
-barabasi_albert,"n=15, m=1",256,15,14,baseline,False,False,trivial,7,0.006032,1215,600,15,0,0,0,0,True
-barabasi_albert,"n=15, m=1",256,15,14,improved,True,True,maximal_matching,7,2.9e-05,1,0,0,0,15,8,7,True
-barabasi_albert,"n=15, m=1",789,15,14,baseline,False,False,trivial,5,0.00254,545,263,15,0,0,0,0,True
-barabasi_albert,"n=15, m=1",789,15,14,improved,True,True,maximal_matching,5,3.7e-05,1,0,0,0,15,10,5,True
-barabasi_albert,"n=15, m=1",1024,15,14,baseline,False,False,trivial,6,0.003772,875,429,15,0,0,0,0,True
-barabasi_albert,"n=15, m=1",1024,15,14,improved,True,True,maximal_matching,6,2.6e-05,1,0,0,0,15,9,6,True
-barabasi_albert,"n=15, m=2",42,15,26,baseline,False,False,trivial,6,0.002324,447,215,15,0,0,0,0,True
-barabasi_albert,"n=15, m=2",42,15,26,improved,True,True,maximal_matching,6,0.000197,3,1,1,10,18,12,5,True
-barabasi_albert,"n=15, m=2",123,15,26,baseline,False,False,trivial,6,0.004015,627,305,15,0,0,0,0,True
-barabasi_albert,"n=15, m=2",123,15,26,improved,True,True,maximal_matching,6,3.5e-05,1,0,0,0,15,9,6,True
-barabasi_albert,"n=15, m=2",256,15,26,baseline,False,False,trivial,7,0.002694,519,252,15,0,0,0,0,True
-barabasi_albert,"n=15, m=2",256,15,26,improved,True,True,maximal_matching,7,0.000164,3,1,1,8,20,14,5,True
-barabasi_albert,"n=15, m=2",789,15,26,baseline,False,False,trivial,7,0.005625,995,490,15,0,0,0,0,True
-barabasi_albert,"n=15, m=2",789,15,26,improved,True,True,maximal_matching,7,7.3e-05,3,1,1,11,17,11,6,True
-barabasi_albert,"n=15, m=2",1024,15,26,baseline,False,False,trivial,8,0.004715,825,406,15,0,0,0,0,True
-barabasi_albert,"n=15, m=2",1024,15,26,improved,True,True,maximal_matching,8,0.000112,3,1,1,6,20,11,6,True
-barabasi_albert,"n=15, m=3",42,15,36,baseline,False,False,trivial,8,0.003316,545,266,15,0,0,0,0,True
-barabasi_albert,"n=15, m=3",42,15,36,improved,True,True,maximal_matching,8,0.000194,5,2,2,16,24,14,6,True
-barabasi_albert,"n=15, m=3",123,15,36,baseline,False,False,trivial,8,0.003199,529,258,15,0,0,0,0,True
-barabasi_albert,"n=15, m=3",123,15,36,improved,True,True,maximal_matching,8,0.000126,5,2,2,18,22,14,6,True
-barabasi_albert,"n=15, m=3",256,15,36,baseline,False,False,trivial,8,0.004248,679,333,15,0,0,0,0,True
-barabasi_albert,"n=15, m=3",256,15,36,improved,True,True,maximal_matching,8,9e-05,3,1,1,11,17,10,5,True
-barabasi_albert,"n=15, m=3",789,15,36,baseline,False,False,trivial,9,0.004725,781,385,15,0,0,0,0,True
-barabasi_albert,"n=15, m=3",789,15,36,improved,True,True,maximal_matching,9,0.000175,7,3,3,16,25,14,6,True
-barabasi_albert,"n=15, m=3",1024,15,36,baseline,False,False,trivial,9,0.004795,611,300,15,0,0,0,0,True
-barabasi_albert,"n=15, m=3",1024,15,36,improved,True,True,maximal_matching,9,0.00022,9,4,4,25,22,14,6,True
-barabasi_albert,"n=20, m=1",42,20,19,baseline,False,False,trivial,6,0.005749,1021,497,20,0,0,0,0,True
-barabasi_albert,"n=20, m=1",42,20,19,improved,True,True,maximal_matching,6,3.1e-05,1,0,0,0,20,14,6,True
-barabasi_albert,"n=20, m=1",123,20,19,baseline,False,False,trivial,6,0.028653,4791,2382,20,0,0,0,0,True
-barabasi_albert,"n=20, m=1",123,20,19,improved,True,True,maximal_matching,6,4e-05,1,0,0,0,20,14,6,True
-barabasi_albert,"n=20, m=1",256,20,19,baseline,False,False,trivial,8,0.015205,2659,1318,20,0,0,0,0,True
-barabasi_albert,"n=20, m=1",256,20,19,improved,True,True,maximal_matching,8,3.9e-05,1,0,0,0,20,12,8,True
-barabasi_albert,"n=20, m=1",789,20,19,baseline,False,False,trivial,7,0.01355,2389,1182,20,0,0,0,0,True
-barabasi_albert,"n=20, m=1",789,20,19,improved,True,True,maximal_matching,7,3.8e-05,1,0,0,0,20,13,7,True
-barabasi_albert,"n=20, m=1",1024,20,19,baseline,False,False,trivial,7,0.013745,2483,1229,20,0,0,0,0,True
-barabasi_albert,"n=20, m=1",1024,20,19,improved,True,True,maximal_matching,7,3.6e-05,1,0,0,0,20,13,7,True
-barabasi_albert,"n=20, m=2",42,20,36,baseline,False,False,trivial,7,0.004233,621,298,20,0,0,0,0,True
-barabasi_albert,"n=20, m=2",42,20,36,improved,True,True,maximal_matching,7,9.3e-05,3,1,1,13,25,18,5,True
-barabasi_albert,"n=20, m=2",123,20,36,baseline,False,False,trivial,9,0.043744,6007,2993,20,0,0,0,0,True
-barabasi_albert,"n=20, m=2",123,20,36,improved,True,True,maximal_matching,9,4.4e-05,1,0,0,0,20,11,9,True
-barabasi_albert,"n=20, m=2",256,20,36,baseline,False,False,trivial,8,0.007944,1145,561,20,0,0,0,0,True
-barabasi_albert,"n=20, m=2",256,20,36,improved,True,True,maximal_matching,8,9.8e-05,3,1,1,10,28,20,6,True
-barabasi_albert,"n=20, m=2",789,20,36,baseline,False,False,trivial,9,0.024765,3523,1751,20,0,0,0,0,True
-barabasi_albert,"n=20, m=2",789,20,36,improved,True,True,maximal_matching,9,0.000102,3,1,1,13,25,15,8,True
-barabasi_albert,"n=20, m=2",1024,20,36,baseline,False,False,trivial,10,0.024693,3567,1774,20,0,0,0,0,True
-barabasi_albert,"n=20, m=2",1024,20,36,improved,True,True,maximal_matching,10,0.000132,3,1,1,9,29,16,7,True
-barabasi_albert,"n=20, m=3",42,20,51,baseline,False,False,trivial,10,0.016529,2025,1003,20,0,0,0,0,True
-barabasi_albert,"n=20, m=3",42,20,51,improved,True,True,maximal_matching,10,0.000188,5,2,2,21,34,22,8,True
-barabasi_albert,"n=20, m=3",123,20,51,baseline,False,False,trivial,11,0.035216,4163,2073,20,0,0,0,0,True
-barabasi_albert,"n=20, m=3",123,20,51,improved,True,True,maximal_matching,11,0.000273,7,3,3,26,36,22,8,True
-barabasi_albert,"n=20, m=3",256,20,51,baseline,False,False,trivial,11,0.022803,2779,1381,20,0,0,0,0,True
-barabasi_albert,"n=20, m=3",256,20,51,improved,True,True,maximal_matching,11,0.000176,5,2,2,17,26,14,7,True
-barabasi_albert,"n=20, m=3",789,20,51,baseline,False,False,trivial,11,0.01983,2419,1201,20,0,0,0,0,True
-barabasi_albert,"n=20, m=3",789,20,51,improved,True,True,maximal_matching,11,0.000224,5,2,2,14,31,17,8,True
-barabasi_albert,"n=20, m=3",1024,20,51,baseline,False,False,trivial,11,0.027631,3351,1667,20,0,0,0,0,True
-barabasi_albert,"n=20, m=3",1024,20,51,improved,True,True,maximal_matching,11,0.000395,9,4,4,30,39,23,8,True
-barabasi_albert,"n=25, m=1",42,25,24,baseline,False,False,trivial,7,0.024272,3551,1758,25,0,0,0,0,True
-barabasi_albert,"n=25, m=1",42,25,24,improved,True,True,maximal_matching,7,4.3e-05,1,0,0,0,25,18,7,True
-barabasi_albert,"n=25, m=1",123,25,24,baseline,False,False,trivial,7,0.117941,17897,8931,25,0,0,0,0,True
-barabasi_albert,"n=25, m=1",123,25,24,improved,True,True,maximal_matching,7,4e-05,1,0,0,0,25,18,7,True
-barabasi_albert,"n=25, m=1",256,25,24,baseline,False,False,trivial,10,0.119966,17903,8937,25,0,0,0,0,True
-barabasi_albert,"n=25, m=1",256,25,24,improved,True,True,maximal_matching,10,4.3e-05,1,0,0,0,25,15,10,True
-barabasi_albert,"n=25, m=1",789,25,24,baseline,False,False,trivial,9,0.094698,14475,7222,25,0,0,0,0,True
-barabasi_albert,"n=25, m=1",789,25,24,improved,True,True,maximal_matching,9,4.1e-05,1,0,0,0,25,16,9,True
-barabasi_albert,"n=25, m=1",1024,25,24,baseline,False,False,trivial,8,0.094899,11439,5703,25,0,0,0,0,True
-barabasi_albert,"n=25, m=1",1024,25,24,improved,True,True,maximal_matching,8,4.6e-05,1,0,0,0,25,17,8,True
-barabasi_albert,"n=25, m=2",42,25,46,baseline,False,False,trivial,8,0.060011,6621,3294,25,0,0,0,0,True
-barabasi_albert,"n=25, m=2",42,25,46,improved,True,True,maximal_matching,8,0.000122,3,1,1,16,32,23,7,True
-barabasi_albert,"n=25, m=2",123,25,46,baseline,False,False,trivial,9,0.085632,9927,4948,25,0,0,0,0,True
-barabasi_albert,"n=25, m=2",123,25,46,improved,True,True,maximal_matching,9,6.2e-05,1,0,0,0,25,16,9,True
-barabasi_albert,"n=25, m=2",256,25,46,baseline,False,False,trivial,9,0.020502,2467,1218,25,0,0,0,0,True
-barabasi_albert,"n=25, m=2",256,25,46,improved,True,True,maximal_matching,9,0.000198,3,1,1,12,36,26,6,True
-barabasi_albert,"n=25, m=2",789,25,46,baseline,False,False,trivial,13,0.37617,43969,21973,25,0,0,0,0,True
-barabasi_albert,"n=25, m=2",789,25,46,improved,True,True,maximal_matching,13,0.000175,5,2,2,17,34,19,10,True
-barabasi_albert,"n=25, m=2",1024,25,46,baseline,False,False,trivial,11,0.03435,4051,2012,25,0,0,0,0,True
-barabasi_albert,"n=25, m=2",1024,25,46,improved,True,True,maximal_matching,11,0.000129,3,1,1,9,39,25,8,True
-barabasi_albert,"n=25, m=3",42,25,66,baseline,False,False,trivial,12,0.08806,8371,4173,25,0,0,0,0,True
-barabasi_albert,"n=25, m=3",42,25,66,improved,True,True,maximal_matching,12,0.000239,5,2,2,25,45,28,10,True
-barabasi_albert,"n=25, m=3",123,25,66,baseline,False,False,trivial,14,0.192444,18801,9390,25,0,0,0,0,True
-barabasi_albert,"n=25, m=3",123,25,66,improved,True,True,maximal_matching,14,0.00042,11,5,5,35,48,29,11,True
-barabasi_albert,"n=25, m=3",256,25,66,baseline,False,False,trivial,13,0.129604,12541,6259,25,0,0,0,0,True
-barabasi_albert,"n=25, m=3",256,25,66,improved,True,True,maximal_matching,13,0.000289,7,3,3,22,42,24,10,True
-barabasi_albert,"n=25, m=3",789,25,66,baseline,False,False,trivial,12,0.087199,8201,4088,25,0,0,0,0,True
-barabasi_albert,"n=25, m=3",789,25,66,improved,True,True,maximal_matching,12,0.000262,3,1,1,10,36,21,8,True
-barabasi_albert,"n=25, m=3",1024,25,66,baseline,False,False,trivial,14,0.096299,9501,4740,25,0,0,0,0,True
-barabasi_albert,"n=25, m=3",1024,25,66,improved,True,True,maximal_matching,14,0.000624,11,4,5,38,76,45,10,True
+family,params,seed,n,m,solver_type,preprocessing_enabled,propagation_enabled,lower_bound_type,optimal_cover_size,runtime_seconds,nodes_explored,nodes_pruned,max_depth,forced_assignments,preprocessing_reductions,vertices_removed_by_preprocessing,root_lower_bound,finished,threshold_trajectory
+barabasi_albert,"n=10, m=1",42,10,9,baseline,False,False,trivial,3,0.000638,105,46,10,0,0,0,0,True,[]
+barabasi_albert,"n=10, m=1",42,10,9,improved,True,True,maximal_matching,3,2.2e-05,1,0,0,0,10,7,3,True,[]
+barabasi_albert,"n=10, m=1",42,10,9,raw_emulation,False,False,trivial,3,0.003792,89,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 18), (32, 2.0, 18), (32, 3.0, 46)]"
+barabasi_albert,"n=10, m=1",42,10,9,ablation_prep,True,True,trivial,3,0.000201,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=10, m=1",42,10,9,ablation_prep_lb,True,True,maximal_matching,3,0.000177,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=10, m=1",42,10,9,enhanced_emulation,True,True,maximal_matching,3,0.0002,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=10, m=1",123,10,9,baseline,False,False,trivial,3,0.000754,197,92,10,0,0,0,0,True,[]
+barabasi_albert,"n=10, m=1",123,10,9,improved,True,True,maximal_matching,3,2.1e-05,1,0,0,0,10,7,3,True,[]
+barabasi_albert,"n=10, m=1",123,10,9,raw_emulation,False,False,trivial,3,0.006703,183,0,0,0,0,0,0,True,"[(8, 1.0, 10), (16, 1.0, 10), (32, 2.0, 35), (64, 2.0, 35), (64, 3.0, 93)]"
+barabasi_albert,"n=10, m=1",123,10,9,ablation_prep,True,True,trivial,3,0.000237,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=10, m=1",123,10,9,ablation_prep_lb,True,True,maximal_matching,3,0.00019,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=10, m=1",123,10,9,enhanced_emulation,True,True,maximal_matching,3,0.00022,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=10, m=1",256,10,9,baseline,False,False,trivial,5,0.001082,255,123,10,0,0,0,0,True,[]
+barabasi_albert,"n=10, m=1",256,10,9,improved,True,True,maximal_matching,5,2.3e-05,1,0,0,0,10,5,5,True,[]
+barabasi_albert,"n=10, m=1",256,10,9,raw_emulation,False,False,trivial,5,0.012806,370,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 16), (32, 2.0, 16), (32, 3.0, 36), (64, 4.0, 74), (128, 4.0, 74), (128, 5.0, 147)]"
+barabasi_albert,"n=10, m=1",256,10,9,ablation_prep,True,True,trivial,5,0.00022,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=10, m=1",256,10,9,ablation_prep_lb,True,True,maximal_matching,5,0.000472,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=10, m=1",256,10,9,enhanced_emulation,True,True,maximal_matching,5,0.000261,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=10, m=1",789,10,9,baseline,False,False,trivial,4,0.000516,141,65,10,0,0,0,0,True,[]
+barabasi_albert,"n=10, m=1",789,10,9,improved,True,True,maximal_matching,4,2.1e-05,1,0,0,0,10,6,4,True,[]
+barabasi_albert,"n=10, m=1",789,10,9,raw_emulation,False,False,trivial,4,0.007021,164,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 1.0, 6), (16, 2.0, 14), (32, 2.0, 14), (32, 3.0, 36), (64, 4.0, 88)]"
+barabasi_albert,"n=10, m=1",789,10,9,ablation_prep,True,True,trivial,4,0.000205,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=10, m=1",789,10,9,ablation_prep_lb,True,True,maximal_matching,4,0.000267,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=10, m=1",789,10,9,enhanced_emulation,True,True,maximal_matching,4,0.000238,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=10, m=1",1024,10,9,baseline,False,False,trivial,5,0.000753,223,107,10,0,0,0,0,True,[]
+barabasi_albert,"n=10, m=1",1024,10,9,improved,True,True,maximal_matching,5,2.1e-05,1,0,0,0,10,5,5,True,[]
+barabasi_albert,"n=10, m=1",1024,10,9,raw_emulation,False,False,trivial,5,0.01278,379,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 1.0, 6), (16, 2.0, 15), (32, 2.0, 15), (32, 3.0, 35), (64, 4.0, 76), (128, 4.0, 76), (128, 5.0, 150)]"
+barabasi_albert,"n=10, m=1",1024,10,9,ablation_prep,True,True,trivial,5,0.000223,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=10, m=1",1024,10,9,ablation_prep_lb,True,True,maximal_matching,5,0.000211,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=10, m=1",1024,10,9,enhanced_emulation,True,True,maximal_matching,5,0.000282,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=10, m=2",42,10,16,baseline,False,False,trivial,5,0.000685,171,81,10,0,0,0,0,True,[]
+barabasi_albert,"n=10, m=2",42,10,16,improved,True,True,maximal_matching,5,5.6e-05,3,1,1,6,12,7,4,True,[]
+barabasi_albert,"n=10, m=2",42,10,16,raw_emulation,False,False,trivial,5,0.00935,210,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 2.0, 12), (16, 2.0, 12), (32, 2.0, 12), (32, 3.0, 25), (64, 4.0, 50), (64, 5.0, 93)]"
+barabasi_albert,"n=10, m=2",42,10,16,ablation_prep,True,True,trivial,5,0.00076,12,0,0,0,0,0,0,True,"[(2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=10, m=2",42,10,16,ablation_prep_lb,True,True,maximal_matching,5,0.0018,14,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=10, m=2",42,10,16,enhanced_emulation,True,True,maximal_matching,5,0.000896,14,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=10, m=2",123,10,16,baseline,False,False,trivial,5,0.000674,175,83,10,0,0,0,0,True,[]
+barabasi_albert,"n=10, m=2",123,10,16,improved,True,True,maximal_matching,5,2.1e-05,1,0,0,0,10,5,5,True,[]
+barabasi_albert,"n=10, m=2",123,10,16,raw_emulation,False,False,trivial,5,0.014506,351,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 1.0, 6), (16, 2.0, 14), (32, 2.0, 14), (32, 3.0, 29), (64, 4.0, 56), (128, 4.0, 56), (128, 6.0, 170)]"
+barabasi_albert,"n=10, m=2",123,10,16,ablation_prep,True,True,trivial,5,0.000252,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=10, m=2",123,10,16,ablation_prep_lb,True,True,maximal_matching,5,0.00023,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=10, m=2",123,10,16,enhanced_emulation,True,True,maximal_matching,5,0.000238,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=10, m=2",256,10,16,baseline,False,False,trivial,5,0.000602,139,65,10,0,0,0,0,True,[]
+barabasi_albert,"n=10, m=2",256,10,16,improved,True,True,maximal_matching,5,5.4e-05,3,1,1,7,11,7,4,True,[]
+barabasi_albert,"n=10, m=2",256,10,16,raw_emulation,False,False,trivial,5,0.008206,226,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 2.0, 12), (16, 2.0, 12), (16, 3.0, 23), (32, 4.0, 44), (64, 4.0, 44), (64, 5.0, 85)]"
+barabasi_albert,"n=10, m=2",256,10,16,ablation_prep,True,True,trivial,5,0.000663,12,0,0,0,0,0,0,True,"[(2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=10, m=2",256,10,16,ablation_prep_lb,True,True,maximal_matching,5,0.000724,14,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=10, m=2",256,10,16,enhanced_emulation,True,True,maximal_matching,5,0.00078,14,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=10, m=2",789,10,16,baseline,False,False,trivial,4,0.000389,95,42,10,0,0,0,0,True,[]
+barabasi_albert,"n=10, m=2",789,10,16,improved,True,True,maximal_matching,4,5e-05,3,1,1,8,10,7,3,True,[]
+barabasi_albert,"n=10, m=2",789,10,16,raw_emulation,False,False,trivial,4,0.006572,137,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 2.0, 12), (16, 2.0, 12), (16, 3.0, 23), (32, 2.0, 12), (32, 3.0, 23), (64, 4.0, 49)]"
+barabasi_albert,"n=10, m=2",789,10,16,ablation_prep,True,True,trivial,4,0.000618,12,0,0,0,0,0,0,True,"[(2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=10, m=2",789,10,16,ablation_prep_lb,True,True,maximal_matching,4,0.000658,13,0,0,0,0,0,0,True,"[(1, 2.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=10, m=2",789,10,16,enhanced_emulation,True,True,maximal_matching,4,0.000786,13,0,0,0,0,0,0,True,"[(1, 2.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=10, m=2",1024,10,16,baseline,False,False,trivial,6,0.00097,251,122,10,0,0,0,0,True,[]
+barabasi_albert,"n=10, m=2",1024,10,16,improved,True,True,maximal_matching,6,8.4e-05,5,2,2,6,11,6,4,True,[]
+barabasi_albert,"n=10, m=2",1024,10,16,raw_emulation,False,False,trivial,6,0.01485,392,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 2.0, 12), (16, 2.0, 12), (16, 3.0, 23), (32, 4.0, 43), (64, 4.0, 43), (64, 5.0, 78), (128, 4.0, 43), (128, 6.0, 132)]"
+barabasi_albert,"n=10, m=2",1024,10,16,ablation_prep,True,True,trivial,6,0.001415,26,0,0,0,0,0,0,True,"[(2, 2.0, 3), (2, 3.0, 3), (4, 8.0, 5), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+barabasi_albert,"n=10, m=2",1024,10,16,ablation_prep_lb,True,True,maximal_matching,6,0.001248,24,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 4.0, 2), (4, 8.0, 5), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+barabasi_albert,"n=10, m=2",1024,10,16,enhanced_emulation,True,True,maximal_matching,6,0.001297,24,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 4.0, 2), (4, 8.0, 5), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+barabasi_albert,"n=10, m=3",42,10,21,baseline,False,False,trivial,6,0.000833,197,95,10,0,0,0,0,True,[]
+barabasi_albert,"n=10, m=3",42,10,21,improved,True,True,maximal_matching,6,8.3e-05,5,2,2,11,10,6,4,True,[]
+barabasi_albert,"n=10, m=3",42,10,21,raw_emulation,False,False,trivial,6,0.018116,365,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 15), (32, 4.0, 43), (64, 4.0, 43), (64, 5.0, 69), (128, 8.0, 188)]"
+barabasi_albert,"n=10, m=3",42,10,21,ablation_prep,True,True,trivial,6,0.001499,23,0,0,0,0,0,0,True,"[(2, 2.0, 3), (4, 8.0, 5), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+barabasi_albert,"n=10, m=3",42,10,21,ablation_prep_lb,True,True,maximal_matching,6,0.001408,25,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 4.0, 3), (4, 8.0, 5), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+barabasi_albert,"n=10, m=3",42,10,21,enhanced_emulation,True,True,maximal_matching,6,0.001655,25,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 4.0, 3), (4, 8.0, 5), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+barabasi_albert,"n=10, m=3",123,10,21,baseline,False,False,trivial,6,0.000658,151,72,10,0,0,0,0,True,[]
+barabasi_albert,"n=10, m=3",123,10,21,improved,True,True,maximal_matching,6,0.000135,7,3,3,14,15,10,4,True,[]
+barabasi_albert,"n=10, m=3",123,10,21,raw_emulation,False,False,trivial,6,0.012291,196,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 15), (32, 4.0, 40), (64, 4.0, 40), (64, 6.0, 94)]"
+barabasi_albert,"n=10, m=3",123,10,21,ablation_prep,True,True,trivial,6,0.002881,49,0,0,0,0,0,0,True,"[(4, 2.0, 5), (8, 8.0, 11), (8, 12.0, 11), (8, 14.0, 11), (8, 15.0, 11)]"
+barabasi_albert,"n=10, m=3",123,10,21,ablation_prep_lb,True,True,maximal_matching,6,0.002846,56,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 4.0, 2), (4, 4.0, 2), (4, 5.0, 6), (8, 8.0, 11), (8, 12.0, 11), (8, 14.0, 11), (8, 15.0, 11)]"
+barabasi_albert,"n=10, m=3",123,10,21,enhanced_emulation,True,True,maximal_matching,6,0.002753,38,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 4.0, 2), (4, 4.0, 2), (4, 5.0, 4), (8, 8.0, 7), (8, 12.0, 7), (8, 14.0, 7), (8, 15.0, 7)]"
+barabasi_albert,"n=10, m=3",256,10,21,baseline,False,False,trivial,5,0.000926,211,101,10,0,0,0,0,True,[]
+barabasi_albert,"n=10, m=3",256,10,21,improved,True,True,maximal_matching,5,6.1e-05,3,1,1,8,10,6,5,True,[]
+barabasi_albert,"n=10, m=3",256,10,21,raw_emulation,False,False,trivial,5,0.009299,188,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 15), (32, 4.0, 46), (64, 4.0, 46), (64, 5.0, 74)]"
+barabasi_albert,"n=10, m=3",256,10,21,ablation_prep,True,True,trivial,5,0.00071,12,0,0,0,0,0,0,True,"[(2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=10, m=3",256,10,21,ablation_prep_lb,True,True,maximal_matching,5,0.000691,13,0,0,0,0,0,0,True,"[(1, 4.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=10, m=3",256,10,21,enhanced_emulation,True,True,maximal_matching,5,0.000997,13,0,0,0,0,0,0,True,"[(1, 4.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=10, m=3",789,10,21,baseline,False,False,trivial,5,0.000757,183,87,10,0,0,0,0,True,[]
+barabasi_albert,"n=10, m=3",789,10,21,improved,True,True,maximal_matching,5,6.1e-05,3,1,1,5,11,6,4,True,[]
+barabasi_albert,"n=10, m=3",789,10,21,raw_emulation,False,False,trivial,5,0.009216,189,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 15), (32, 4.0, 46), (64, 4.0, 46), (64, 5.0, 75)]"
+barabasi_albert,"n=10, m=3",789,10,21,ablation_prep,True,True,trivial,5,0.002279,36,0,0,0,0,0,0,True,"[(2, 1.0, 2), (4, 4.0, 6), (8, 8.0, 7), (8, 12.0, 7), (8, 14.0, 7), (8, 15.0, 7)]"
+barabasi_albert,"n=10, m=3",789,10,21,ablation_prep_lb,True,True,maximal_matching,5,0.00116,11,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 4.0, 2), (4, 4.0, 2), (4, 5.0, 5)]"
+barabasi_albert,"n=10, m=3",789,10,21,enhanced_emulation,True,True,maximal_matching,5,0.000955,14,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=10, m=3",1024,10,21,baseline,False,False,trivial,6,0.000959,211,102,10,0,0,0,0,True,[]
+barabasi_albert,"n=10, m=3",1024,10,21,improved,True,True,maximal_matching,6,9e-05,5,2,2,8,13,7,5,True,[]
+barabasi_albert,"n=10, m=3",1024,10,21,raw_emulation,False,False,trivial,6,0.019032,362,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 15), (32, 4.0, 43), (64, 4.0, 43), (64, 5.0, 69), (128, 8.0, 185)]"
+barabasi_albert,"n=10, m=3",1024,10,21,ablation_prep,True,True,trivial,6,0.001528,22,0,0,0,0,0,0,True,"[(2, 1.0, 2), (4, 8.0, 5), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+barabasi_albert,"n=10, m=3",1024,10,21,ablation_prep_lb,True,True,maximal_matching,6,0.00138,22,0,0,0,0,0,0,True,"[(1, 4.0, 1), (2, 4.0, 1), (4, 8.0, 5), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+barabasi_albert,"n=10, m=3",1024,10,21,enhanced_emulation,True,True,maximal_matching,6,0.001514,22,0,0,0,0,0,0,True,"[(1, 4.0, 1), (2, 4.0, 1), (4, 8.0, 5), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+barabasi_albert,"n=15, m=1",42,15,14,baseline,False,False,trivial,6,0.004134,901,442,15,0,0,0,0,True,[]
+barabasi_albert,"n=15, m=1",42,15,14,improved,True,True,maximal_matching,6,2.5e-05,1,0,0,0,15,9,6,True,[]
+barabasi_albert,"n=15, m=1",42,15,14,raw_emulation,False,False,trivial,6,0.118791,2075,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 18), (32, 2.0, 18), (32, 3.0, 46), (64, 2.0, 18), (64, 3.0, 46), (128, 4.0, 123), (256, 4.0, 123), (256, 5.0, 324), (512, 4.0, 123), (512, 5.0, 324), (1024, 4.0, 123), (1024, 6.0, 782)]"
+barabasi_albert,"n=15, m=1",42,15,14,ablation_prep,True,True,trivial,6,0.000308,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=15, m=1",42,15,14,ablation_prep_lb,True,True,maximal_matching,6,0.000306,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=15, m=1",42,15,14,enhanced_emulation,True,True,maximal_matching,6,0.00031,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=15, m=1",123,15,14,baseline,False,False,trivial,4,0.003525,637,308,15,0,0,0,0,True,[]
+barabasi_albert,"n=15, m=1",123,15,14,improved,True,True,maximal_matching,4,4.7e-05,1,0,0,0,15,11,4,True,[]
+barabasi_albert,"n=15, m=1",123,15,14,raw_emulation,False,False,trivial,4,0.034724,546,0,0,0,0,0,0,True,"[(8, 1.0, 10), (16, 1.0, 10), (32, 2.0, 35), (64, 2.0, 35), (64, 3.0, 95), (128, 2.0, 35), (128, 3.0, 95), (256, 4.0, 231)]"
+barabasi_albert,"n=15, m=1",123,15,14,ablation_prep,True,True,trivial,4,0.000325,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=15, m=1",123,15,14,ablation_prep_lb,True,True,maximal_matching,4,0.000267,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=15, m=1",123,15,14,enhanced_emulation,True,True,maximal_matching,4,0.000354,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=15, m=1",256,15,14,baseline,False,False,trivial,7,0.005488,1215,600,15,0,0,0,0,True,[]
+barabasi_albert,"n=15, m=1",256,15,14,improved,True,True,maximal_matching,7,2.8e-05,1,0,0,0,15,8,7,True,[]
+barabasi_albert,"n=15, m=1",256,15,14,raw_emulation,False,False,trivial,7,0.100541,2558,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 16), (32, 2.0, 16), (32, 3.0, 36), (64, 4.0, 74), (128, 4.0, 74), (128, 5.0, 161), (256, 4.0, 74), (256, 6.0, 374), (512, 4.0, 74), (512, 6.0, 374), (1024, 4.0, 74), (1024, 6.0, 374), (1024, 7.0, 830)]"
+barabasi_albert,"n=15, m=1",256,15,14,ablation_prep,True,True,trivial,7,0.000277,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=15, m=1",256,15,14,ablation_prep_lb,True,True,maximal_matching,7,0.000261,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=15, m=1",256,15,14,enhanced_emulation,True,True,maximal_matching,7,0.00026,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=15, m=1",789,15,14,baseline,False,False,trivial,5,0.002324,545,263,15,0,0,0,0,True,[]
+barabasi_albert,"n=15, m=1",789,15,14,improved,True,True,maximal_matching,5,2.4e-05,1,0,0,0,15,10,5,True,[]
+barabasi_albert,"n=15, m=1",789,15,14,raw_emulation,False,False,trivial,5,0.031367,583,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 1.0, 6), (16, 2.0, 14), (32, 2.0, 14), (32, 3.0, 36), (64, 4.0, 92), (128, 4.0, 92), (256, 4.0, 92), (256, 5.0, 231)]"
+barabasi_albert,"n=15, m=1",789,15,14,ablation_prep,True,True,trivial,5,0.000261,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=15, m=1",789,15,14,ablation_prep_lb,True,True,maximal_matching,5,0.000238,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=15, m=1",789,15,14,enhanced_emulation,True,True,maximal_matching,5,0.000321,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=15, m=1",1024,15,14,baseline,False,False,trivial,6,0.003793,875,429,15,0,0,0,0,True,[]
+barabasi_albert,"n=15, m=1",1024,15,14,improved,True,True,maximal_matching,6,2.6e-05,1,0,0,0,15,9,6,True,[]
+barabasi_albert,"n=15, m=1",1024,15,14,raw_emulation,False,False,trivial,6,0.058956,1139,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 1.0, 6), (16, 2.0, 15), (32, 2.0, 15), (32, 3.0, 35), (64, 4.0, 76), (128, 4.0, 76), (128, 5.0, 169), (256, 4.0, 76), (256, 5.0, 169), (512, 4.0, 76), (512, 6.0, 420)]"
+barabasi_albert,"n=15, m=1",1024,15,14,ablation_prep,True,True,trivial,6,0.000271,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=15, m=1",1024,15,14,ablation_prep_lb,True,True,maximal_matching,6,0.000253,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=15, m=1",1024,15,14,enhanced_emulation,True,True,maximal_matching,6,0.000257,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=15, m=2",42,15,26,baseline,False,False,trivial,6,0.002312,447,215,15,0,0,0,0,True,[]
+barabasi_albert,"n=15, m=2",42,15,26,improved,True,True,maximal_matching,6,7.7e-05,3,1,1,10,18,12,5,True,[]
+barabasi_albert,"n=15, m=2",42,15,26,raw_emulation,False,False,trivial,6,0.024732,447,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 2.0, 12), (16, 2.0, 12), (32, 2.0, 12), (32, 3.0, 25), (64, 4.0, 50), (64, 5.0, 95), (128, 4.0, 50), (128, 6.0, 185)]"
+barabasi_albert,"n=15, m=2",42,15,26,ablation_prep,True,True,trivial,6,0.001075,12,0,0,0,0,0,0,True,"[(2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=15, m=2",42,15,26,ablation_prep_lb,True,True,maximal_matching,6,0.000869,13,0,0,0,0,0,0,True,"[(1, 4.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=15, m=2",42,15,26,enhanced_emulation,True,True,maximal_matching,6,0.001061,13,0,0,0,0,0,0,True,"[(1, 4.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=15, m=2",123,15,26,baseline,False,False,trivial,6,0.00369,627,305,15,0,0,0,0,True,[]
+barabasi_albert,"n=15, m=2",123,15,26,improved,True,True,maximal_matching,6,0.000112,1,0,0,0,15,9,6,True,[]
+barabasi_albert,"n=15, m=2",123,15,26,raw_emulation,False,False,trivial,6,0.039277,570,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 1.0, 6), (16, 2.0, 14), (32, 2.0, 14), (32, 3.0, 29), (64, 4.0, 56), (128, 4.0, 56), (128, 5.0, 108), (256, 4.0, 56), (256, 6.0, 225)]"
+barabasi_albert,"n=15, m=2",123,15,26,ablation_prep,True,True,trivial,6,0.000312,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=15, m=2",123,15,26,ablation_prep_lb,True,True,maximal_matching,6,0.000294,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=15, m=2",123,15,26,enhanced_emulation,True,True,maximal_matching,6,0.00032,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+barabasi_albert,"n=15, m=2",256,15,26,baseline,False,False,trivial,7,0.002625,519,252,15,0,0,0,0,True,[]
+barabasi_albert,"n=15, m=2",256,15,26,improved,True,True,maximal_matching,7,7.2e-05,3,1,1,8,20,14,5,True,[]
+barabasi_albert,"n=15, m=2",256,15,26,raw_emulation,False,False,trivial,7,0.04376,975,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 2.0, 12), (16, 2.0, 12), (16, 3.0, 23), (32, 4.0, 44), (64, 4.0, 44), (64, 5.0, 87), (128, 4.0, 44), (128, 6.0, 169), (256, 4.0, 44), (256, 6.0, 169), (256, 7.0, 321)]"
+barabasi_albert,"n=15, m=2",256,15,26,ablation_prep,True,True,trivial,7,0.000929,12,0,0,0,0,0,0,True,"[(2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=15, m=2",256,15,26,ablation_prep_lb,True,True,maximal_matching,7,0.000938,13,0,0,0,0,0,0,True,"[(1, 4.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=15, m=2",256,15,26,enhanced_emulation,True,True,maximal_matching,7,0.001052,13,0,0,0,0,0,0,True,"[(1, 4.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=15, m=2",789,15,26,baseline,False,False,trivial,7,0.005413,995,490,15,0,0,0,0,True,[]
+barabasi_albert,"n=15, m=2",789,15,26,improved,True,True,maximal_matching,7,6.8e-05,3,1,1,11,17,11,6,True,[]
+barabasi_albert,"n=15, m=2",789,15,26,raw_emulation,False,False,trivial,7,0.066394,1335,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 2.0, 12), (16, 2.0, 12), (16, 3.0, 23), (32, 2.0, 12), (32, 3.0, 23), (64, 4.0, 49), (128, 4.0, 49), (128, 5.0, 109), (256, 4.0, 49), (256, 6.0, 233), (512, 4.0, 49), (512, 6.0, 233), (512, 7.0, 476)]"
+barabasi_albert,"n=15, m=2",789,15,26,ablation_prep,True,True,trivial,7,0.001663,20,0,0,0,0,0,0,True,"[(4, 8.0, 5), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+barabasi_albert,"n=15, m=2",789,15,26,ablation_prep_lb,True,True,maximal_matching,7,0.001492,24,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 5.0, 1), (2, 4.0, 1), (2, 5.0, 1), (4, 8.0, 5), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+barabasi_albert,"n=15, m=2",789,15,26,enhanced_emulation,True,True,maximal_matching,7,0.000942,14,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 5.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=15, m=2",1024,15,26,baseline,False,False,trivial,8,0.004309,825,406,15,0,0,0,0,True,[]
+barabasi_albert,"n=15, m=2",1024,15,26,improved,True,True,maximal_matching,8,9.2e-05,3,1,1,6,20,11,6,True,[]
+barabasi_albert,"n=15, m=2",1024,15,26,raw_emulation,False,False,trivial,8,0.078088,1286,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 2.0, 12), (16, 2.0, 12), (16, 3.0, 23), (32, 4.0, 43), (64, 4.0, 43), (64, 5.0, 78), (128, 4.0, 43), (128, 6.0, 135), (256, 4.0, 43), (256, 6.0, 135), (256, 7.0, 246), (512, 8.0, 467)]"
+barabasi_albert,"n=15, m=2",1024,15,26,ablation_prep,True,True,trivial,8,0.001126,12,0,0,0,0,0,0,True,"[(2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=15, m=2",1024,15,26,ablation_prep_lb,True,True,maximal_matching,8,0.001146,14,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 5.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=15, m=2",1024,15,26,enhanced_emulation,True,True,maximal_matching,8,0.001413,14,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 5.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=15, m=3",42,15,36,baseline,False,False,trivial,8,0.003159,545,266,15,0,0,0,0,True,[]
+barabasi_albert,"n=15, m=3",42,15,36,improved,True,True,maximal_matching,8,0.000117,5,2,2,16,24,14,6,True,[]
+barabasi_albert,"n=15, m=3",42,15,36,raw_emulation,False,False,trivial,8,0.053638,696,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 15), (32, 4.0, 43), (64, 4.0, 43), (64, 5.0, 69), (128, 4.0, 43), (128, 6.0, 113), (256, 8.0, 363)]"
+barabasi_albert,"n=15, m=3",42,15,36,ablation_prep,True,True,trivial,8,0.005886,80,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 4.0, 10), (8, 5.0, 12), (16, 8.0, 13), (16, 12.0, 13), (16, 14.0, 13), (16, 15.0, 13)]"
+barabasi_albert,"n=15, m=3",42,15,36,ablation_prep_lb,True,True,maximal_matching,8,0.0059,78,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 5.0, 1), (2, 4.0, 1), (2, 5.0, 1), (4, 4.0, 1), (4, 6.0, 4), (8, 4.0, 1), (8, 6.0, 4), (8, 7.0, 12), (16, 8.0, 13), (16, 12.0, 13), (16, 14.0, 13), (16, 15.0, 13)]"
+barabasi_albert,"n=15, m=3",42,15,36,enhanced_emulation,True,True,maximal_matching,8,0.002232,24,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 5.0, 1), (2, 4.0, 1), (2, 5.0, 1), (4, 8.0, 5), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+barabasi_albert,"n=15, m=3",123,15,36,baseline,False,False,trivial,8,0.003301,529,258,15,0,0,0,0,True,[]
+barabasi_albert,"n=15, m=3",123,15,36,improved,True,True,maximal_matching,8,0.000133,5,2,2,18,22,14,6,True,[]
+barabasi_albert,"n=15, m=3",123,15,36,raw_emulation,False,False,trivial,8,0.05499,773,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 15), (32, 4.0, 40), (64, 4.0, 40), (64, 6.0, 96), (128, 4.0, 40), (128, 6.0, 96), (128, 7.0, 158), (256, 8.0, 281)]"
+barabasi_albert,"n=15, m=3",123,15,36,ablation_prep,True,True,trivial,8,0.001937,20,0,0,0,0,0,0,True,"[(4, 8.0, 5), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+barabasi_albert,"n=15, m=3",123,15,36,ablation_prep_lb,True,True,maximal_matching,8,0.001932,25,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 5.0, 1), (2, 4.0, 1), (2, 6.0, 2), (4, 8.0, 5), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+barabasi_albert,"n=15, m=3",123,15,36,enhanced_emulation,True,True,maximal_matching,8,0.002097,25,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 5.0, 1), (2, 4.0, 1), (2, 6.0, 2), (4, 8.0, 5), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+barabasi_albert,"n=15, m=3",256,15,36,baseline,False,False,trivial,8,0.004059,679,333,15,0,0,0,0,True,[]
+barabasi_albert,"n=15, m=3",256,15,36,improved,True,True,maximal_matching,8,9.7e-05,3,1,1,11,17,10,5,True,[]
+barabasi_albert,"n=15, m=3",256,15,36,raw_emulation,False,False,trivial,8,0.053144,688,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 15), (32, 4.0, 46), (64, 4.0, 46), (64, 5.0, 74), (128, 4.0, 46), (128, 6.0, 119), (256, 8.0, 335)]"
+barabasi_albert,"n=15, m=3",256,15,36,ablation_prep,True,True,trivial,8,0.000979,12,0,0,0,0,0,0,True,"[(2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=15, m=3",256,15,36,ablation_prep_lb,True,True,maximal_matching,8,0.00106,13,0,0,0,0,0,0,True,"[(1, 4.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=15, m=3",256,15,36,enhanced_emulation,True,True,maximal_matching,8,0.001297,13,0,0,0,0,0,0,True,"[(1, 4.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+barabasi_albert,"n=15, m=3",789,15,36,baseline,False,False,trivial,9,0.004696,781,385,15,0,0,0,0,True,[]
+barabasi_albert,"n=15, m=3",789,15,36,improved,True,True,maximal_matching,9,0.000181,7,3,3,16,25,14,6,True,[]
+barabasi_albert,"n=15, m=3",789,15,36,raw_emulation,False,False,trivial,9,0.10015,1857,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 15), (32, 4.0, 46), (64, 4.0, 46), (64, 5.0, 75), (128, 4.0, 46), (128, 6.0, 120), (128, 7.0, 190), (256, 8.0, 300), (512, 8.0, 300), (512, 10.0, 712)]"
+barabasi_albert,"n=15, m=3",789,15,36,ablation_prep,True,True,trivial,9,0.00434,52,0,0,0,0,0,0,True,"[(2, 1.0, 2), (4, 4.0, 6), (8, 8.0, 11), (8, 12.0, 11), (8, 14.0, 11), (8, 15.0, 11)]"
+barabasi_albert,"n=15, m=3",789,15,36,ablation_prep_lb,True,True,maximal_matching,9,0.004756,56,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 5.0, 1), (2, 4.0, 1), (2, 6.0, 2), (4, 4.0, 1), (4, 6.0, 2), (4, 7.0, 5), (8, 8.0, 10), (8, 12.0, 11), (8, 14.0, 11), (8, 15.0, 11)]"
+barabasi_albert,"n=15, m=3",789,15,36,enhanced_emulation,True,True,maximal_matching,9,0.004015,40,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 5.0, 1), (2, 4.0, 1), (2, 6.0, 2), (4, 4.0, 1), (4, 6.0, 2), (4, 7.0, 4), (8, 8.0, 7), (8, 12.0, 7), (8, 14.0, 7), (8, 15.0, 7)]"
+barabasi_albert,"n=15, m=3",1024,15,36,baseline,False,False,trivial,9,0.003898,611,300,15,0,0,0,0,True,[]
+barabasi_albert,"n=15, m=3",1024,15,36,improved,True,True,maximal_matching,9,0.000216,9,4,4,25,22,14,6,True,[]
+barabasi_albert,"n=15, m=3",1024,15,36,raw_emulation,False,False,trivial,9,0.061763,1102,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 15), (32, 4.0, 43), (64, 4.0, 43), (64, 5.0, 69), (128, 4.0, 43), (128, 6.0, 106), (128, 7.0, 155), (256, 8.0, 237), (256, 9.0, 384)]"
+barabasi_albert,"n=15, m=3",1024,15,36,ablation_prep,True,True,trivial,9,0.004032,29,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 8.0, 11), (8, 9.0, 12)]"
+barabasi_albert,"n=15, m=3",1024,15,36,ablation_prep_lb,True,True,maximal_matching,9,0.003909,30,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 5.0, 1), (2, 4.0, 1), (2, 5.0, 1), (4, 4.0, 1), (4, 6.0, 4), (8, 8.0, 9), (8, 10.0, 12)]"
+barabasi_albert,"n=15, m=3",1024,15,36,enhanced_emulation,True,True,maximal_matching,9,0.004538,57,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 5.0, 1), (2, 4.0, 1), (2, 5.0, 1), (4, 4.0, 1), (4, 6.0, 5), (4, 7.0, 6), (8, 8.0, 8), (8, 12.0, 11), (8, 14.0, 11), (8, 15.0, 11)]"
+barabasi_albert,"n=20, m=1",42,20,19,baseline,False,False,trivial,6,0.006266,1021,497,20,0,0,0,0,True,[]
+barabasi_albert,"n=20, m=1",42,20,19,improved,True,True,maximal_matching,6,3.5e-05,1,0,0,0,20,14,6,True,[]
+barabasi_albert,"n=20, m=1",42,20,19,raw_emulation,False,False,trivial,6,0.143369,2123,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 18), (32, 2.0, 18), (32, 3.0, 46), (64, 2.0, 18), (64, 3.0, 46), (128, 4.0, 123), (256, 4.0, 123), (256, 5.0, 324), (512, 4.0, 123), (512, 5.0, 324), (1024, 4.0, 123), (1024, 6.0, 830)]"
+barabasi_albert,"n=20, m=1",42,20,19,ablation_prep,True,True,trivial,6,0.000362,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=20, m=1",42,20,19,ablation_prep_lb,True,True,maximal_matching,6,0.000387,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=20, m=1",42,20,19,enhanced_emulation,True,True,maximal_matching,6,0.000346,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=20, m=1",123,20,19,baseline,False,False,trivial,6,0.026359,4791,2382,20,0,0,0,0,True,[]
+barabasi_albert,"n=20, m=1",123,20,19,improved,True,True,maximal_matching,6,3.3e-05,1,0,0,0,20,14,6,True,[]
+barabasi_albert,"n=20, m=1",123,20,19,raw_emulation,False,False,trivial,6,0.341746,3967,0,0,0,0,0,0,True,"[(8, 1.0, 10), (16, 1.0, 10), (32, 2.0, 35), (64, 2.0, 35), (64, 3.0, 95), (128, 2.0, 35), (128, 3.0, 95), (256, 4.0, 231), (512, 4.0, 231), (512, 5.0, 577), (1024, 4.0, 231), (1024, 5.0, 577), (2048, 4.0, 231), (2048, 6.0, 1574)]"
+barabasi_albert,"n=20, m=1",123,20,19,ablation_prep,True,True,trivial,6,0.000376,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=20, m=1",123,20,19,ablation_prep_lb,True,True,maximal_matching,6,0.000414,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=20, m=1",123,20,19,enhanced_emulation,True,True,maximal_matching,6,0.000355,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=20, m=1",256,20,19,baseline,False,False,trivial,8,0.014316,2659,1318,20,0,0,0,0,True,[]
+barabasi_albert,"n=20, m=1",256,20,19,improved,True,True,maximal_matching,8,3.5e-05,1,0,0,0,20,12,8,True,[]
+barabasi_albert,"n=20, m=1",256,20,19,raw_emulation,False,False,trivial,8,0.323298,4424,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 16), (32, 2.0, 16), (32, 3.0, 36), (64, 4.0, 74), (128, 4.0, 74), (128, 5.0, 161), (256, 4.0, 74), (256, 6.0, 374), (512, 4.0, 74), (512, 6.0, 374), (1024, 4.0, 74), (1024, 6.0, 374), (1024, 7.0, 844), (2048, 8.0, 1852)]"
+barabasi_albert,"n=20, m=1",256,20,19,ablation_prep,True,True,trivial,8,0.000411,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=20, m=1",256,20,19,ablation_prep_lb,True,True,maximal_matching,8,0.000656,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=20, m=1",256,20,19,enhanced_emulation,True,True,maximal_matching,8,0.000392,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=20, m=1",789,20,19,baseline,False,False,trivial,7,0.013478,2389,1182,20,0,0,0,0,True,[]
+barabasi_albert,"n=20, m=1",789,20,19,improved,True,True,maximal_matching,7,4.5e-05,1,0,0,0,20,13,7,True,[]
+barabasi_albert,"n=20, m=1",789,20,19,raw_emulation,False,False,trivial,7,0.20243,3509,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 1.0, 6), (16, 2.0, 14), (32, 2.0, 14), (32, 3.0, 36), (64, 4.0, 92), (128, 4.0, 92), (256, 4.0, 92), (256, 5.0, 233), (512, 4.0, 92), (512, 6.0, 603), (1024, 4.0, 92), (1024, 6.0, 603), (1024, 7.0, 1534)]"
+barabasi_albert,"n=20, m=1",789,20,19,ablation_prep,True,True,trivial,7,0.000396,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=20, m=1",789,20,19,ablation_prep_lb,True,True,maximal_matching,7,0.000417,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=20, m=1",789,20,19,enhanced_emulation,True,True,maximal_matching,7,0.000398,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=20, m=1",1024,20,19,baseline,False,False,trivial,7,0.01347,2483,1229,20,0,0,0,0,True,[]
+barabasi_albert,"n=20, m=1",1024,20,19,improved,True,True,maximal_matching,7,3.6e-05,1,0,0,0,20,13,7,True,[]
+barabasi_albert,"n=20, m=1",1024,20,19,raw_emulation,False,False,trivial,7,0.194865,2887,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 1.0, 6), (16, 2.0, 15), (32, 2.0, 15), (32, 3.0, 35), (64, 4.0, 76), (128, 4.0, 76), (128, 5.0, 169), (256, 4.0, 76), (256, 5.0, 169), (512, 4.0, 76), (512, 6.0, 436), (1024, 4.0, 76), (1024, 6.0, 436), (1024, 7.0, 1220)]"
+barabasi_albert,"n=20, m=1",1024,20,19,ablation_prep,True,True,trivial,7,0.000395,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=20, m=1",1024,20,19,ablation_prep_lb,True,True,maximal_matching,7,0.000412,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=20, m=1",1024,20,19,enhanced_emulation,True,True,maximal_matching,7,0.000498,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=20, m=2",42,20,36,baseline,False,False,trivial,7,0.004538,621,298,20,0,0,0,0,True,[]
+barabasi_albert,"n=20, m=2",42,20,36,improved,True,True,maximal_matching,7,9.4e-05,3,1,1,13,25,18,5,True,[]
+barabasi_albert,"n=20, m=2",42,20,36,raw_emulation,False,False,trivial,7,0.094646,1345,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 2.0, 12), (16, 2.0, 12), (32, 2.0, 12), (32, 3.0, 25), (64, 4.0, 50), (64, 5.0, 95), (128, 4.0, 50), (128, 6.0, 187), (256, 4.0, 50), (256, 6.0, 187), (512, 4.0, 50), (512, 6.0, 187), (512, 7.0, 422)]"
+barabasi_albert,"n=20, m=2",42,20,36,ablation_prep,True,True,trivial,7,0.001245,15,0,0,0,0,0,0,True,"[(2, 16.0, 3), (2, 24.0, 3), (2, 28.0, 3), (2, 30.0, 3), (2, 31.0, 3)]"
+barabasi_albert,"n=20, m=2",42,20,36,ablation_prep_lb,True,True,maximal_matching,7,0.001352,16,0,0,0,0,0,0,True,"[(1, 4.0, 1), (2, 16.0, 3), (2, 24.0, 3), (2, 28.0, 3), (2, 30.0, 3), (2, 31.0, 3)]"
+barabasi_albert,"n=20, m=2",42,20,36,enhanced_emulation,True,True,maximal_matching,7,0.001621,16,0,0,0,0,0,0,True,"[(1, 4.0, 1), (2, 16.0, 3), (2, 24.0, 3), (2, 28.0, 3), (2, 30.0, 3), (2, 31.0, 3)]"
+barabasi_albert,"n=20, m=2",123,20,36,baseline,False,False,trivial,9,0.044935,6007,2993,20,0,0,0,0,True,[]
+barabasi_albert,"n=20, m=2",123,20,36,improved,True,True,maximal_matching,9,4.4e-05,1,0,0,0,20,11,9,True,[]
+barabasi_albert,"n=20, m=2",123,20,36,raw_emulation,False,False,trivial,9,0.578953,6635,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 1.0, 6), (16, 2.0, 14), (32, 2.0, 14), (32, 3.0, 29), (64, 4.0, 56), (128, 4.0, 56), (128, 5.0, 108), (256, 4.0, 56), (256, 6.0, 228), (512, 4.0, 56), (512, 6.0, 228), (512, 7.0, 536), (1024, 8.0, 1258), (2048, 8.0, 1258), (2048, 9.0, 2726)]"
+barabasi_albert,"n=20, m=2",123,20,36,ablation_prep,True,True,trivial,9,0.000493,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=20, m=2",123,20,36,ablation_prep_lb,True,True,maximal_matching,9,0.000481,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=20, m=2",123,20,36,enhanced_emulation,True,True,maximal_matching,9,0.000544,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=20, m=2",256,20,36,baseline,False,False,trivial,8,0.008229,1145,561,20,0,0,0,0,True,[]
+barabasi_albert,"n=20, m=2",256,20,36,improved,True,True,maximal_matching,8,0.0001,3,1,1,10,28,20,6,True,[]
+barabasi_albert,"n=20, m=2",256,20,36,raw_emulation,False,False,trivial,8,0.12197,1601,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 2.0, 12), (16, 2.0, 12), (16, 3.0, 23), (32, 4.0, 44), (64, 4.0, 44), (64, 5.0, 87), (128, 4.0, 44), (128, 6.0, 169), (256, 4.0, 44), (256, 6.0, 169), (256, 7.0, 321), (512, 8.0, 626)]"
+barabasi_albert,"n=20, m=2",256,20,36,ablation_prep,True,True,trivial,8,0.001481,15,0,0,0,0,0,0,True,"[(2, 16.0, 3), (2, 24.0, 3), (2, 28.0, 3), (2, 30.0, 3), (2, 31.0, 3)]"
+barabasi_albert,"n=20, m=2",256,20,36,ablation_prep_lb,True,True,maximal_matching,8,0.001688,17,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 5.0, 1), (2, 16.0, 3), (2, 24.0, 3), (2, 28.0, 3), (2, 30.0, 3), (2, 31.0, 3)]"
+barabasi_albert,"n=20, m=2",256,20,36,enhanced_emulation,True,True,maximal_matching,8,0.001732,17,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 5.0, 1), (2, 16.0, 3), (2, 24.0, 3), (2, 28.0, 3), (2, 30.0, 3), (2, 31.0, 3)]"
+barabasi_albert,"n=20, m=2",789,20,36,baseline,False,False,trivial,9,0.025651,3523,1751,20,0,0,0,0,True,[]
+barabasi_albert,"n=20, m=2",789,20,36,improved,True,True,maximal_matching,9,0.000107,3,1,1,13,25,15,8,True,[]
+barabasi_albert,"n=20, m=2",789,20,36,raw_emulation,False,False,trivial,9,0.443298,4923,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 2.0, 12), (16, 2.0, 12), (16, 3.0, 23), (32, 2.0, 12), (32, 3.0, 23), (64, 4.0, 49), (128, 4.0, 49), (128, 5.0, 109), (256, 4.0, 49), (256, 6.0, 233), (512, 4.0, 49), (512, 6.0, 233), (512, 7.0, 477), (1024, 8.0, 924), (2048, 8.0, 924), (2048, 9.0, 1739)]"
+barabasi_albert,"n=20, m=2",789,20,36,ablation_prep,True,True,trivial,9,0.004155,46,0,0,0,0,0,0,True,"[(4, 2.0, 5), (4, 3.0, 6), (8, 16.0, 7), (8, 24.0, 7), (8, 28.0, 7), (8, 30.0, 7), (8, 31.0, 7)]"
+barabasi_albert,"n=20, m=2",789,20,36,ablation_prep_lb,True,True,maximal_matching,9,0.004465,45,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (1, 7.0, 1), (2, 4.0, 1), (2, 6.0, 1), (2, 7.0, 1), (4, 8.0, 4), (8, 16.0, 7), (8, 24.0, 7), (8, 28.0, 7), (8, 30.0, 7), (8, 31.0, 7)]"
+barabasi_albert,"n=20, m=2",789,20,36,enhanced_emulation,True,True,maximal_matching,9,0.002349,18,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (1, 7.0, 1), (2, 16.0, 3), (2, 24.0, 3), (2, 28.0, 3), (2, 30.0, 3), (2, 31.0, 3)]"
+barabasi_albert,"n=20, m=2",1024,20,36,baseline,False,False,trivial,10,0.02904,3567,1774,20,0,0,0,0,True,[]
+barabasi_albert,"n=20, m=2",1024,20,36,improved,True,True,maximal_matching,10,0.000118,3,1,1,9,29,16,7,True,[]
+barabasi_albert,"n=20, m=2",1024,20,36,raw_emulation,False,False,trivial,10,0.394877,4849,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 2.0, 12), (16, 2.0, 12), (16, 3.0, 23), (32, 4.0, 43), (64, 4.0, 43), (64, 5.0, 78), (128, 4.0, 43), (128, 6.0, 135), (256, 4.0, 43), (256, 6.0, 135), (256, 7.0, 246), (512, 8.0, 469), (1024, 8.0, 469), (1024, 9.0, 895), (2048, 8.0, 469), (2048, 10.0, 1728)]"
+barabasi_albert,"n=20, m=2",1024,20,36,ablation_prep,True,True,trivial,10,0.002864,28,0,0,0,0,0,0,True,"[(2, 1.0, 3), (4, 16.0, 5), (4, 24.0, 5), (4, 28.0, 5), (4, 30.0, 5), (4, 31.0, 5)]"
+barabasi_albert,"n=20, m=2",1024,20,36,ablation_prep_lb,True,True,maximal_matching,10,0.003476,31,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (2, 4.0, 1), (2, 6.0, 1), (2, 7.0, 2), (4, 16.0, 5), (4, 24.0, 5), (4, 28.0, 5), (4, 30.0, 5), (4, 31.0, 5)]"
+barabasi_albert,"n=20, m=2",1024,20,36,enhanced_emulation,True,True,maximal_matching,10,0.002126,17,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (2, 16.0, 3), (2, 24.0, 3), (2, 28.0, 3), (2, 30.0, 3), (2, 31.0, 3)]"
+barabasi_albert,"n=20, m=3",42,20,51,baseline,False,False,trivial,10,0.016944,2025,1003,20,0,0,0,0,True,[]
+barabasi_albert,"n=20, m=3",42,20,51,improved,True,True,maximal_matching,10,0.000409,5,2,2,21,34,22,8,True,[]
+barabasi_albert,"n=20, m=3",42,20,51,raw_emulation,False,False,trivial,10,0.282131,3179,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 15), (32, 4.0, 43), (64, 4.0, 43), (64, 5.0, 69), (128, 4.0, 43), (128, 6.0, 113), (256, 8.0, 364), (512, 8.0, 364), (512, 9.0, 640), (1024, 8.0, 364), (1024, 10.0, 1114)]"
+barabasi_albert,"n=20, m=3",42,20,51,ablation_prep,True,True,trivial,10,0.006156,51,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 16.0, 9), (8, 24.0, 9), (8, 28.0, 9), (8, 30.0, 9), (8, 31.0, 9)]"
+barabasi_albert,"n=20, m=3",42,20,51,ablation_prep_lb,True,True,maximal_matching,10,0.006308,55,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (1, 7.0, 1), (2, 4.0, 1), (2, 6.0, 1), (2, 7.0, 1), (4, 8.0, 4), (8, 16.0, 9), (8, 24.0, 9), (8, 28.0, 9), (8, 30.0, 9), (8, 31.0, 9)]"
+barabasi_albert,"n=20, m=3",42,20,51,enhanced_emulation,True,True,maximal_matching,10,0.003914,31,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (1, 7.0, 1), (2, 4.0, 1), (2, 6.0, 1), (2, 7.0, 1), (4, 16.0, 5), (4, 24.0, 5), (4, 28.0, 5), (4, 30.0, 5), (4, 31.0, 5)]"
+barabasi_albert,"n=20, m=3",123,20,51,baseline,False,False,trivial,11,0.03376,4163,2073,20,0,0,0,0,True,[]
+barabasi_albert,"n=20, m=3",123,20,51,improved,True,True,maximal_matching,11,0.000244,7,3,3,26,36,22,8,True,[]
+barabasi_albert,"n=20, m=3",123,20,51,raw_emulation,False,False,trivial,11,0.603879,6030,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 15), (32, 4.0, 40), (64, 4.0, 40), (64, 6.0, 96), (128, 4.0, 40), (128, 6.0, 96), (128, 7.0, 158), (256, 8.0, 283), (512, 8.0, 283), (512, 9.0, 537), (1024, 8.0, 283), (1024, 10.0, 993), (2048, 8.0, 283), (2048, 12.0, 2876)]"
+barabasi_albert,"n=20, m=3",123,20,51,ablation_prep,True,True,trivial,11,0.006391,61,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 16.0, 11), (8, 24.0, 11), (8, 28.0, 11), (8, 30.0, 11), (8, 31.0, 11)]"
+barabasi_albert,"n=20, m=3",123,20,51,ablation_prep_lb,True,True,maximal_matching,11,0.007257,68,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (1, 7.0, 1), (2, 8.0, 2), (4, 8.0, 2), (4, 9.0, 6), (8, 16.0, 11), (8, 24.0, 11), (8, 28.0, 11), (8, 30.0, 11), (8, 31.0, 11)]"
+barabasi_albert,"n=20, m=3",123,20,51,enhanced_emulation,True,True,maximal_matching,11,0.009359,57,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (1, 7.0, 1), (2, 8.0, 2), (4, 8.0, 2), (4, 10.0, 5), (8, 16.0, 9), (8, 24.0, 9), (8, 28.0, 9), (8, 30.0, 9), (8, 31.0, 9)]"
+barabasi_albert,"n=20, m=3",256,20,51,baseline,False,False,trivial,11,0.022226,2779,1381,20,0,0,0,0,True,[]
+barabasi_albert,"n=20, m=3",256,20,51,improved,True,True,maximal_matching,11,0.000166,5,2,2,17,26,14,7,True,[]
+barabasi_albert,"n=20, m=3",256,20,51,raw_emulation,False,False,trivial,11,0.487062,6128,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 15), (32, 4.0, 46), (64, 4.0, 46), (64, 5.0, 74), (128, 4.0, 46), (128, 6.0, 119), (256, 8.0, 335), (512, 8.0, 335), (512, 9.0, 583), (1024, 8.0, 335), (1024, 10.0, 1017), (2048, 8.0, 335), (2048, 10.0, 1017), (2048, 11.0, 1818)]"
+barabasi_albert,"n=20, m=3",256,20,51,ablation_prep,True,True,trivial,11,0.003035,31,0,0,0,0,0,0,True,"[(2, 4.0, 3), (2, 6.0, 3), (4, 16.0, 5), (4, 24.0, 5), (4, 28.0, 5), (4, 30.0, 5), (4, 31.0, 5)]"
+barabasi_albert,"n=20, m=3",256,20,51,ablation_prep_lb,True,True,maximal_matching,11,0.003246,33,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (2, 8.0, 3), (2, 9.0, 3), (4, 16.0, 5), (4, 24.0, 5), (4, 28.0, 5), (4, 30.0, 5), (4, 31.0, 5)]"
+barabasi_albert,"n=20, m=3",256,20,51,enhanced_emulation,True,True,maximal_matching,11,0.00368,33,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (2, 8.0, 3), (2, 9.0, 3), (4, 16.0, 5), (4, 24.0, 5), (4, 28.0, 5), (4, 30.0, 5), (4, 31.0, 5)]"
+barabasi_albert,"n=20, m=3",789,20,51,baseline,False,False,trivial,11,0.020437,2419,1201,20,0,0,0,0,True,[]
+barabasi_albert,"n=20, m=3",789,20,51,improved,True,True,maximal_matching,11,0.000224,5,2,2,14,31,17,8,True,[]
+barabasi_albert,"n=20, m=3",789,20,51,raw_emulation,False,False,trivial,11,0.288898,4321,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 15), (32, 4.0, 46), (64, 4.0, 46), (64, 5.0, 75), (128, 4.0, 46), (128, 6.0, 120), (128, 7.0, 190), (256, 8.0, 300), (512, 8.0, 300), (512, 10.0, 765), (1024, 8.0, 300), (1024, 10.0, 765), (1024, 11.0, 1346)]"
+barabasi_albert,"n=20, m=3",789,20,51,ablation_prep,True,True,trivial,11,0.006393,29,0,0,0,0,0,0,True,"[(2, 1.0, 2), (4, 4.0, 5), (8, 8.0, 10), (8, 12.0, 12)]"
+barabasi_albert,"n=20, m=3",789,20,51,ablation_prep_lb,True,True,maximal_matching,11,0.006103,35,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (1, 7.0, 1), (2, 8.0, 2), (4, 8.0, 2), (4, 9.0, 5), (8, 8.0, 2), (8, 12.0, 9), (8, 14.0, 12)]"
+barabasi_albert,"n=20, m=3",789,20,51,enhanced_emulation,True,True,maximal_matching,11,0.004726,33,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (1, 7.0, 1), (2, 8.0, 2), (2, 9.0, 3), (4, 16.0, 5), (4, 24.0, 5), (4, 28.0, 5), (4, 30.0, 5), (4, 31.0, 5)]"
+barabasi_albert,"n=20, m=3",1024,20,51,baseline,False,False,trivial,11,0.026917,3351,1667,20,0,0,0,0,True,[]
+barabasi_albert,"n=20, m=3",1024,20,51,improved,True,True,maximal_matching,11,0.000321,9,4,4,30,39,23,8,True,[]
+barabasi_albert,"n=20, m=3",1024,20,51,raw_emulation,False,False,trivial,11,0.301194,3732,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 15), (32, 4.0, 43), (64, 4.0, 43), (64, 5.0, 69), (128, 4.0, 43), (128, 6.0, 106), (128, 7.0, 155), (256, 8.0, 237), (512, 8.0, 237), (512, 10.0, 672), (1024, 8.0, 237), (1024, 10.0, 672), (1024, 11.0, 1196)]"
+barabasi_albert,"n=20, m=3",1024,20,51,ablation_prep,True,True,trivial,11,0.016514,131,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 4.0, 9), (8, 6.0, 11), (16, 16.0, 21), (16, 24.0, 21), (16, 28.0, 21), (16, 30.0, 21), (16, 31.0, 21)]"
+barabasi_albert,"n=20, m=3",1024,20,51,ablation_prep_lb,True,True,maximal_matching,11,0.005554,36,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (1, 7.0, 1), (2, 4.0, 1), (2, 6.0, 1), (2, 7.0, 1), (4, 8.0, 4), (8, 8.0, 4), (8, 10.0, 10), (8, 11.0, 12)]"
+barabasi_albert,"n=20, m=3",1024,20,51,enhanced_emulation,True,True,maximal_matching,11,0.008134,71,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (1, 7.0, 1), (2, 4.0, 1), (2, 6.0, 1), (2, 7.0, 1), (4, 8.0, 4), (4, 10.0, 6), (8, 16.0, 11), (8, 24.0, 11), (8, 28.0, 11), (8, 30.0, 11), (8, 31.0, 11)]"
+barabasi_albert,"n=25, m=1",42,25,24,baseline,False,False,trivial,7,0.022204,3551,1758,25,0,0,0,0,True,[]
+barabasi_albert,"n=25, m=1",42,25,24,improved,True,True,maximal_matching,7,3.6e-05,1,0,0,0,25,18,7,True,[]
+barabasi_albert,"n=25, m=1",42,25,24,raw_emulation,False,False,trivial,7,0.363997,5398,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 18), (32, 2.0, 18), (32, 3.0, 46), (64, 2.0, 18), (64, 3.0, 46), (128, 4.0, 123), (256, 4.0, 123), (256, 5.0, 324), (512, 4.0, 123), (512, 5.0, 324), (1024, 4.0, 123), (1024, 6.0, 834), (2048, 4.0, 123), (2048, 6.0, 834), (2048, 7.0, 2314)]"
+barabasi_albert,"n=25, m=1",42,25,24,ablation_prep,True,True,trivial,7,0.00051,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=25, m=1",42,25,24,ablation_prep_lb,True,True,maximal_matching,7,0.000506,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=25, m=1",42,25,24,enhanced_emulation,True,True,maximal_matching,7,0.000489,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=25, m=1",123,25,24,baseline,False,False,trivial,7,0.114779,17897,8931,25,0,0,0,0,True,[]
+barabasi_albert,"n=25, m=1",123,25,24,improved,True,True,maximal_matching,7,4.1e-05,1,0,0,0,25,18,7,True,[]
+barabasi_albert,"n=25, m=1",123,25,24,raw_emulation,False,False,trivial,7,0.897748,10288,0,0,0,0,0,0,True,"[(8, 1.0, 10), (16, 1.0, 10), (32, 2.0, 35), (64, 2.0, 35), (64, 3.0, 95), (128, 2.0, 35), (128, 3.0, 95), (256, 4.0, 231), (512, 4.0, 231), (512, 5.0, 577), (1024, 4.0, 231), (1024, 5.0, 577), (2048, 4.0, 231), (2048, 6.0, 1574), (4096, 4.0, 231), (4096, 6.0, 1574), (4096, 7.0, 4516)]"
+barabasi_albert,"n=25, m=1",123,25,24,ablation_prep,True,True,trivial,7,0.000461,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=25, m=1",123,25,24,ablation_prep_lb,True,True,maximal_matching,7,0.000457,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=25, m=1",123,25,24,enhanced_emulation,True,True,maximal_matching,7,0.00043,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=25, m=1",256,25,24,baseline,False,False,trivial,10,0.115943,17903,8937,25,0,0,0,0,True,[]
+barabasi_albert,"n=25, m=1",256,25,24,improved,True,True,maximal_matching,10,4.6e-05,1,0,0,0,25,15,10,True,[]
+barabasi_albert,"n=25, m=1",256,25,24,raw_emulation,False,False,trivial,10,2.117068,24456,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 16), (32, 2.0, 16), (32, 3.0, 36), (64, 4.0, 74), (128, 4.0, 74), (128, 5.0, 161), (256, 4.0, 74), (256, 6.0, 374), (512, 4.0, 74), (512, 6.0, 374), (1024, 4.0, 74), (1024, 6.0, 374), (1024, 7.0, 844), (2048, 8.0, 1872), (4096, 8.0, 1872), (4096, 9.0, 4480), (8192, 8.0, 1872), (8192, 10.0, 11788)]"
+barabasi_albert,"n=25, m=1",256,25,24,ablation_prep,True,True,trivial,10,0.000562,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=25, m=1",256,25,24,ablation_prep_lb,True,True,maximal_matching,10,0.00047,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=25, m=1",256,25,24,enhanced_emulation,True,True,maximal_matching,10,0.000483,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=25, m=1",789,25,24,baseline,False,False,trivial,9,0.091801,14475,7222,25,0,0,0,0,True,[]
+barabasi_albert,"n=25, m=1",789,25,24,improved,True,True,maximal_matching,9,4.2e-05,1,0,0,0,25,16,9,True,[]
+barabasi_albert,"n=25, m=1",789,25,24,raw_emulation,False,False,trivial,9,1.924016,21946,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 1.0, 6), (16, 2.0, 14), (32, 2.0, 14), (32, 3.0, 36), (64, 4.0, 92), (128, 4.0, 92), (256, 4.0, 92), (256, 5.0, 233), (512, 4.0, 92), (512, 6.0, 603), (1024, 4.0, 92), (1024, 6.0, 603), (1024, 7.0, 1536), (2048, 4.0, 92), (2048, 6.0, 603), (2048, 7.0, 1536), (4096, 8.0, 3729), (8192, 8.0, 3729), (8192, 9.0, 8746)]"
+barabasi_albert,"n=25, m=1",789,25,24,ablation_prep,True,True,trivial,9,0.000614,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=25, m=1",789,25,24,ablation_prep_lb,True,True,maximal_matching,9,0.000436,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=25, m=1",789,25,24,enhanced_emulation,True,True,maximal_matching,9,0.000421,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=25, m=1",1024,25,24,baseline,False,False,trivial,8,0.075296,11439,5703,25,0,0,0,0,True,[]
+barabasi_albert,"n=25, m=1",1024,25,24,improved,True,True,maximal_matching,8,4e-05,1,0,0,0,25,17,8,True,[]
+barabasi_albert,"n=25, m=1",1024,25,24,raw_emulation,False,False,trivial,8,0.85986,8399,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 1.0, 6), (16, 2.0, 15), (32, 2.0, 15), (32, 3.0, 35), (64, 4.0, 76), (128, 4.0, 76), (128, 5.0, 169), (256, 4.0, 76), (256, 5.0, 169), (512, 4.0, 76), (512, 6.0, 436), (1024, 4.0, 76), (1024, 6.0, 436), (1024, 7.0, 1238), (2048, 4.0, 76), (2048, 6.0, 436), (2048, 7.0, 1238), (4096, 8.0, 3744)]"
+barabasi_albert,"n=25, m=1",1024,25,24,ablation_prep,True,True,trivial,8,0.000452,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=25, m=1",1024,25,24,ablation_prep_lb,True,True,maximal_matching,8,0.000504,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=25, m=1",1024,25,24,enhanced_emulation,True,True,maximal_matching,8,0.000441,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=25, m=2",42,25,46,baseline,False,False,trivial,8,0.059391,6621,3294,25,0,0,0,0,True,[]
+barabasi_albert,"n=25, m=2",42,25,46,improved,True,True,maximal_matching,8,0.000115,3,1,1,16,32,23,7,True,[]
+barabasi_albert,"n=25, m=2",42,25,46,raw_emulation,False,False,trivial,8,0.344817,2635,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 2.0, 12), (16, 2.0, 12), (32, 2.0, 12), (32, 3.0, 25), (64, 4.0, 50), (64, 5.0, 95), (128, 4.0, 50), (128, 6.0, 187), (256, 4.0, 50), (256, 6.0, 187), (512, 4.0, 50), (512, 6.0, 187), (512, 7.0, 432), (1024, 8.0, 1280)]"
+barabasi_albert,"n=25, m=2",42,25,46,ablation_prep,True,True,trivial,8,0.001596,15,0,0,0,0,0,0,True,"[(2, 16.0, 3), (2, 24.0, 3), (2, 28.0, 3), (2, 30.0, 3), (2, 31.0, 3)]"
+barabasi_albert,"n=25, m=2",42,25,46,ablation_prep_lb,True,True,maximal_matching,8,0.001557,17,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (2, 16.0, 3), (2, 24.0, 3), (2, 28.0, 3), (2, 30.0, 3), (2, 31.0, 3)]"
+barabasi_albert,"n=25, m=2",42,25,46,enhanced_emulation,True,True,maximal_matching,8,0.001818,17,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (2, 16.0, 3), (2, 24.0, 3), (2, 28.0, 3), (2, 30.0, 3), (2, 31.0, 3)]"
+barabasi_albert,"n=25, m=2",123,25,46,baseline,False,False,trivial,9,0.083794,9927,4948,25,0,0,0,0,True,[]
+barabasi_albert,"n=25, m=2",123,25,46,improved,True,True,maximal_matching,9,4.9e-05,1,0,0,0,25,16,9,True,[]
+barabasi_albert,"n=25, m=2",123,25,46,raw_emulation,False,False,trivial,9,0.665848,6643,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 1.0, 6), (16, 2.0, 14), (32, 2.0, 14), (32, 3.0, 29), (64, 4.0, 56), (128, 4.0, 56), (128, 5.0, 108), (256, 4.0, 56), (256, 6.0, 228), (512, 4.0, 56), (512, 6.0, 228), (512, 7.0, 536), (1024, 8.0, 1258), (2048, 8.0, 1258), (2048, 9.0, 2734)]"
+barabasi_albert,"n=25, m=2",123,25,46,ablation_prep,True,True,trivial,9,0.000665,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=25, m=2",123,25,46,ablation_prep_lb,True,True,maximal_matching,9,0.000838,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=25, m=2",123,25,46,enhanced_emulation,True,True,maximal_matching,9,0.000636,5,0,0,0,0,0,0,True,"[(1, 16.0, 1), (1, 24.0, 1), (1, 28.0, 1), (1, 30.0, 1), (1, 31.0, 1)]"
+barabasi_albert,"n=25, m=2",256,25,46,baseline,False,False,trivial,9,0.021405,2467,1218,25,0,0,0,0,True,[]
+barabasi_albert,"n=25, m=2",256,25,46,improved,True,True,maximal_matching,9,0.000176,3,1,1,12,36,26,6,True,[]
+barabasi_albert,"n=25, m=2",256,25,46,raw_emulation,False,False,trivial,9,0.319021,3526,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 2.0, 12), (16, 2.0, 12), (16, 3.0, 23), (32, 4.0, 44), (64, 4.0, 44), (64, 5.0, 87), (128, 4.0, 44), (128, 6.0, 169), (256, 4.0, 44), (256, 6.0, 169), (256, 7.0, 321), (512, 8.0, 627), (1024, 8.0, 627), (1024, 9.0, 1297)]"
+barabasi_albert,"n=25, m=2",256,25,46,ablation_prep,True,True,trivial,9,0.00177,15,0,0,0,0,0,0,True,"[(2, 16.0, 3), (2, 24.0, 3), (2, 28.0, 3), (2, 30.0, 3), (2, 31.0, 3)]"
+barabasi_albert,"n=25, m=2",256,25,46,ablation_prep_lb,True,True,maximal_matching,9,0.001798,17,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 5.0, 1), (2, 16.0, 3), (2, 24.0, 3), (2, 28.0, 3), (2, 30.0, 3), (2, 31.0, 3)]"
+barabasi_albert,"n=25, m=2",256,25,46,enhanced_emulation,True,True,maximal_matching,9,0.002047,17,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 5.0, 1), (2, 16.0, 3), (2, 24.0, 3), (2, 28.0, 3), (2, 30.0, 3), (2, 31.0, 3)]"
+barabasi_albert,"n=25, m=2",789,25,46,baseline,False,False,trivial,13,0.374716,43969,21973,25,0,0,0,0,True,[]
+barabasi_albert,"n=25, m=2",789,25,46,improved,True,True,maximal_matching,13,0.000176,5,2,2,17,34,19,10,True,[]
+barabasi_albert,"n=25, m=2",789,25,46,raw_emulation,False,False,trivial,13,10.452326,94204,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 2.0, 12), (16, 2.0, 12), (16, 3.0, 23), (32, 2.0, 12), (32, 3.0, 23), (64, 4.0, 49), (128, 4.0, 49), (128, 5.0, 109), (256, 4.0, 49), (256, 6.0, 233), (512, 4.0, 49), (512, 6.0, 233), (512, 7.0, 477), (1024, 8.0, 924), (2048, 8.0, 924), (2048, 9.0, 1741), (4096, 8.0, 924), (4096, 10.0, 3357), (8192, 8.0, 924), (8192, 10.0, 3357), (8192, 11.0, 6682), (16384, 8.0, 924), (16384, 12.0, 13259), (32768, 8.0, 924), (32768, 12.0, 13259), (32768, 14.0, 45669)]"
+barabasi_albert,"n=25, m=2",789,25,46,ablation_prep,True,True,trivial,13,0.010747,95,0,0,0,0,0,0,True,"[(4, 2.0, 5), (4, 3.0, 6), (8, 8.0, 7), (8, 12.0, 12), (16, 16.0, 13), (16, 24.0, 13), (16, 28.0, 13), (16, 30.0, 13), (16, 31.0, 13)]"
+barabasi_albert,"n=25, m=2",789,25,46,ablation_prep_lb,True,True,maximal_matching,13,0.005489,35,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 9.0, 1), (2, 8.0, 1), (2, 9.0, 1), (4, 8.0, 1), (4, 10.0, 4), (4, 11.0, 5), (8, 8.0, 1), (8, 12.0, 9), (8, 13.0, 11)]"
+barabasi_albert,"n=25, m=2",789,25,46,enhanced_emulation,True,True,maximal_matching,13,0.003271,33,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 9.0, 1), (2, 8.0, 1), (2, 10.0, 2), (2, 11.0, 3), (4, 16.0, 5), (4, 24.0, 5), (4, 28.0, 5), (4, 30.0, 5), (4, 31.0, 5)]"
+barabasi_albert,"n=25, m=2",1024,25,46,baseline,False,False,trivial,11,0.034384,4051,2012,25,0,0,0,0,True,[]
+barabasi_albert,"n=25, m=2",1024,25,46,improved,True,True,maximal_matching,11,0.000126,3,1,1,9,39,25,8,True,[]
+barabasi_albert,"n=25, m=2",1024,25,46,raw_emulation,False,False,trivial,11,0.89928,10453,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 2.0, 12), (16, 2.0, 12), (16, 3.0, 23), (32, 4.0, 43), (64, 4.0, 43), (64, 5.0, 78), (128, 4.0, 43), (128, 6.0, 135), (256, 4.0, 43), (256, 6.0, 135), (256, 7.0, 246), (512, 8.0, 469), (1024, 8.0, 469), (1024, 9.0, 895), (2048, 8.0, 469), (2048, 10.0, 1728), (4096, 8.0, 469), (4096, 10.0, 1728), (4096, 11.0, 3407)]"
+barabasi_albert,"n=25, m=2",1024,25,46,ablation_prep,True,True,trivial,11,0.001843,15,0,0,0,0,0,0,True,"[(2, 16.0, 3), (2, 24.0, 3), (2, 28.0, 3), (2, 30.0, 3), (2, 31.0, 3)]"
+barabasi_albert,"n=25, m=2",1024,25,46,ablation_prep_lb,True,True,maximal_matching,11,0.001958,18,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (1, 7.0, 1), (2, 16.0, 3), (2, 24.0, 3), (2, 28.0, 3), (2, 30.0, 3), (2, 31.0, 3)]"
+barabasi_albert,"n=25, m=2",1024,25,46,enhanced_emulation,True,True,maximal_matching,11,0.002053,18,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (1, 7.0, 1), (2, 16.0, 3), (2, 24.0, 3), (2, 28.0, 3), (2, 30.0, 3), (2, 31.0, 3)]"
+barabasi_albert,"n=25, m=3",42,25,66,baseline,False,False,trivial,12,0.085028,8371,4173,25,0,0,0,0,True,[]
+barabasi_albert,"n=25, m=3",42,25,66,improved,True,True,maximal_matching,12,0.000239,5,2,2,25,45,28,10,True,[]
+barabasi_albert,"n=25, m=3",42,25,66,raw_emulation,False,False,trivial,12,1.403457,11205,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 15), (32, 4.0, 43), (64, 4.0, 43), (64, 5.0, 69), (128, 4.0, 43), (128, 6.0, 113), (256, 8.0, 364), (512, 8.0, 364), (512, 9.0, 640), (1024, 8.0, 364), (1024, 10.0, 1120), (2048, 8.0, 364), (2048, 10.0, 1120), (2048, 11.0, 2066), (4096, 8.0, 364), (4096, 12.0, 4106)]"
+barabasi_albert,"n=25, m=3",42,25,66,ablation_prep,True,True,trivial,12,0.007848,51,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 16.0, 9), (8, 24.0, 9), (8, 28.0, 9), (8, 30.0, 9), (8, 31.0, 9)]"
+barabasi_albert,"n=25, m=3",42,25,66,ablation_prep_lb,True,True,maximal_matching,12,0.011085,54,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 9.0, 1), (2, 8.0, 1), (2, 9.0, 1), (4, 8.0, 1), (4, 10.0, 4), (8, 16.0, 9), (8, 24.0, 9), (8, 28.0, 9), (8, 30.0, 9), (8, 31.0, 9)]"
+barabasi_albert,"n=25, m=3",42,25,66,enhanced_emulation,True,True,maximal_matching,12,0.005605,29,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 9.0, 1), (2, 8.0, 1), (2, 9.0, 1), (4, 16.0, 5), (4, 24.0, 5), (4, 28.0, 5), (4, 30.0, 5), (4, 31.0, 5)]"
+barabasi_albert,"n=25, m=3",123,25,66,baseline,False,False,trivial,14,0.189927,18801,9390,25,0,0,0,0,True,[]
+barabasi_albert,"n=25, m=3",123,25,66,improved,True,True,maximal_matching,14,0.000414,11,5,5,35,48,29,11,True,[]
+barabasi_albert,"n=25, m=3",123,25,66,raw_emulation,False,False,trivial,14,2.827058,25583,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 15), (32, 4.0, 40), (64, 4.0, 40), (64, 6.0, 96), (128, 4.0, 40), (128, 6.0, 96), (128, 7.0, 158), (256, 8.0, 283), (512, 8.0, 283), (512, 9.0, 537), (1024, 8.0, 283), (1024, 10.0, 993), (2048, 8.0, 283), (2048, 12.0, 2904), (4096, 8.0, 283), (4096, 12.0, 2904), (4096, 13.0, 4873), (8192, 8.0, 283), (8192, 12.0, 2904), (8192, 14.0, 8278)]"
+barabasi_albert,"n=25, m=3",123,25,66,ablation_prep,True,True,trivial,14,0.02466,209,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 8.0, 12), (16, 8.0, 12), (16, 12.0, 21), (16, 13.0, 24), (32, 16.0, 26), (32, 24.0, 27), (32, 28.0, 27), (32, 30.0, 27), (32, 31.0, 27)]"
+barabasi_albert,"n=25, m=3",123,25,66,ablation_prep_lb,True,True,maximal_matching,14,0.010666,58,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 10.0, 1), (2, 8.0, 1), (2, 10.0, 1), (2, 11.0, 2), (4, 8.0, 1), (4, 10.0, 1), (4, 11.0, 2), (8, 8.0, 1), (8, 12.0, 8), (8, 13.0, 12), (16, 8.0, 1), (16, 12.0, 8), (16, 14.0, 18)]"
+barabasi_albert,"n=25, m=3",123,25,66,enhanced_emulation,True,True,maximal_matching,14,0.009001,22,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 10.0, 1), (2, 8.0, 1), (2, 10.0, 1), (2, 11.0, 2), (4, 8.0, 1), (4, 10.0, 1), (4, 11.0, 2), (8, 16.0, 12)]"
+barabasi_albert,"n=25, m=3",256,25,66,baseline,False,False,trivial,13,0.128713,12541,6259,25,0,0,0,0,True,[]
+barabasi_albert,"n=25, m=3",256,25,66,improved,True,True,maximal_matching,13,0.000869,7,3,3,22,42,24,10,True,[]
+barabasi_albert,"n=25, m=3",256,25,66,raw_emulation,False,False,trivial,13,2.794731,25827,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 15), (32, 4.0, 46), (64, 4.0, 46), (64, 5.0, 74), (128, 4.0, 46), (128, 6.0, 119), (256, 8.0, 335), (512, 8.0, 335), (512, 9.0, 583), (1024, 8.0, 335), (1024, 10.0, 1017), (2048, 8.0, 335), (2048, 10.0, 1017), (2048, 11.0, 1822), (4096, 8.0, 335), (4096, 12.0, 3404), (8192, 8.0, 335), (8192, 12.0, 3404), (8192, 14.0, 12217)]"
+barabasi_albert,"n=25, m=3",256,25,66,ablation_prep,True,True,trivial,13,0.008566,67,0,0,0,0,0,0,True,"[(2, 4.0, 3), (4, 4.0, 3), (4, 6.0, 6), (8, 16.0, 11), (8, 24.0, 11), (8, 28.0, 11), (8, 30.0, 11), (8, 31.0, 11)]"
+barabasi_albert,"n=25, m=3",256,25,66,ablation_prep_lb,True,True,maximal_matching,13,0.008706,69,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 9.0, 1), (2, 8.0, 1), (2, 10.0, 3), (2, 11.0, 3), (4, 8.0, 1), (4, 12.0, 4), (8, 16.0, 11), (8, 24.0, 11), (8, 28.0, 11), (8, 30.0, 11), (8, 31.0, 11)]"
+barabasi_albert,"n=25, m=3",256,25,66,enhanced_emulation,True,True,maximal_matching,13,0.008085,50,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 9.0, 1), (2, 8.0, 1), (2, 10.0, 3), (2, 11.0, 3), (4, 8.0, 1), (4, 12.0, 5), (8, 16.0, 7), (8, 24.0, 7), (8, 28.0, 7), (8, 30.0, 7), (8, 31.0, 7)]"
+barabasi_albert,"n=25, m=3",789,25,66,baseline,False,False,trivial,12,0.112674,8201,4088,25,0,0,0,0,True,[]
+barabasi_albert,"n=25, m=3",789,25,66,improved,True,True,maximal_matching,12,0.000216,3,1,1,10,36,21,8,True,[]
+barabasi_albert,"n=25, m=3",789,25,66,raw_emulation,False,False,trivial,12,0.784218,7222,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 15), (32, 4.0, 46), (64, 4.0, 46), (64, 5.0, 75), (128, 4.0, 46), (128, 6.0, 120), (128, 7.0, 190), (256, 8.0, 300), (512, 8.0, 300), (512, 10.0, 765), (1024, 8.0, 300), (1024, 10.0, 765), (1024, 11.0, 1357), (2048, 8.0, 300), (2048, 12.0, 2590)]"
+barabasi_albert,"n=25, m=3",789,25,66,ablation_prep,True,True,trivial,12,0.004184,13,0,0,0,0,0,0,True,"[(2, 1.0, 2), (4, 8.0, 5), (4, 12.0, 6)]"
+barabasi_albert,"n=25, m=3",789,25,66,ablation_prep_lb,True,True,maximal_matching,12,0.00424,22,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (1, 7.0, 1), (2, 8.0, 2), (4, 8.0, 2), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+barabasi_albert,"n=25, m=3",789,25,66,enhanced_emulation,True,True,maximal_matching,12,0.003066,18,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (1, 7.0, 1), (2, 16.0, 3), (2, 24.0, 3), (2, 28.0, 3), (2, 30.0, 3), (2, 31.0, 3)]"
+barabasi_albert,"n=25, m=3",1024,25,66,baseline,False,False,trivial,14,0.094882,9501,4740,25,0,0,0,0,True,[]
+barabasi_albert,"n=25, m=3",1024,25,66,improved,True,True,maximal_matching,14,0.000495,11,4,5,38,76,45,10,True,[]
+barabasi_albert,"n=25, m=3",1024,25,66,raw_emulation,False,False,trivial,14,1.418555,13675,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 15), (32, 4.0, 43), (64, 4.0, 43), (64, 5.0, 69), (128, 4.0, 43), (128, 6.0, 106), (128, 7.0, 155), (256, 8.0, 237), (512, 8.0, 237), (512, 10.0, 672), (1024, 8.0, 237), (1024, 10.0, 672), (1024, 11.0, 1196), (2048, 8.0, 237), (2048, 12.0, 2081), (4096, 8.0, 237), (4096, 12.0, 2081), (4096, 14.0, 5307)]"
+barabasi_albert,"n=25, m=3",1024,25,66,ablation_prep,True,True,trivial,14,0.015087,119,0,0,0,0,0,0,True,"[(4, 4.0, 6), (8, 4.0, 6), (8, 6.0, 10), (8, 7.0, 12), (16, 16.0, 17), (16, 24.0, 17), (16, 28.0, 17), (16, 30.0, 17), (16, 31.0, 17)]"
+barabasi_albert,"n=25, m=3",1024,25,66,ablation_prep_lb,True,True,maximal_matching,14,0.01529,110,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 9.0, 1), (2, 8.0, 1), (2, 10.0, 2), (4, 8.0, 1), (4, 10.0, 2), (4, 11.0, 6), (8, 8.0, 1), (8, 12.0, 10), (16, 16.0, 17), (16, 24.0, 17), (16, 28.0, 17), (16, 30.0, 17), (16, 31.0, 17)]"
+barabasi_albert,"n=25, m=3",1024,25,66,enhanced_emulation,True,True,maximal_matching,14,0.009496,44,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 9.0, 1), (2, 8.0, 1), (2, 10.0, 2), (4, 8.0, 1), (4, 10.0, 2), (4, 11.0, 4), (8, 8.0, 1), (8, 12.0, 8), (8, 14.0, 11), (8, 15.0, 12)]"

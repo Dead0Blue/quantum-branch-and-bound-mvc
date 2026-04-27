@@ -1,41 +1,42 @@
-# Quantum Branch-and-Bound for Minimum Vertex Cover
+# Quantum-Inspired Classical Emulation for Minimum Vertex Cover
 
-Implementation of a Montanaro-style quantum branch-and-bound algorithm for the Minimum Vertex Cover (MVC) problem, with an improved classical exact solver and comprehensive benchmarking.
+Implementation of a Montanaro-style quantum branch-and-bound logic applied as a **quantum-inspired classical emulation** for the Minimum Vertex Cover (MVC) problem. This repository includes an exact baseline solver, a raw emulation of Montanaro's branch-and-bound logic, and an enhanced emulation integrating mathematically sound classical heuristic reductions.
 
 ## Overview
 
 This project implements and benchmarks:
 
-1. **Quantum Branch-and-Bound** — Montanaro's algorithm with quantum subroutines (tree size estimation via phase estimation, quantum tree search)
-2. **Classical Exact Solvers** — Both a baseline and improved branch-and-bound solver
-3. **Approximation** — Greedy MVC heuristic
-4. **Benchmarking Pipeline** — Batch experiments across 5 graph families with full instrumentation
+1. **Classical Exact Solvers** — A baseline brute-force B&B solver.
+2. **Raw Montanaro-Inspired Emulation** — An emulation that maps Montanaro's quantum search structure (tree construction, cost thresholding) directly into a classical environment without heuristic rules.
+3. **Enhanced Montanaro-Inspired Emulation** — An exact, optimized version combining the Montanaro logic with strict classical pruning (forced-neighbor propagation, degree-based preprocessing, and maximal matching lower bounds).
+4. **Benchmarking Pipeline** — Batch experiments across 5 graph families with comprehensive ablation and density studies.
 
 ## Project Structure
 
 ```
-├── classical_solvers.py      # Baseline & improved B&B solvers (WP1)
-├── quantum_solvers.py        # Montanaro quantum B&B (Qiskit)
+├── classical_solvers.py      # Baseline B&B and branching heuristics
+├── montanaro_emulation.py    # Raw and Enhanced Quantum-Inspired Emulators
 ├── problem_encoding.py       # MVC cost, branching, feasibility
 ├── instance_generator.py     # Graph generation (ER, BA, WS, regular, toy)
 ├── visualization.py          # Graph and solution plotting
-├── batch_experiments.py      # Batch experiment runner (WP2)
-├── generate_plots.py         # Paper-ready plot generation (WP2)
-├── main_workflow.ipynb       # Interactive notebook (quantum experiments)
-├── EXPERIMENT_README.md      # Detailed experiment documentation
+├── batch_experiments.py      # Batch experiment runner (Ablation, Density)
+├── generate_plots.py         # Paper-ready plot generation
+├── generate_summary_report.py# Automated PDF Research Summary generator
+├── sanity_checks.py          # Exactness verification script
 ├── results/                  # CSV experiment data
-│   ├── results_all.csv           # Merged (450 runs)
+│   ├── results_all.csv           # Merged (1530 runs)
 │   ├── results_erdos_renyi.csv
+│   ├── results_erdos_renyi_density.csv
 │   ├── results_barabasi_albert.csv
 │   ├── results_watts_strogatz.csv
 │   ├── results_random_regular.csv
 │   └── results_toy.csv
 └── plots/                    # Generated figures
-    ├── plot1_runtime_comparison.png
-    ├── plot2_nodes_comparison.png
-    ├── plot3_pruning_ratio.png
-    ├── plot4_preprocessing_effect.png
-    └── plot5_runtime_vs_cover.png
+    ├── plot1_2_vs_vertices.png
+    ├── plot3_pruning_effect.png
+    ├── plot4_ablation_study.png
+    ├── plot5_density_study.png
+    └── plot6_threshold_behavior.png
 ```
 
 ## Classical Solver Improvements (WP1)
@@ -59,40 +60,30 @@ When a vertex `v` is excluded from the cover (set to 0), all its neighbors must 
 ### Maximal Matching Lower Bound
 A greedy maximal matching on the residual subgraph provides a tighter lower bound than simply counting selected vertices.
 
-## Experiment Results (WP2)
+## Experiment Results
 
-**450 runs** across 225 graph instances (5 families × multiple sizes/params × 5 seeds) × 2 solver modes.
+**1,530 runs** across 5 graph families, verifying exactness across combinations of density and size using 6 distinct configurations:
+- `baseline`, `improved`, `raw_emulation`, `ablation_prep`, `ablation_prep_lb`, `enhanced_emulation`.
 
 ### Key Findings
 
-The improved solver achieves **100–5000× fewer explored nodes** and **1–3 orders of magnitude speedup** over the baseline:
+The enhanced emulation perfectly mirrors the mathematically sound optimal covers verified by the baseline solver, while demonstrating an exponential reduction in explored nodes:
+- The **ablation study** isolates the contribution of each heuristic, proving that lower bounds and intelligent branching severely curtail the search space.
+- The **threshold-search behavior** validates the algorithm dynamically adjusting the cost bounds to shrink the generated tree dimension.
 
-| Instance | Baseline Nodes | Improved Nodes | Reduction |
-|----------|---------------|----------------|-----------|
-| BA n=25, m=1 | 16,511 | 3 | 5,503× |
-| ER n=25, p=0.5 | 31,643 | 9 | 3,516× |
-| Regular n=24, d=3 | 54,927 | 29 | 1,894× |
-| WS n=25, k=4, p=0.1 | 34,129 | 91 | 375× |
-| Star n=15 | 265 | 1 | 265× |
-
-### Plots
+### Generated Plots
 
 | Plot | Description |
 |------|-------------|
-| Plot 1 | Runtime: baseline vs improved (log-log scatter) |
-| Plot 2 | Explored nodes: baseline vs improved |
-| Plot 3 | Pruning ratio by graph family and density |
-| Plot 4 | Speedup and node reduction analysis |
-| Plot 5 | Runtime vs optimal cover size |
+| Plot 1 & 2 | Scaling of runtime and explored nodes as $n$ increases |
+| Plot 3 | Log-log scatter plot of search tree nodes before vs. after pruning rules |
+| Plot 4 | Bar-chart ablation study isolating algorithmic impact |
+| Plot 5 | Analysis of solver performance varying density parameters $p$ |
+| Plot 6 | Line plot tracking dynamic threshold $C$ against $|\mathcal{T}_C|$ |
 
-## Quantum Solver
+## Clarification on Quantum Claims
 
-The quantum solver implements Montanaro's quantum branch-and-bound framework:
-
-- **Quantum tree size estimation** via phase estimation on quantum walk operators
-- **Quantum tree search** using the same walk to detect marked (solution) states
-- **Binary search** on the cost parameter to find the optimal MVC
-- Both **real quantum circuit** (Qiskit/AerSimulator) and **fast classical** emulations
+To maintain mathematical rigor, this implementation does not execute Montanaro's original phase estimation and quantum tree search on a quantum circuit (due to qubit limitations for meaningful graph sizes). Instead, it **classically emulates** the logic—structuring the search tree identically to the quantum version, applying bounds, and systematically finding the marked states. All classical heuristic rules (preprocessing, forced-neighbor propagation, etc.) have been proven to preserve the exactness of the problem.
 
 ## Requirements
 

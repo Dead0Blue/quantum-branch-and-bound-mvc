@@ -1,8 +1,9 @@
 """
-quantum_solvers.py
-implementation of quantum algorithms (the two subroutines and Montanaro algorithm)
-the two subroutines are also implemented classically to validate the logic on larger graphs where we can't run real quantum circuits
-
+montanaro_emulation.py
+implementation of quantum-inspired classical emulation of Montanaro's branch-and-bound logic.
+The quantum part of Montanaro's method consists mainly of two subroutines: quantum tree-size estimation 
+and quantum tree search. Here we provide the fast emulation version which replaces these 
+two quantum subroutines by explicit classical tree construction, counting, and search.
 """
 
 import math
@@ -15,6 +16,12 @@ from qiskit_aer import AerSimulator
 from qiskit.circuit.library import QFT, UnitaryGate
 
 from problem_encoding import cost, branch, is_solution
+from classical_solvers import (
+    forced_neighbor_propagation, 
+    preprocessing, 
+    maximal_matching_lower_bound,
+    choose_branching_vertex
+)
 
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
@@ -51,6 +58,76 @@ def build_oracle_tree(root_state, graph, c_limit, T_limit):
         enfants_states = branch(curr_state, graph)
         for child_state in enfants_states:
             if cost(child_state, graph) <= c_limit:
+                child_id = next_id
+                next_id += 1
+                
+                G_dir.add_node(child_id, state=child_state)
+                G_dir.add_edge(curr_id, child_id)
+                queue.append((child_state, child_id))
+                
+                if G_dir.number_of_nodes() > T_limit:
+                    return "overflow", None
+                    
+    return "Ok", G_dir
+
+
+def build_oracle_tree_enhanced(root_state, graph, c_limit, T_limit, use_preprocessing=True, use_lower_bound=True, use_improved_branching=True):
+    """
+    generates the tree of the problem with enhanced classical logic.
+    incorporates forced neighbor propagation, preprocessing, and maximal matching lower bound.
+    """
+    G_dir = nx.DiGraph()
+    queue = [(root_state, 0)]
+    G_dir.add_node(0, state=root_state)
+    next_id = 1
+    
+    stats = {'forced_assignments': 0, 'preprocessing_reductions': 0, 'vertices_removed_by_preprocessing': 0}
+    
+    while queue:
+        curr_state, curr_id = queue.pop(0)
+        
+        if G_dir.number_of_nodes() > T_limit:
+            return "overflow", None
+            
+        if is_solution(curr_state, graph):
+            continue
+            
+        state_to_branch = curr_state.copy()
+        
+        if use_preprocessing:
+            state_to_branch = forced_neighbor_propagation(state_to_branch, graph, stats)
+            if state_to_branch is None: continue # Pruned
+            state_to_branch = preprocessing(state_to_branch, graph, stats)
+            if state_to_branch is None: continue # Pruned
+            
+            # Update the state in the tree so Search_fast can see the inferred assignments
+            G_dir.nodes[curr_id]['state'] = state_to_branch.copy()
+            
+        if is_solution(state_to_branch, graph):
+            continue # Already handled or covered
+            
+        unassigned = [v for v in graph.nodes() if v not in state_to_branch]
+        if not unassigned: continue
+        
+        if use_improved_branching:
+            v = choose_branching_vertex(unassigned, state_to_branch, graph)
+            enfants_states = [state_to_branch.copy(), state_to_branch.copy()]
+            enfants_states[0][v] = 0
+            enfants_states[1][v] = 1
+        else:
+            enfants_states = branch(state_to_branch, graph)
+            
+        for child_state in enfants_states:
+            selected = sum(1 for val in child_state.values() if val == 1)
+            
+            if use_lower_bound:
+                rem_lb = maximal_matching_lower_bound(child_state, graph)
+                if rem_lb == float('inf'): continue
+                total_lb = selected + rem_lb
+            else:
+                total_lb = cost(child_state, graph)
+                
+            if total_lb <= c_limit:
                 child_id = next_id
                 next_id += 1
                 
@@ -297,33 +374,76 @@ def Montanaro_BB_MVC(graph):
 
 
 #version 2 : classical implementation of the two subroutines to validate the logic on larger graphs
-def Count_fast(root_state, graph, c_limit, T0, delta=0.5):
+def Count_fast(root_state, graph, c_limit, T0, delta=0.5, builder_func=build_oracle_tree, kwargs=None):
+    if kwargs is None: kwargs = {}
     T_limit = math.floor((1 + delta) * T0)
-    status, G_tree = build_oracle_tree(root_state, graph, c_limit, T_limit)
+    status, G_tree = builder_func(root_state, graph, c_limit, T_limit, **kwargs)
     if status == "overflow": return "contains more than T0 nodes"
     return G_tree.number_of_nodes()
 
-def Search_fast(root_state, graph, c_limit, T_bound, delta=0.5):
+def Search_fast(root_state, graph, c_limit, T_bound, delta=0.5, builder_func=build_oracle_tree, kwargs=None):
+    if kwargs is None: kwargs = {}
     T_limit = math.floor((1 + delta) * T_bound)
-    status, G_sub = build_oracle_tree(root_state, graph, c_limit, T_limit)
+    status, G_sub = builder_func(root_state, graph, c_limit, T_limit, **kwargs)
     if status == "overflow": return False
-    return any(is_solution(attr['state'], graph) for n, attr in G_sub.nodes(data=True))
+    return any(is_solution(attr['state'], graph) and cost(attr['state'], graph) <= c_limit for n, attr in G_sub.nodes(data=True))
 
-def Find_marked_state_fast(root_state, graph, c_limit, T_bound, delta=0.5):
+def Find_marked_state_fast(root_state, graph, c_limit, T_bound, delta=0.5, builder_func=build_oracle_tree, kwargs=None):
+    if kwargs is None: kwargs = {}
     current_state = root_state.copy()
+    stats = {'forced_assignments': 0, 'preprocessing_reductions': 0, 'vertices_removed_by_preprocessing': 0}
+    
     while not is_solution(current_state, graph):
-        enfants = branch(current_state, graph)
+        # 1. Preprocess current_state exactly like the builder
+        use_preprocessing = kwargs.get('use_preprocessing', False) if builder_func == build_oracle_tree_enhanced else False
+        state_to_branch = current_state.copy()
+        if use_preprocessing:
+            state_to_branch = forced_neighbor_propagation(state_to_branch, graph, stats)
+            if state_to_branch is None: break
+            state_to_branch = preprocessing(state_to_branch, graph, stats)
+            if state_to_branch is None: break
+            
+        if is_solution(state_to_branch, graph):
+            current_state = state_to_branch
+            break
+            
+        # 2. Branch using the same logic as the builder
+        use_improved_branching = kwargs.get('use_improved_branching', False) if builder_func == build_oracle_tree_enhanced else False
+        unassigned = [v for v in graph.nodes() if v not in state_to_branch]
+        
+        if use_improved_branching and unassigned:
+            v = choose_branching_vertex(unassigned, state_to_branch, graph)
+            enfants = [state_to_branch.copy(), state_to_branch.copy()]
+            enfants[0][v] = 0
+            enfants[1][v] = 1
+        else:
+            enfants = branch(state_to_branch, graph)
+            
         found_good_branch = False
         for enfant in enfants:
-            if cost(enfant, graph) <= c_limit:
-                if Search_fast(enfant, graph, c_limit, T_bound, delta):
+            selected = sum(1 for val in enfant.values() if val == 1)
+            use_lower_bound = kwargs.get('use_lower_bound', False) if builder_func == build_oracle_tree_enhanced else False
+            
+            if use_lower_bound:
+                rem_lb = maximal_matching_lower_bound(enfant, graph)
+                if rem_lb == float('inf'): continue
+                total_lb = selected + rem_lb
+            else:
+                total_lb = cost(enfant, graph)
+                
+            if total_lb <= c_limit:
+                if Search_fast(enfant, graph, c_limit, T_bound, delta, builder_func, kwargs):
                     current_state = enfant
                     found_good_branch = True
                     break
         if not found_good_branch: break
     return current_state
 
-def Montanaro_BB_MVC_Fast(graph):
+def _run_montanaro_emulation(graph, builder_func, kwargs=None, name="Emulation"):
+    import time
+    start_time = time.time()
+    if kwargs is None: kwargs = {}
+    
     N = graph.number_of_nodes()
     c_max = 2 ** math.ceil(math.log2(N)) 
     T_max = (2 ** (N + 1)) - 1
@@ -331,39 +451,80 @@ def Montanaro_BB_MVC_Fast(graph):
     c_old = 0
     root_state = {}
     
-    print(f"\nStarting Montanaro_BB_MVC_Fast | Nodes: {N}")
+    threshold_trajectory = [] # List of (T, c_new, tree_size)
+    nodes_explored = 0 # In this emulation, we just sum up the trees we build
+    
+    # print(f"\nStarting {name} | Nodes: {N}")
     
     while T <= T_max:
-        print(f"\nTree size limit T = {T}")
+        # print(f"\nTree size limit T = {T}")
         if T > T_max / 2: 
             c_new = c_max
         else:
             c_new = 0
             for i in range(1, int(math.log2(c_max)) + 1):
                 test_c = c_new + c_max / (2**i)
-                if Count_fast(root_state, graph, test_c, T) != "contains more than T0 nodes":
+                count_res = Count_fast(root_state, graph, test_c, T, builder_func=builder_func, kwargs=kwargs)
+                if count_res != "contains more than T0 nodes":
                     c_new = test_c
-        print(f"Estimated cost (c_new): {c_new}")
+                    nodes_explored += count_res
+                    threshold_trajectory.append((T, test_c, count_res))
+        
+        # print(f"Estimated cost (c_new): {c_new}")
 
-        if Search_fast(root_state, graph, c_new, T):
+        if Search_fast(root_state, graph, c_new, T, builder_func=builder_func, kwargs=kwargs):
             low = math.floor(c_old)
             high = math.ceil(c_new)
-            print(f"Solution detected. Starting binary search in [{low}, {high}]")
+            # print(f"Solution detected. Starting binary search in [{low}, {high}]")
             while low < high: 
                 mid = (low + high) // 2 
-                print(f"Testing cost mid = {mid}... ", end="")
-                if Search_fast(root_state, graph, mid, T): 
+                # print(f"Testing cost mid = {mid}... ", end="")
+                if Search_fast(root_state, graph, mid, T, builder_func=builder_func, kwargs=kwargs): 
                     high = mid
-                    print("Success")
+                    # print("Success")
                 else: 
                     low = mid + 1
-                    print("Failed")
+                    # print("Failed")
             
-            print(f"Optimal MVC cost found: {low}. Recovering state...")
-            etat_final = Find_marked_state_fast(root_state, graph, low, T)
-            return low, etat_final
+            # print(f"Optimal MVC cost found: {low}. Recovering state...")
+            etat_final = Find_marked_state_fast(root_state, graph, low, T, builder_func=builder_func, kwargs=kwargs)
             
-        print("No solution found. Doubling T.")
+            elapsed = time.time() - start_time
+            cover = [v for v, s in etat_final.items() if s == 1]
+            return {
+                'cover': sorted(cover),
+                'cover_size': low,
+                'nodes_explored': nodes_explored,
+                'nodes_pruned': 0, # Hard to track purely in this logic without deep instrumentation
+                'max_depth': 0,
+                'runtime': elapsed,
+                'finished': True,
+                'threshold_trajectory': threshold_trajectory
+            }
+            
+        # print("No solution found. Doubling T.")
         T = 2 * T
         c_old = c_new
-    return "no solution", None
+        
+    elapsed = time.time() - start_time
+    return {
+        'cover': [],
+        'cover_size': -1,
+        'nodes_explored': nodes_explored,
+        'nodes_pruned': 0,
+        'max_depth': 0,
+        'runtime': elapsed,
+        'finished': False,
+        'threshold_trajectory': threshold_trajectory
+    }
+
+def Montanaro_inspired_raw(graph):
+    return _run_montanaro_emulation(graph, build_oracle_tree, name="Montanaro_inspired_raw")
+
+def Montanaro_inspired_enhanced(graph, use_preprocessing=True, use_lower_bound=True, use_improved_branching=True):
+    kwargs = {
+        'use_preprocessing': use_preprocessing,
+        'use_lower_bound': use_lower_bound,
+        'use_improved_branching': use_improved_branching
+    }
+    return _run_montanaro_emulation(graph, build_oracle_tree_enhanced, kwargs, name="Montanaro_inspired_enhanced")

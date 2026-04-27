@@ -20,6 +20,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from instance_generator import generate_mvc_instance, get_exact_mvc_solution
 from classical_solvers import bb_mvc_baseline, bb_mvc_improved
+from montanaro_emulation import Montanaro_inspired_raw, Montanaro_inspired_enhanced
 
 
 # ======================================================================
@@ -43,7 +44,7 @@ def generate_experiment_instances():
     seeds = [42, 123, 256, 789, 1024]
 
     # ── Erdos-Renyi ──────────────────────────────────────────────
-    for n in [10, 15, 20, 25]:
+    for n in [10, 15, 20]:
         for p in [0.2, 0.3, 0.5]:
             for seed in seeds:
                 inst = generate_mvc_instance(
@@ -59,6 +60,21 @@ def generate_experiment_instances():
                     'seed': seed,
                     'param_dict': {'n': n, 'p': p},
                 })
+                
+    # ── Density Study (Fixed n=20, varying p) ─────────────────────
+    for p in [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]:
+        for seed in seeds:
+            inst = generate_mvc_instance(model="erdos_renyi", n=20, p=p, seed=seed)
+            G = inst['graph']
+            instances.append({
+                'graph': G,
+                'family': 'erdos_renyi_density',
+                'params': f'n=20, p={p}',
+                'n': G.number_of_nodes(),
+                'm': G.number_of_edges(),
+                'seed': seed,
+                'param_dict': {'n': 20, 'p': p},
+            })
 
     # ── Barabasi-Albert ──────────────────────────────────────────
     for n in [10, 15, 20, 25]:
@@ -144,7 +160,7 @@ CSV_HEADER = [
     'nodes_explored', 'nodes_pruned', 'max_depth',
     'forced_assignments', 'preprocessing_reductions',
     'vertices_removed_by_preprocessing',
-    'root_lower_bound', 'finished',
+    'root_lower_bound', 'finished', 'threshold_trajectory',
 ]
 
 
@@ -170,6 +186,38 @@ def run_single_experiment(instance, solver_type='baseline', timeout=120):
             'propagation_enabled': True,
             'lower_bound_type': 'maximal_matching',
         }
+    elif solver_type == 'raw_emulation':
+        result = Montanaro_inspired_raw(G)
+        config = {
+            'solver_type': 'raw_emulation',
+            'preprocessing_enabled': False,
+            'propagation_enabled': False,
+            'lower_bound_type': 'trivial',
+        }
+    elif solver_type == 'ablation_prep':
+        result = Montanaro_inspired_enhanced(G, use_preprocessing=True, use_lower_bound=False, use_improved_branching=False)
+        config = {
+            'solver_type': 'ablation_prep',
+            'preprocessing_enabled': True,
+            'propagation_enabled': True,
+            'lower_bound_type': 'trivial',
+        }
+    elif solver_type == 'ablation_prep_lb':
+        result = Montanaro_inspired_enhanced(G, use_preprocessing=True, use_lower_bound=True, use_improved_branching=False)
+        config = {
+            'solver_type': 'ablation_prep_lb',
+            'preprocessing_enabled': True,
+            'propagation_enabled': True,
+            'lower_bound_type': 'maximal_matching',
+        }
+    elif solver_type == 'enhanced_emulation':
+        result = Montanaro_inspired_enhanced(G, use_preprocessing=True, use_lower_bound=True, use_improved_branching=True)
+        config = {
+            'solver_type': 'enhanced_emulation',
+            'preprocessing_enabled': True,
+            'propagation_enabled': True,
+            'lower_bound_type': 'maximal_matching',
+        }
     else:
         raise ValueError(f"Unknown solver_type: {solver_type}")
 
@@ -182,14 +230,15 @@ def run_single_experiment(instance, solver_type='baseline', timeout=120):
         **config,
         'optimal_cover_size': result['cover_size'],
         'runtime_seconds': round(result['runtime'], 6),
-        'nodes_explored': result['nodes_explored'],
-        'nodes_pruned': result['nodes_pruned'],
-        'max_depth': result['max_depth'],
-        'forced_assignments': result['forced_assignments'],
-        'preprocessing_reductions': result['preprocessing_reductions'],
-        'vertices_removed_by_preprocessing': result['vertices_removed_by_preprocessing'],
-        'root_lower_bound': result['root_lower_bound'],
-        'finished': result['finished'],
+        'nodes_explored': result.get('nodes_explored', 0),
+        'nodes_pruned': result.get('nodes_pruned', 0),
+        'max_depth': result.get('max_depth', 0),
+        'forced_assignments': result.get('forced_assignments', 0),
+        'preprocessing_reductions': result.get('preprocessing_reductions', 0),
+        'vertices_removed_by_preprocessing': result.get('vertices_removed_by_preprocessing', 0),
+        'root_lower_bound': result.get('root_lower_bound', 0),
+        'finished': result.get('finished', True),
+        'threshold_trajectory': str(result.get('threshold_trajectory', [])),
     }
     return row
 
@@ -204,11 +253,12 @@ def run_batch_experiments(output_dir='results', timeout=120):
     all_rows = []
     family_rows = {}  # family -> list of rows
 
-    total = len(instances) * 2  # baseline + improved for each
+    solver_types = ['baseline', 'improved', 'raw_emulation', 'ablation_prep', 'ablation_prep_lb', 'enhanced_emulation']
+    total = len(instances) * len(solver_types)
     done = 0
 
     for inst in instances:
-        for solver_type in ['baseline', 'improved']:
+        for solver_type in solver_types:
             done += 1
             family = inst['family']
             n = inst['n']

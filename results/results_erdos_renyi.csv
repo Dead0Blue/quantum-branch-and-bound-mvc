@@ -1,121 +1,271 @@
-family,params,seed,n,m,solver_type,preprocessing_enabled,propagation_enabled,lower_bound_type,optimal_cover_size,runtime_seconds,nodes_explored,nodes_pruned,max_depth,forced_assignments,preprocessing_reductions,vertices_removed_by_preprocessing,root_lower_bound,finished
-erdos_renyi,"n=10, p=0.2",42,10,11,baseline,False,False,trivial,5,0.000868,251,121,10,0,0,0,0,True
-erdos_renyi,"n=10, p=0.2",42,10,11,improved,True,True,maximal_matching,5,7.4e-05,3,1,1,4,11,7,4,True
-erdos_renyi,"n=10, p=0.2",123,10,11,baseline,False,False,trivial,4,0.00034,93,41,10,0,0,0,0,True
-erdos_renyi,"n=10, p=0.2",123,10,11,improved,True,True,maximal_matching,4,2.2e-05,1,0,0,0,10,6,4,True
-erdos_renyi,"n=10, p=0.2",256,10,9,baseline,False,False,trivial,4,0.001282,405,197,10,0,0,0,0,True
-erdos_renyi,"n=10, p=0.2",256,10,9,improved,True,True,maximal_matching,4,1.6e-05,1,0,0,0,10,6,4,True
-erdos_renyi,"n=10, p=0.2",789,10,5,baseline,False,False,trivial,3,0.000878,281,134,10,0,0,0,0,True
-erdos_renyi,"n=10, p=0.2",789,10,5,improved,True,True,maximal_matching,3,2.2e-05,1,0,0,0,10,7,3,True
-erdos_renyi,"n=10, p=0.2",1024,10,10,baseline,False,False,trivial,5,0.001462,409,200,10,0,0,0,0,True
-erdos_renyi,"n=10, p=0.2",1024,10,10,improved,True,True,maximal_matching,5,2e-05,1,0,0,0,10,5,5,True
-erdos_renyi,"n=10, p=0.3",42,10,17,baseline,False,False,trivial,6,0.000934,239,116,10,0,0,0,0,True
-erdos_renyi,"n=10, p=0.3",42,10,17,improved,True,True,maximal_matching,6,9.3e-05,5,2,2,8,11,6,4,True
-erdos_renyi,"n=10, p=0.3",123,10,14,baseline,False,False,trivial,5,0.000426,119,55,10,0,0,0,0,True
-erdos_renyi,"n=10, p=0.3",123,10,14,improved,True,True,maximal_matching,5,4.4e-05,3,1,1,2,9,5,4,True
-erdos_renyi,"n=10, p=0.3",256,10,13,baseline,False,False,trivial,5,0.000945,279,135,10,0,0,0,0,True
-erdos_renyi,"n=10, p=0.3",256,10,13,improved,True,True,maximal_matching,5,2.4e-05,1,0,0,0,10,5,5,True
-erdos_renyi,"n=10, p=0.3",789,10,9,baseline,False,False,trivial,4,0.000909,301,145,10,0,0,0,0,True
-erdos_renyi,"n=10, p=0.3",789,10,9,improved,True,True,maximal_matching,4,1.8e-05,1,0,0,0,10,6,4,True
-erdos_renyi,"n=10, p=0.3",1024,10,11,baseline,False,False,trivial,5,0.001299,415,203,10,0,0,0,0,True
-erdos_renyi,"n=10, p=0.3",1024,10,11,improved,True,True,maximal_matching,5,1.7e-05,1,0,0,0,10,5,5,True
-erdos_renyi,"n=10, p=0.5",42,10,21,baseline,False,False,trivial,6,0.001206,223,108,10,0,0,0,0,True
-erdos_renyi,"n=10, p=0.5",42,10,21,improved,True,True,maximal_matching,6,0.000171,5,2,2,11,12,6,4,True
-erdos_renyi,"n=10, p=0.5",123,10,25,baseline,False,False,trivial,6,0.000585,123,58,10,0,0,0,0,True
-erdos_renyi,"n=10, p=0.5",123,10,25,improved,True,True,maximal_matching,6,0.000128,7,3,3,14,7,4,4,True
-erdos_renyi,"n=10, p=0.5",256,10,25,baseline,False,False,trivial,7,0.000781,175,85,10,0,0,0,0,True
-erdos_renyi,"n=10, p=0.5",256,10,25,improved,True,True,maximal_matching,7,0.000222,9,4,4,20,16,11,5,True
-erdos_renyi,"n=10, p=0.5",789,10,24,baseline,False,False,trivial,6,0.000736,171,82,10,0,0,0,0,True
-erdos_renyi,"n=10, p=0.5",789,10,24,improved,True,True,maximal_matching,6,0.000117,7,3,3,16,9,6,4,True
-erdos_renyi,"n=10, p=0.5",1024,10,21,baseline,False,False,trivial,7,0.00093,239,117,10,0,0,0,0,True
-erdos_renyi,"n=10, p=0.5",1024,10,21,improved,True,True,maximal_matching,7,0.000139,9,4,4,17,13,7,4,True
-erdos_renyi,"n=15, p=0.2",42,15,20,baseline,False,False,trivial,7,0.010886,2249,1117,15,0,0,0,0,True
-erdos_renyi,"n=15, p=0.2",42,15,20,improved,True,True,maximal_matching,7,3.7e-05,1,0,0,0,15,8,7,True
-erdos_renyi,"n=15, p=0.2",123,15,27,baseline,False,False,trivial,8,0.007765,1239,613,15,0,0,0,0,True
-erdos_renyi,"n=15, p=0.2",123,15,27,improved,True,True,maximal_matching,8,0.000142,5,2,2,9,27,15,6,True
-erdos_renyi,"n=15, p=0.2",256,15,23,baseline,False,False,trivial,7,0.012085,2289,1137,15,0,0,0,0,True
-erdos_renyi,"n=15, p=0.2",256,15,23,improved,True,True,maximal_matching,7,0.000103,3,1,1,5,19,11,6,True
-erdos_renyi,"n=15, p=0.2",789,15,18,baseline,False,False,trivial,7,0.007727,1597,791,15,0,0,0,0,True
-erdos_renyi,"n=15, p=0.2",789,15,18,improved,True,True,maximal_matching,7,0.000123,3,1,1,3,19,11,6,True
-erdos_renyi,"n=15, p=0.2",1024,15,21,baseline,False,False,trivial,7,0.012244,2469,1227,15,0,0,0,0,True
-erdos_renyi,"n=15, p=0.2",1024,15,21,improved,True,True,maximal_matching,7,6.6e-05,1,0,0,0,15,8,7,True
-erdos_renyi,"n=15, p=0.3",42,15,38,baseline,False,False,trivial,9,0.006821,1043,516,15,0,0,0,0,True
-erdos_renyi,"n=15, p=0.3",42,15,38,improved,True,True,maximal_matching,9,0.000264,9,4,4,21,22,13,7,True
-erdos_renyi,"n=15, p=0.3",123,15,35,baseline,False,False,trivial,9,0.007229,1135,562,15,0,0,0,0,True
-erdos_renyi,"n=15, p=0.3",123,15,35,improved,True,True,maximal_matching,9,0.000272,11,5,5,26,36,22,6,True
-erdos_renyi,"n=15, p=0.3",256,15,36,baseline,False,False,trivial,10,0.009109,1481,736,15,0,0,0,0,True
-erdos_renyi,"n=15, p=0.3",256,15,36,improved,True,True,maximal_matching,10,0.000405,11,5,5,25,24,13,7,True
-erdos_renyi,"n=15, p=0.3",789,15,26,baseline,False,False,trivial,8,0.00933,1789,888,15,0,0,0,0,True
-erdos_renyi,"n=15, p=0.3",789,15,26,improved,True,True,maximal_matching,8,0.000109,5,2,2,5,16,9,7,True
-erdos_renyi,"n=15, p=0.3",1024,15,28,baseline,False,False,trivial,9,0.011711,2249,1119,15,0,0,0,0,True
-erdos_renyi,"n=15, p=0.3",1024,15,28,improved,True,True,maximal_matching,9,0.000228,9,4,4,14,31,18,7,True
-erdos_renyi,"n=15, p=0.5",42,15,52,baseline,False,False,trivial,10,0.00718,953,472,15,0,0,0,0,True
-erdos_renyi,"n=15, p=0.5",42,15,52,improved,True,True,maximal_matching,10,0.000352,13,6,6,40,26,15,7,True
-erdos_renyi,"n=15, p=0.5",123,15,63,baseline,False,False,trivial,11,0.005732,671,332,15,0,0,0,0,True
-erdos_renyi,"n=15, p=0.5",123,15,63,improved,True,True,maximal_matching,11,0.000453,17,8,8,56,32,20,7,True
-erdos_renyi,"n=15, p=0.5",256,15,59,baseline,False,False,trivial,11,0.006837,733,363,15,0,0,0,0,True
-erdos_renyi,"n=15, p=0.5",256,15,59,improved,True,True,maximal_matching,11,0.000447,17,8,8,52,24,16,7,True
-erdos_renyi,"n=15, p=0.5",789,15,55,baseline,False,False,trivial,11,0.006401,767,380,15,0,0,0,0,True
-erdos_renyi,"n=15, p=0.5",789,15,55,improved,True,True,maximal_matching,11,0.000444,17,8,8,50,26,16,7,True
-erdos_renyi,"n=15, p=0.5",1024,15,51,baseline,False,False,trivial,10,0.006519,815,403,15,0,0,0,0,True
-erdos_renyi,"n=15, p=0.5",1024,15,51,improved,True,True,maximal_matching,10,0.00031,11,5,5,36,17,9,7,True
-erdos_renyi,"n=20, p=0.2",42,20,37,baseline,False,False,trivial,11,0.031676,4559,2271,20,0,0,0,0,True
-erdos_renyi,"n=20, p=0.2",42,20,37,improved,True,True,maximal_matching,11,0.0003,9,4,4,19,43,26,9,True
-erdos_renyi,"n=20, p=0.2",123,20,43,baseline,False,False,trivial,11,0.038953,5213,2598,20,0,0,0,0,True
-erdos_renyi,"n=20, p=0.2",123,20,43,improved,True,True,maximal_matching,11,0.000454,9,4,4,21,42,25,9,True
-erdos_renyi,"n=20, p=0.2",256,20,45,baseline,False,False,trivial,11,0.064283,8763,4373,20,0,0,0,0,True
-erdos_renyi,"n=20, p=0.2",256,20,45,improved,True,True,maximal_matching,11,0.000312,7,3,3,18,30,17,8,True
-erdos_renyi,"n=20, p=0.2",789,20,37,baseline,False,False,trivial,10,0.067334,9519,4750,20,0,0,0,0,True
-erdos_renyi,"n=20, p=0.2",789,20,37,improved,True,True,maximal_matching,10,0.000216,5,2,2,11,33,18,8,True
-erdos_renyi,"n=20, p=0.2",1024,20,40,baseline,False,False,trivial,12,0.050104,7239,3612,20,0,0,0,0,True
-erdos_renyi,"n=20, p=0.2",1024,20,40,improved,True,True,maximal_matching,12,0.000328,9,4,4,19,40,22,9,True
-erdos_renyi,"n=20, p=0.3",42,20,67,baseline,False,False,trivial,13,0.023464,2529,1258,20,0,0,0,0,True
-erdos_renyi,"n=20, p=0.3",42,20,67,improved,True,True,maximal_matching,13,0.000584,17,8,7,51,53,32,9,True
-erdos_renyi,"n=20, p=0.3",123,20,56,baseline,False,False,trivial,12,0.034688,4233,2109,20,0,0,0,0,True
-erdos_renyi,"n=20, p=0.3",123,20,56,improved,True,True,maximal_matching,12,0.00035,9,4,4,30,44,24,9,True
-erdos_renyi,"n=20, p=0.3",256,20,65,baseline,False,False,trivial,13,0.032274,3599,1793,20,0,0,0,0,True
-erdos_renyi,"n=20, p=0.3",256,20,65,improved,True,True,maximal_matching,13,0.000538,15,7,7,48,49,28,9,True
-erdos_renyi,"n=20, p=0.3",789,20,53,baseline,False,False,trivial,12,0.071159,8981,4483,20,0,0,0,0,True
-erdos_renyi,"n=20, p=0.3",789,20,53,improved,True,True,maximal_matching,12,0.00033,9,4,4,27,26,14,8,True
-erdos_renyi,"n=20, p=0.3",1024,20,58,baseline,False,False,trivial,13,0.046538,5611,2799,20,0,0,0,0,True
-erdos_renyi,"n=20, p=0.3",1024,20,58,improved,True,True,maximal_matching,13,0.000509,15,7,6,41,36,21,9,True
-erdos_renyi,"n=20, p=0.5",42,20,98,baseline,False,False,trivial,15,0.022439,2045,1018,20,0,0,0,0,True
-erdos_renyi,"n=20, p=0.5",42,20,98,improved,True,True,maximal_matching,15,0.001454,23,11,11,89,57,34,10,True
-erdos_renyi,"n=20, p=0.5",123,20,101,baseline,False,False,trivial,15,0.020149,1659,825,20,0,0,0,0,True
-erdos_renyi,"n=20, p=0.5",123,20,101,improved,True,True,maximal_matching,15,0.000894,21,10,10,89,45,27,10,True
-erdos_renyi,"n=20, p=0.5",256,20,102,baseline,False,False,trivial,15,0.018745,1623,807,20,0,0,0,0,True
-erdos_renyi,"n=20, p=0.5",256,20,102,improved,True,True,maximal_matching,15,0.000958,23,11,11,91,48,27,9,True
-erdos_renyi,"n=20, p=0.5",789,20,105,baseline,False,False,trivial,15,0.021313,1813,902,20,0,0,0,0,True
-erdos_renyi,"n=20, p=0.5",789,20,105,improved,True,True,maximal_matching,15,0.000889,21,10,10,91,30,16,9,True
-erdos_renyi,"n=20, p=0.5",1024,20,104,baseline,False,False,trivial,15,0.023824,2151,1071,20,0,0,0,0,True
-erdos_renyi,"n=20, p=0.5",1024,20,104,improved,True,True,maximal_matching,15,0.000943,23,11,11,95,50,30,10,True
-erdos_renyi,"n=25, p=0.2",42,25,57,baseline,False,False,trivial,14,0.463905,49865,24922,25,0,0,0,0,True
-erdos_renyi,"n=25, p=0.2",42,25,57,improved,True,True,maximal_matching,14,0.000303,7,3,3,13,32,16,10,True
-erdos_renyi,"n=25, p=0.2",123,25,68,baseline,False,False,trivial,13,0.256505,25417,12697,25,0,0,0,0,True
-erdos_renyi,"n=25, p=0.2",123,25,68,improved,True,True,maximal_matching,13,0.000243,5,2,2,12,30,17,12,True
-erdos_renyi,"n=25, p=0.2",256,25,63,baseline,False,False,trivial,14,0.331021,35685,17832,25,0,0,0,0,True
-erdos_renyi,"n=25, p=0.2",256,25,63,improved,True,True,maximal_matching,14,0.000452,9,4,4,28,46,25,12,True
-erdos_renyi,"n=25, p=0.2",789,25,62,baseline,False,False,trivial,15,0.592545,65745,32863,25,0,0,0,0,True
-erdos_renyi,"n=25, p=0.2",789,25,62,improved,True,True,maximal_matching,15,0.000656,15,6,7,36,75,41,11,True
-erdos_renyi,"n=25, p=0.2",1024,25,63,baseline,False,False,trivial,15,0.407528,42989,21485,25,0,0,0,0,True
-erdos_renyi,"n=25, p=0.2",1024,25,63,improved,True,True,maximal_matching,15,0.000467,11,5,5,29,59,32,11,True
-erdos_renyi,"n=25, p=0.3",42,25,105,baseline,False,False,trivial,17,0.214131,17081,8533,25,0,0,0,0,True
-erdos_renyi,"n=25, p=0.3",42,25,105,improved,True,True,maximal_matching,17,0.001231,29,13,11,98,88,51,12,True
-erdos_renyi,"n=25, p=0.3",123,25,93,baseline,False,False,trivial,16,0.216919,18119,9051,25,0,0,0,0,True
-erdos_renyi,"n=25, p=0.3",123,25,93,improved,True,True,maximal_matching,16,0.000797,15,7,7,59,74,39,12,True
-erdos_renyi,"n=25, p=0.3",256,25,94,baseline,False,False,trivial,17,0.17779,13521,6753,25,0,0,0,0,True
-erdos_renyi,"n=25, p=0.3",256,25,94,improved,True,True,maximal_matching,17,0.00098,21,10,10,72,71,39,11,True
-erdos_renyi,"n=25, p=0.3",789,25,91,baseline,False,False,trivial,17,0.319763,29517,14751,25,0,0,0,0,True
-erdos_renyi,"n=25, p=0.3",789,25,91,improved,True,True,maximal_matching,17,0.001318,19,9,9,63,47,25,12,True
-erdos_renyi,"n=25, p=0.3",1024,25,89,baseline,False,False,trivial,17,0.327423,29183,14584,25,0,0,0,0,True
-erdos_renyi,"n=25, p=0.3",1024,25,89,improved,True,True,maximal_matching,17,0.001095,25,12,9,81,98,54,11,True
-erdos_renyi,"n=25, p=0.5",42,25,151,baseline,False,False,trivial,19,0.112768,7245,3617,25,0,0,0,0,True
-erdos_renyi,"n=25, p=0.5",42,25,151,improved,True,True,maximal_matching,19,0.001584,31,14,15,138,59,34,12,True
-erdos_renyi,"n=25, p=0.5",123,25,162,baseline,False,False,trivial,20,0.080585,4935,2463,25,0,0,0,0,True
-erdos_renyi,"n=25, p=0.5",123,25,162,improved,True,True,maximal_matching,20,0.001686,33,16,15,157,75,43,12,True
-erdos_renyi,"n=25, p=0.5",256,25,154,baseline,False,False,trivial,19,0.067551,4283,2136,25,0,0,0,0,True
-erdos_renyi,"n=25, p=0.5",256,25,154,improved,True,True,maximal_matching,19,0.001659,33,15,16,146,45,27,11,True
-erdos_renyi,"n=25, p=0.5",789,25,165,baseline,False,False,trivial,20,0.074374,4485,2238,25,0,0,0,0,True
-erdos_renyi,"n=25, p=0.5",789,25,165,improved,True,True,maximal_matching,20,0.001765,33,16,16,155,40,24,12,True
-erdos_renyi,"n=25, p=0.5",1024,25,161,baseline,False,False,trivial,19,0.076447,4691,2340,25,0,0,0,0,True
-erdos_renyi,"n=25, p=0.5",1024,25,161,improved,True,True,maximal_matching,19,0.001798,29,14,14,147,45,26,12,True
+family,params,seed,n,m,solver_type,preprocessing_enabled,propagation_enabled,lower_bound_type,optimal_cover_size,runtime_seconds,nodes_explored,nodes_pruned,max_depth,forced_assignments,preprocessing_reductions,vertices_removed_by_preprocessing,root_lower_bound,finished,threshold_trajectory
+erdos_renyi,"n=10, p=0.2",42,10,11,baseline,False,False,trivial,5,0.00087,251,121,10,0,0,0,0,True,[]
+erdos_renyi,"n=10, p=0.2",42,10,11,improved,True,True,maximal_matching,5,7.4e-05,3,1,1,4,11,7,4,True,[]
+erdos_renyi,"n=10, p=0.2",42,10,11,raw_emulation,False,False,trivial,5,0.01396,398,0,0,0,0,0,0,True,"[(8, 1.0, 9), (16, 2.0, 24), (32, 2.0, 24), (64, 4.0, 90), (128, 4.0, 90), (128, 5.0, 161)]"
+erdos_renyi,"n=10, p=0.2",42,10,11,ablation_prep,True,True,trivial,5,0.000826,12,0,0,0,0,0,0,True,"[(2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+erdos_renyi,"n=10, p=0.2",42,10,11,ablation_prep_lb,True,True,maximal_matching,5,0.0008,14,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+erdos_renyi,"n=10, p=0.2",42,10,11,enhanced_emulation,True,True,maximal_matching,5,0.000829,14,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+erdos_renyi,"n=10, p=0.2",123,10,11,baseline,False,False,trivial,4,0.000333,93,41,10,0,0,0,0,True,[]
+erdos_renyi,"n=10, p=0.2",123,10,11,improved,True,True,maximal_matching,4,2.2e-05,1,0,0,0,10,6,4,True,[]
+erdos_renyi,"n=10, p=0.2",123,10,11,raw_emulation,False,False,trivial,4,0.006185,123,0,0,0,0,0,0,True,"[(4, 1.0, 5), (8, 2.0, 11), (16, 2.0, 11), (32, 2.0, 11), (32, 3.0, 25), (64, 4.0, 60)]"
+erdos_renyi,"n=10, p=0.2",123,10,11,ablation_prep,True,True,trivial,4,0.000239,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=10, p=0.2",123,10,11,ablation_prep_lb,True,True,maximal_matching,4,0.000228,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=10, p=0.2",123,10,11,enhanced_emulation,True,True,maximal_matching,4,0.000219,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=10, p=0.2",256,10,9,baseline,False,False,trivial,4,0.001293,405,197,10,0,0,0,0,True,[]
+erdos_renyi,"n=10, p=0.2",256,10,9,improved,True,True,maximal_matching,4,2e-05,1,0,0,0,10,6,4,True,[]
+erdos_renyi,"n=10, p=0.2",256,10,9,raw_emulation,False,False,trivial,4,0.013472,324,0,0,0,0,0,0,True,"[(16, 1.0, 17), (32, 2.0, 39), (64, 2.0, 39), (64, 3.0, 80), (128, 4.0, 149)]"
+erdos_renyi,"n=10, p=0.2",256,10,9,ablation_prep,True,True,trivial,4,0.000225,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=10, p=0.2",256,10,9,ablation_prep_lb,True,True,maximal_matching,4,0.000307,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=10, p=0.2",256,10,9,enhanced_emulation,True,True,maximal_matching,4,0.000209,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=10, p=0.2",789,10,5,baseline,False,False,trivial,3,0.000825,281,134,10,0,0,0,0,True,[]
+erdos_renyi,"n=10, p=0.2",789,10,5,improved,True,True,maximal_matching,3,1.8e-05,1,0,0,0,10,7,3,True,[]
+erdos_renyi,"n=10, p=0.2",789,10,5,raw_emulation,False,False,trivial,3,0.010845,273,0,0,0,0,0,0,True,"[(16, 1.0, 17), (32, 2.0, 46), (64, 2.0, 46), (128, 2.0, 46), (128, 3.0, 118)]"
+erdos_renyi,"n=10, p=0.2",789,10,5,ablation_prep,True,True,trivial,3,0.000196,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=10, p=0.2",789,10,5,ablation_prep_lb,True,True,maximal_matching,3,0.000187,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=10, p=0.2",789,10,5,enhanced_emulation,True,True,maximal_matching,3,0.000186,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=10, p=0.2",1024,10,10,baseline,False,False,trivial,5,0.001499,409,200,10,0,0,0,0,True,[]
+erdos_renyi,"n=10, p=0.2",1024,10,10,improved,True,True,maximal_matching,5,2.5e-05,1,0,0,0,10,5,5,True,[]
+erdos_renyi,"n=10, p=0.2",1024,10,10,raw_emulation,False,False,trivial,5,0.028496,906,0,0,0,0,0,0,True,"[(16, 1.0, 19), (32, 2.0, 48), (64, 2.0, 48), (64, 3.0, 95), (128, 4.0, 163), (256, 4.0, 163), (256, 6.0, 370)]"
+erdos_renyi,"n=10, p=0.2",1024,10,10,ablation_prep,True,True,trivial,5,0.000326,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=10, p=0.2",1024,10,10,ablation_prep_lb,True,True,maximal_matching,5,0.000232,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=10, p=0.2",1024,10,10,enhanced_emulation,True,True,maximal_matching,5,0.000189,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=10, p=0.3",42,10,17,baseline,False,False,trivial,6,0.000956,239,116,10,0,0,0,0,True,[]
+erdos_renyi,"n=10, p=0.3",42,10,17,improved,True,True,maximal_matching,6,9.4e-05,5,2,2,8,11,6,4,True,[]
+erdos_renyi,"n=10, p=0.3",42,10,17,raw_emulation,False,False,trivial,6,0.016693,398,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 14), (32, 4.0, 48), (64, 4.0, 48), (64, 5.0, 88), (128, 4.0, 48), (128, 6.0, 145)]"
+erdos_renyi,"n=10, p=0.3",42,10,17,ablation_prep,True,True,trivial,6,0.001918,23,0,0,0,0,0,0,True,"[(2, 2.0, 3), (4, 8.0, 5), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+erdos_renyi,"n=10, p=0.3",42,10,17,ablation_prep_lb,True,True,maximal_matching,6,0.001444,24,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 4.0, 2), (4, 8.0, 5), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+erdos_renyi,"n=10, p=0.3",42,10,17,enhanced_emulation,True,True,maximal_matching,6,0.001522,24,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 4.0, 2), (4, 8.0, 5), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+erdos_renyi,"n=10, p=0.3",123,10,14,baseline,False,False,trivial,5,0.000443,119,55,10,0,0,0,0,True,[]
+erdos_renyi,"n=10, p=0.3",123,10,14,improved,True,True,maximal_matching,5,4.7e-05,3,1,1,2,9,5,4,True,[]
+erdos_renyi,"n=10, p=0.3",123,10,14,raw_emulation,False,False,trivial,5,0.007894,221,0,0,0,0,0,0,True,"[(4, 1.0, 5), (8, 2.0, 11), (16, 2.0, 11), (16, 3.0, 23), (32, 4.0, 44), (64, 4.0, 44), (64, 5.0, 83)]"
+erdos_renyi,"n=10, p=0.3",123,10,14,ablation_prep,True,True,trivial,5,0.000644,13,0,0,0,0,0,0,True,"[(1, 2.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+erdos_renyi,"n=10, p=0.3",123,10,14,ablation_prep_lb,True,True,maximal_matching,5,0.000682,14,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+erdos_renyi,"n=10, p=0.3",123,10,14,enhanced_emulation,True,True,maximal_matching,5,0.000746,14,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+erdos_renyi,"n=10, p=0.3",256,10,13,baseline,False,False,trivial,5,0.000983,279,135,10,0,0,0,0,True,[]
+erdos_renyi,"n=10, p=0.3",256,10,13,improved,True,True,maximal_matching,5,2.6e-05,1,0,0,0,10,5,5,True,[]
+erdos_renyi,"n=10, p=0.3",256,10,13,raw_emulation,False,False,trivial,5,0.014724,390,0,0,0,0,0,0,True,"[(16, 1.0, 16), (32, 2.0, 32), (64, 4.0, 95), (128, 4.0, 95), (128, 5.0, 152)]"
+erdos_renyi,"n=10, p=0.3",256,10,13,ablation_prep,True,True,trivial,5,0.000287,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=10, p=0.3",256,10,13,ablation_prep_lb,True,True,maximal_matching,5,0.000261,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=10, p=0.3",256,10,13,enhanced_emulation,True,True,maximal_matching,5,0.000277,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=10, p=0.3",789,10,9,baseline,False,False,trivial,4,0.001035,301,145,10,0,0,0,0,True,[]
+erdos_renyi,"n=10, p=0.3",789,10,9,improved,True,True,maximal_matching,4,2.1e-05,1,0,0,0,10,6,4,True,[]
+erdos_renyi,"n=10, p=0.3",789,10,9,raw_emulation,False,False,trivial,4,0.013731,318,0,0,0,0,0,0,True,"[(16, 1.0, 17), (32, 2.0, 38), (64, 2.0, 38), (64, 3.0, 76), (128, 4.0, 149)]"
+erdos_renyi,"n=10, p=0.3",789,10,9,ablation_prep,True,True,trivial,4,0.000224,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=10, p=0.3",789,10,9,ablation_prep_lb,True,True,maximal_matching,4,0.000202,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=10, p=0.3",789,10,9,enhanced_emulation,True,True,maximal_matching,4,0.000202,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=10, p=0.3",1024,10,11,baseline,False,False,trivial,5,0.001425,415,203,10,0,0,0,0,True,[]
+erdos_renyi,"n=10, p=0.3",1024,10,11,improved,True,True,maximal_matching,5,2e-05,1,0,0,0,10,5,5,True,[]
+erdos_renyi,"n=10, p=0.3",1024,10,11,raw_emulation,False,False,trivial,5,0.029098,904,0,0,0,0,0,0,True,"[(16, 1.0, 19), (32, 2.0, 48), (64, 2.0, 48), (64, 3.0, 95), (128, 4.0, 163), (256, 4.0, 163), (256, 6.0, 368)]"
+erdos_renyi,"n=10, p=0.3",1024,10,11,ablation_prep,True,True,trivial,5,0.000234,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=10, p=0.3",1024,10,11,ablation_prep_lb,True,True,maximal_matching,5,0.000254,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=10, p=0.3",1024,10,11,enhanced_emulation,True,True,maximal_matching,5,0.000198,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=10, p=0.5",42,10,21,baseline,False,False,trivial,6,0.000965,223,108,10,0,0,0,0,True,[]
+erdos_renyi,"n=10, p=0.5",42,10,21,improved,True,True,maximal_matching,6,9.8e-05,5,2,2,11,12,6,4,True,[]
+erdos_renyi,"n=10, p=0.5",42,10,21,raw_emulation,False,False,trivial,6,0.018364,539,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 14), (32, 4.0, 45), (64, 4.0, 45), (64, 5.0, 80), (128, 4.0, 45), (128, 6.0, 127), (128, 7.0, 176)]"
+erdos_renyi,"n=10, p=0.5",42,10,21,ablation_prep,True,True,trivial,6,0.001494,23,0,0,0,0,0,0,True,"[(2, 1.0, 3), (4, 8.0, 5), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+erdos_renyi,"n=10, p=0.5",42,10,21,ablation_prep_lb,True,True,maximal_matching,6,0.001522,24,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 4.0, 2), (4, 8.0, 5), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+erdos_renyi,"n=10, p=0.5",42,10,21,enhanced_emulation,True,True,maximal_matching,6,0.001734,25,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 4.0, 3), (4, 8.0, 5), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+erdos_renyi,"n=10, p=0.5",123,10,25,baseline,False,False,trivial,6,0.000569,123,58,10,0,0,0,0,True,[]
+erdos_renyi,"n=10, p=0.5",123,10,25,improved,True,True,maximal_matching,6,0.000133,7,3,3,14,7,4,4,True,[]
+erdos_renyi,"n=10, p=0.5",123,10,25,raw_emulation,False,False,trivial,6,0.010141,269,0,0,0,0,0,0,True,"[(4, 1.0, 5), (8, 2.0, 9), (16, 4.0, 23), (32, 4.0, 23), (32, 5.0, 37), (64, 4.0, 23), (64, 6.0, 58), (64, 7.0, 91)]"
+erdos_renyi,"n=10, p=0.5",123,10,25,ablation_prep,True,True,trivial,6,0.00318,45,0,0,0,0,0,0,True,"[(2, 2.0, 3), (4, 4.0, 6), (8, 8.0, 9), (8, 12.0, 9), (8, 14.0, 9), (8, 15.0, 9)]"
+erdos_renyi,"n=10, p=0.5",123,10,25,ablation_prep_lb,True,True,maximal_matching,6,0.00296,46,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 4.0, 2), (4, 4.0, 2), (4, 5.0, 4), (8, 8.0, 9), (8, 12.0, 9), (8, 14.0, 9), (8, 15.0, 9)]"
+erdos_renyi,"n=10, p=0.5",123,10,25,enhanced_emulation,True,True,maximal_matching,6,0.003014,38,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 4.0, 2), (4, 4.0, 2), (4, 5.0, 4), (8, 8.0, 7), (8, 12.0, 7), (8, 14.0, 7), (8, 15.0, 7)]"
+erdos_renyi,"n=10, p=0.5",256,10,25,baseline,False,False,trivial,7,0.000829,175,85,10,0,0,0,0,True,[]
+erdos_renyi,"n=10, p=0.5",256,10,25,improved,True,True,maximal_matching,7,0.000142,9,4,4,20,16,11,5,True,[]
+erdos_renyi,"n=10, p=0.5",256,10,25,raw_emulation,False,False,trivial,7,0.020994,787,0,0,0,0,0,0,True,"[(4, 1.0, 5), (8, 2.0, 10), (16, 2.0, 10), (16, 3.0, 17), (32, 4.0, 28), (32, 5.0, 46), (64, 4.0, 28), (64, 6.0, 71), (128, 8.0, 134), (128, 12.0, 146), (128, 14.0, 146), (128, 15.0, 146)]"
+erdos_renyi,"n=10, p=0.5",256,10,25,ablation_prep,True,True,trivial,7,0.004989,77,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 4.0, 11), (16, 8.0, 15), (16, 12.0, 15), (16, 14.0, 15), (16, 15.0, 15)]"
+erdos_renyi,"n=10, p=0.5",256,10,25,ablation_prep_lb,True,True,maximal_matching,7,0.005314,77,0,0,0,0,0,0,True,"[(1, 4.0, 1), (2, 4.0, 1), (4, 4.0, 1), (4, 5.0, 4), (8, 4.0, 1), (8, 6.0, 9), (16, 8.0, 15), (16, 12.0, 15), (16, 14.0, 15), (16, 15.0, 15)]"
+erdos_renyi,"n=10, p=0.5",256,10,25,enhanced_emulation,True,True,maximal_matching,7,0.003825,43,0,0,0,0,0,0,True,"[(1, 4.0, 1), (2, 4.0, 1), (4, 4.0, 1), (4, 5.0, 4), (8, 8.0, 9), (8, 12.0, 9), (8, 14.0, 9), (8, 15.0, 9)]"
+erdos_renyi,"n=10, p=0.5",789,10,24,baseline,False,False,trivial,6,0.001024,171,82,10,0,0,0,0,True,[]
+erdos_renyi,"n=10, p=0.5",789,10,24,improved,True,True,maximal_matching,6,0.000131,7,3,3,16,9,6,4,True,[]
+erdos_renyi,"n=10, p=0.5",789,10,24,raw_emulation,False,False,trivial,6,0.008788,232,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 2.0, 12), (16, 2.0, 12), (16, 3.0, 20), (32, 4.0, 31), (32, 5.0, 47), (64, 4.0, 31), (64, 6.0, 73)]"
+erdos_renyi,"n=10, p=0.5",789,10,24,ablation_prep,True,True,trivial,6,0.002769,55,0,0,0,0,0,0,True,"[(4, 2.0, 5), (4, 3.0, 6), (8, 8.0, 11), (8, 12.0, 11), (8, 14.0, 11), (8, 15.0, 11)]"
+erdos_renyi,"n=10, p=0.5",789,10,24,ablation_prep_lb,True,True,maximal_matching,6,0.002991,55,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 4.0, 2), (4, 4.0, 2), (4, 5.0, 5), (8, 8.0, 11), (8, 12.0, 11), (8, 14.0, 11), (8, 15.0, 11)]"
+erdos_renyi,"n=10, p=0.5",789,10,24,enhanced_emulation,True,True,maximal_matching,6,0.002915,38,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 4.0, 2), (4, 4.0, 2), (4, 5.0, 4), (8, 8.0, 7), (8, 12.0, 7), (8, 14.0, 7), (8, 15.0, 7)]"
+erdos_renyi,"n=10, p=0.5",1024,10,21,baseline,False,False,trivial,7,0.000988,239,117,10,0,0,0,0,True,[]
+erdos_renyi,"n=10, p=0.5",1024,10,21,improved,True,True,maximal_matching,7,0.00016,9,4,4,17,13,7,4,True,[]
+erdos_renyi,"n=10, p=0.5",1024,10,21,raw_emulation,False,False,trivial,7,0.019598,386,0,0,0,0,0,0,True,"[(8, 1.0, 8), (16, 2.0, 16), (32, 2.0, 16), (32, 3.0, 30), (64, 4.0, 50), (64, 5.0, 76), (128, 8.0, 190)]"
+erdos_renyi,"n=10, p=0.5",1024,10,21,ablation_prep,True,True,trivial,7,0.004988,85,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 4.0, 11), (16, 8.0, 17), (16, 12.0, 17), (16, 14.0, 17), (16, 15.0, 17)]"
+erdos_renyi,"n=10, p=0.5",1024,10,21,ablation_prep_lb,True,True,maximal_matching,7,0.004721,84,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 4.0, 2), (4, 4.0, 2), (8, 4.0, 2), (8, 5.0, 8), (16, 8.0, 17), (16, 12.0, 17), (16, 14.0, 17), (16, 15.0, 17)]"
+erdos_renyi,"n=10, p=0.5",1024,10,21,enhanced_emulation,True,True,maximal_matching,7,0.002827,48,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 4.0, 2), (4, 4.0, 2), (4, 5.0, 6), (8, 8.0, 9), (8, 12.0, 9), (8, 14.0, 9), (8, 15.0, 9)]"
+erdos_renyi,"n=15, p=0.2",42,15,20,baseline,False,False,trivial,7,0.011382,2249,1117,15,0,0,0,0,True,[]
+erdos_renyi,"n=15, p=0.2",42,15,20,improved,True,True,maximal_matching,7,3.3e-05,1,0,0,0,15,8,7,True,[]
+erdos_renyi,"n=15, p=0.2",42,15,20,raw_emulation,False,False,trivial,7,0.160593,3967,0,0,0,0,0,0,True,"[(8, 1.0, 11), (16, 1.0, 11), (32, 2.0, 33), (64, 2.0, 33), (64, 3.0, 82), (128, 4.0, 182), (256, 4.0, 182), (256, 5.0, 374), (512, 4.0, 182), (512, 6.0, 714), (1024, 4.0, 182), (1024, 6.0, 714), (1024, 7.0, 1267)]"
+erdos_renyi,"n=15, p=0.2",42,15,20,ablation_prep,True,True,trivial,7,0.000374,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=15, p=0.2",42,15,20,ablation_prep_lb,True,True,maximal_matching,7,0.000343,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=15, p=0.2",42,15,20,enhanced_emulation,True,True,maximal_matching,7,0.000338,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=15, p=0.2",123,15,27,baseline,False,False,trivial,8,0.007317,1239,613,15,0,0,0,0,True,[]
+erdos_renyi,"n=15, p=0.2",123,15,27,improved,True,True,maximal_matching,8,0.000151,5,2,2,9,27,15,6,True,[]
+erdos_renyi,"n=15, p=0.2",123,15,27,raw_emulation,False,False,trivial,8,0.104523,1470,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 1.0, 6), (16, 2.0, 16), (32, 2.0, 16), (32, 3.0, 38), (64, 4.0, 81), (128, 4.0, 81), (128, 5.0, 159), (256, 4.0, 81), (256, 6.0, 284), (512, 8.0, 702)]"
+erdos_renyi,"n=15, p=0.2",123,15,27,ablation_prep,True,True,trivial,8,0.003687,44,0,0,0,0,0,0,True,"[(2, 1.0, 2), (4, 4.0, 6), (8, 8.0, 9), (8, 12.0, 9), (8, 14.0, 9), (8, 15.0, 9)]"
+erdos_renyi,"n=15, p=0.2",123,15,27,ablation_prep_lb,True,True,maximal_matching,8,0.003346,48,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 5.0, 1), (2, 4.0, 1), (2, 6.0, 2), (4, 4.0, 1), (4, 6.0, 2), (4, 7.0, 6), (8, 8.0, 7), (8, 12.0, 9), (8, 14.0, 9), (8, 15.0, 9)]"
+erdos_renyi,"n=15, p=0.2",123,15,27,enhanced_emulation,True,True,maximal_matching,8,0.00216,25,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 5.0, 1), (2, 4.0, 1), (2, 6.0, 2), (4, 8.0, 5), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+erdos_renyi,"n=15, p=0.2",256,15,23,baseline,False,False,trivial,7,0.011322,2289,1137,15,0,0,0,0,True,[]
+erdos_renyi,"n=15, p=0.2",256,15,23,improved,True,True,maximal_matching,7,9.5e-05,3,1,1,5,19,11,6,True,[]
+erdos_renyi,"n=15, p=0.2",256,15,23,raw_emulation,False,False,trivial,7,0.192123,2809,0,0,0,0,0,0,True,"[(8, 1.0, 12), (16, 1.0, 12), (32, 2.0, 35), (64, 2.0, 35), (128, 2.0, 35), (128, 3.0, 102), (256, 4.0, 236), (512, 4.0, 236), (512, 6.0, 686), (1024, 8.0, 1420)]"
+erdos_renyi,"n=15, p=0.2",256,15,23,ablation_prep,True,True,trivial,7,0.003025,42,0,0,0,0,0,0,True,"[(1, 1.0, 1), (2, 2.0, 2), (4, 4.0, 5), (4, 5.0, 6), (8, 8.0, 7), (8, 12.0, 7), (8, 14.0, 7), (8, 15.0, 7)]"
+erdos_renyi,"n=15, p=0.2",256,15,23,ablation_prep_lb,True,True,maximal_matching,7,0.00155,14,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 5.0, 1), (2, 4.0, 1), (2, 5.0, 1), (4, 4.0, 1), (4, 6.0, 4), (4, 7.0, 5)]"
+erdos_renyi,"n=15, p=0.2",256,15,23,enhanced_emulation,True,True,maximal_matching,7,0.001612,14,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 5.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+erdos_renyi,"n=15, p=0.2",789,15,18,baseline,False,False,trivial,7,0.008084,1597,791,15,0,0,0,0,True,[]
+erdos_renyi,"n=15, p=0.2",789,15,18,improved,True,True,maximal_matching,7,0.000103,3,1,1,3,19,11,6,True,[]
+erdos_renyi,"n=15, p=0.2",789,15,18,raw_emulation,False,False,trivial,7,0.114402,3247,0,0,0,0,0,0,True,"[(16, 1.0, 23), (32, 1.0, 23), (64, 2.0, 56), (128, 4.0, 190), (256, 4.0, 190), (256, 5.0, 322), (512, 4.0, 190), (512, 6.0, 553), (1024, 4.0, 190), (1024, 6.0, 553), (1024, 7.0, 957)]"
+erdos_renyi,"n=15, p=0.2",789,15,18,ablation_prep,True,True,trivial,7,0.001002,13,0,0,0,0,0,0,True,"[(1, 1.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+erdos_renyi,"n=15, p=0.2",789,15,18,ablation_prep_lb,True,True,maximal_matching,7,0.001198,14,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 5.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+erdos_renyi,"n=15, p=0.2",789,15,18,enhanced_emulation,True,True,maximal_matching,7,0.001091,14,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 5.0, 1), (2, 8.0, 3), (2, 12.0, 3), (2, 14.0, 3), (2, 15.0, 3)]"
+erdos_renyi,"n=15, p=0.2",1024,15,21,baseline,False,False,trivial,7,0.017661,2469,1227,15,0,0,0,0,True,[]
+erdos_renyi,"n=15, p=0.2",1024,15,21,improved,True,True,maximal_matching,7,5.7e-05,1,0,0,0,15,8,7,True,[]
+erdos_renyi,"n=15, p=0.2",1024,15,21,raw_emulation,False,False,trivial,7,0.139033,3600,0,0,0,0,0,0,True,"[(16, 1.0, 14), (32, 2.0, 36), (64, 2.0, 36), (64, 3.0, 78), (128, 4.0, 157), (256, 4.0, 157), (256, 5.0, 326), (512, 4.0, 157), (512, 6.0, 657), (1024, 4.0, 157), (1024, 6.0, 657), (1024, 7.0, 1168)]"
+erdos_renyi,"n=15, p=0.2",1024,15,21,ablation_prep,True,True,trivial,7,0.000629,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=15, p=0.2",1024,15,21,ablation_prep_lb,True,True,maximal_matching,7,0.000667,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=15, p=0.2",1024,15,21,enhanced_emulation,True,True,maximal_matching,7,0.000359,4,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 12.0, 1), (1, 14.0, 1), (1, 15.0, 1)]"
+erdos_renyi,"n=15, p=0.3",42,15,38,baseline,False,False,trivial,9,0.00693,1043,516,15,0,0,0,0,True,[]
+erdos_renyi,"n=15, p=0.3",42,15,38,improved,True,True,maximal_matching,9,0.000248,9,4,4,21,22,13,7,True,[]
+erdos_renyi,"n=15, p=0.3",42,15,38,raw_emulation,False,False,trivial,9,0.10332,1850,0,0,0,0,0,0,True,"[(8, 1.0, 8), (16, 2.0, 15), (32, 2.0, 15), (32, 3.0, 32), (64, 4.0, 60), (128, 4.0, 60), (128, 6.0, 169), (256, 4.0, 60), (256, 6.0, 169), (256, 7.0, 266), (512, 8.0, 402), (512, 9.0, 594)]"
+erdos_renyi,"n=15, p=0.3",42,15,38,ablation_prep,True,True,trivial,9,0.006921,96,0,0,0,0,0,0,True,"[(2, 1.0, 3), (4, 2.0, 4), (4, 3.0, 6), (8, 4.0, 7), (8, 6.0, 8), (8, 7.0, 10), (16, 8.0, 13), (16, 12.0, 15), (16, 14.0, 15), (16, 15.0, 15)]"
+erdos_renyi,"n=15, p=0.3",42,15,38,ablation_prep_lb,True,True,maximal_matching,9,0.003975,28,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (2, 4.0, 1), (2, 6.0, 1), (2, 7.0, 2), (4, 8.0, 6), (8, 8.0, 6), (8, 9.0, 10)]"
+erdos_renyi,"n=15, p=0.3",42,15,38,enhanced_emulation,True,True,maximal_matching,9,0.004955,51,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (2, 4.0, 1), (2, 6.0, 1), (2, 7.0, 2), (4, 8.0, 6), (8, 8.0, 6), (8, 12.0, 11), (8, 14.0, 11), (8, 15.0, 11)]"
+erdos_renyi,"n=15, p=0.3",123,15,35,baseline,False,False,trivial,9,0.006919,1135,562,15,0,0,0,0,True,[]
+erdos_renyi,"n=15, p=0.3",123,15,35,improved,True,True,maximal_matching,9,0.000268,11,5,5,26,36,22,6,True,[]
+erdos_renyi,"n=15, p=0.3",123,15,35,raw_emulation,False,False,trivial,9,0.095529,1854,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 1.0, 6), (16, 2.0, 13), (32, 2.0, 13), (32, 3.0, 29), (64, 4.0, 59), (128, 4.0, 59), (128, 6.0, 183), (256, 4.0, 59), (256, 6.0, 183), (256, 7.0, 281), (512, 8.0, 403), (512, 9.0, 560)]"
+erdos_renyi,"n=15, p=0.3",123,15,35,ablation_prep,True,True,trivial,9,0.013662,188,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 4.0, 10), (16, 4.0, 10), (16, 6.0, 20), (32, 8.0, 31), (32, 12.0, 37), (32, 14.0, 37), (32, 15.0, 37)]"
+erdos_renyi,"n=15, p=0.3",123,15,35,ablation_prep_lb,True,True,maximal_matching,9,0.007165,61,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 5.0, 1), (2, 4.0, 1), (2, 6.0, 2), (4, 4.0, 1), (4, 6.0, 2), (4, 7.0, 6), (8, 4.0, 1), (8, 6.0, 2), (8, 7.0, 6), (16, 8.0, 14), (16, 9.0, 24)]"
+erdos_renyi,"n=15, p=0.3",123,15,35,enhanced_emulation,True,True,maximal_matching,9,0.004389,35,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 5.0, 1), (2, 4.0, 1), (2, 6.0, 2), (4, 4.0, 1), (4, 6.0, 2), (4, 7.0, 6), (8, 8.0, 10), (8, 9.0, 11)]"
+erdos_renyi,"n=15, p=0.3",256,15,36,baseline,False,False,trivial,10,0.009401,1481,736,15,0,0,0,0,True,[]
+erdos_renyi,"n=15, p=0.3",256,15,36,improved,True,True,maximal_matching,10,0.000302,11,5,5,25,24,13,7,True,[]
+erdos_renyi,"n=15, p=0.3",256,15,36,raw_emulation,False,False,trivial,10,0.202546,6632,0,0,0,0,0,0,True,"[(8, 1.0, 12), (16, 1.0, 12), (32, 2.0, 27), (64, 4.0, 91), (128, 4.0, 91), (128, 5.0, 145), (256, 4.0, 91), (256, 6.0, 219), (256, 7.0, 319), (512, 8.0, 452), (512, 9.0, 623), (1024, 8.0, 452), (1024, 12.0, 1299), (1024, 14.0, 1399), (1024, 15.0, 1400)]"
+erdos_renyi,"n=15, p=0.3",256,15,36,ablation_prep,True,True,trivial,10,0.015712,208,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 4.0, 10), (16, 4.0, 10), (16, 6.0, 19), (32, 8.0, 34), (32, 12.0, 43), (32, 14.0, 43), (32, 15.0, 43)]"
+erdos_renyi,"n=15, p=0.3",256,15,36,ablation_prep_lb,True,True,maximal_matching,10,0.014268,191,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (2, 4.0, 1), (2, 6.0, 1), (2, 7.0, 2), (4, 4.0, 1), (4, 6.0, 1), (4, 7.0, 2), (8, 8.0, 10), (16, 8.0, 10), (16, 9.0, 22), (32, 8.0, 10), (32, 12.0, 43), (32, 14.0, 43), (32, 15.0, 43)]"
+erdos_renyi,"n=15, p=0.3",256,15,36,enhanced_emulation,True,True,maximal_matching,10,0.00872,83,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (2, 4.0, 1), (2, 6.0, 1), (4, 8.0, 6), (8, 8.0, 6), (8, 9.0, 10), (16, 8.0, 6), (16, 12.0, 17), (16, 14.0, 17), (16, 15.0, 17)]"
+erdos_renyi,"n=15, p=0.3",789,15,26,baseline,False,False,trivial,8,0.009573,1789,888,15,0,0,0,0,True,[]
+erdos_renyi,"n=15, p=0.3",789,15,26,improved,True,True,maximal_matching,8,0.000125,5,2,2,5,16,9,7,True,[]
+erdos_renyi,"n=15, p=0.3",789,15,26,raw_emulation,False,False,trivial,8,0.098219,1571,0,0,0,0,0,0,True,"[(8, 1.0, 11), (16, 1.0, 11), (32, 2.0, 28), (64, 2.0, 28), (64, 3.0, 56), (128, 4.0, 100), (128, 5.0, 174), (256, 4.0, 100), (256, 6.0, 295), (512, 8.0, 768)]"
+erdos_renyi,"n=15, p=0.3",789,15,26,ablation_prep,True,True,trivial,8,0.001891,27,0,0,0,0,0,0,True,"[(1, 2.0, 1), (1, 3.0, 1), (2, 4.0, 2), (2, 5.0, 3), (4, 8.0, 5), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+erdos_renyi,"n=15, p=0.3",789,15,26,ablation_prep_lb,True,True,maximal_matching,8,0.001811,24,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (2, 4.0, 1), (2, 6.0, 1), (4, 8.0, 5), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+erdos_renyi,"n=15, p=0.3",789,15,26,enhanced_emulation,True,True,maximal_matching,8,0.001718,24,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (2, 4.0, 1), (2, 6.0, 1), (4, 8.0, 5), (4, 12.0, 5), (4, 14.0, 5), (4, 15.0, 5)]"
+erdos_renyi,"n=15, p=0.3",1024,15,28,baseline,False,False,trivial,9,0.012221,2249,1119,15,0,0,0,0,True,[]
+erdos_renyi,"n=15, p=0.3",1024,15,28,improved,True,True,maximal_matching,9,0.000232,9,4,4,14,31,18,7,True,[]
+erdos_renyi,"n=15, p=0.3",1024,15,28,raw_emulation,False,False,trivial,9,0.161765,3946,0,0,0,0,0,0,True,"[(16, 1.0, 14), (32, 2.0, 35), (64, 2.0, 35), (64, 3.0, 71), (128, 4.0, 127), (256, 4.0, 127), (256, 6.0, 364), (512, 4.0, 127), (512, 6.0, 364), (512, 7.0, 584), (1024, 8.0, 873), (1024, 9.0, 1225)]"
+erdos_renyi,"n=15, p=0.3",1024,15,28,ablation_prep,True,True,trivial,9,0.006173,89,0,0,0,0,0,0,True,"[(2, 2.0, 3), (4, 4.0, 6), (8, 4.0, 6), (8, 6.0, 10), (8, 7.0, 12), (16, 8.0, 13), (16, 12.0, 13), (16, 14.0, 13), (16, 15.0, 13)]"
+erdos_renyi,"n=15, p=0.3",1024,15,28,ablation_prep_lb,True,True,maximal_matching,9,0.003459,30,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (2, 4.0, 1), (2, 6.0, 1), (2, 7.0, 2), (4, 8.0, 6), (8, 8.0, 6), (8, 9.0, 12)]"
+erdos_renyi,"n=15, p=0.3",1024,15,28,enhanced_emulation,True,True,maximal_matching,9,0.003736,45,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (2, 4.0, 1), (2, 6.0, 1), (2, 7.0, 2), (4, 8.0, 6), (8, 8.0, 6), (8, 12.0, 9), (8, 14.0, 9), (8, 15.0, 9)]"
+erdos_renyi,"n=15, p=0.5",42,15,52,baseline,False,False,trivial,10,0.006752,953,472,15,0,0,0,0,True,[]
+erdos_renyi,"n=15, p=0.5",42,15,52,improved,True,True,maximal_matching,10,0.000354,13,6,6,40,26,15,7,True,[]
+erdos_renyi,"n=15, p=0.5",42,15,52,raw_emulation,False,False,trivial,10,0.119326,1993,0,0,0,0,0,0,True,"[(8, 1.0, 8), (16, 2.0, 15), (32, 2.0, 15), (32, 3.0, 30), (64, 4.0, 55), (64, 5.0, 89), (128, 4.0, 55), (128, 6.0, 135), (256, 8.0, 262), (256, 9.0, 352), (512, 8.0, 262), (512, 12.0, 715)]"
+erdos_renyi,"n=15, p=0.5",42,15,52,ablation_prep,True,True,trivial,10,0.01471,174,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 4.0, 11), (16, 8.0, 23), (32, 8.0, 23), (32, 12.0, 37), (32, 14.0, 37), (32, 15.0, 37)]"
+erdos_renyi,"n=15, p=0.5",42,15,52,ablation_prep_lb,True,True,maximal_matching,10,0.008343,50,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (2, 4.0, 1), (2, 6.0, 1), (2, 7.0, 2), (4, 4.0, 1), (4, 6.0, 1), (4, 7.0, 2), (8, 8.0, 9), (16, 8.0, 9), (16, 10.0, 22)]"
+erdos_renyi,"n=15, p=0.5",42,15,52,enhanced_emulation,True,True,maximal_matching,10,0.009532,81,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (2, 4.0, 1), (2, 6.0, 1), (2, 7.0, 2), (4, 4.0, 1), (4, 6.0, 1), (4, 7.0, 2), (8, 8.0, 8), (8, 9.0, 10), (16, 8.0, 8), (16, 12.0, 15), (16, 14.0, 15), (16, 15.0, 15)]"
+erdos_renyi,"n=15, p=0.5",123,15,63,baseline,False,False,trivial,11,0.005541,671,332,15,0,0,0,0,True,[]
+erdos_renyi,"n=15, p=0.5",123,15,63,improved,True,True,maximal_matching,11,0.000447,17,8,8,56,32,20,7,True,[]
+erdos_renyi,"n=15, p=0.5",123,15,63,raw_emulation,False,False,trivial,11,0.078974,1197,0,0,0,0,0,0,True,"[(4, 1.0, 5), (8, 2.0, 9), (16, 2.0, 9), (16, 3.0, 19), (32, 4.0, 36), (64, 4.0, 36), (64, 6.0, 92), (128, 8.0, 178), (256, 8.0, 178), (256, 10.0, 285), (256, 11.0, 350)]"
+erdos_renyi,"n=15, p=0.5",123,15,63,ablation_prep,True,True,trivial,11,0.021082,217,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 4.0, 10), (8, 5.0, 12), (16, 8.0, 24), (32, 8.0, 24), (32, 12.0, 47), (32, 14.0, 47), (32, 15.0, 47)]"
+erdos_renyi,"n=15, p=0.5",123,15,63,ablation_prep_lb,True,True,maximal_matching,11,0.018483,206,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (2, 4.0, 1), (2, 6.0, 1), (4, 4.0, 1), (4, 6.0, 1), (4, 7.0, 4), (8, 8.0, 8), (8, 9.0, 12), (16, 8.0, 8), (16, 10.0, 20), (32, 8.0, 8), (32, 12.0, 46), (32, 14.0, 47), (32, 15.0, 47)]"
+erdos_renyi,"n=15, p=0.5",123,15,63,enhanced_emulation,True,True,maximal_matching,11,0.013242,95,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (2, 4.0, 1), (2, 6.0, 1), (4, 4.0, 1), (4, 6.0, 1), (4, 7.0, 4), (8, 8.0, 8), (8, 9.0, 12), (16, 8.0, 8), (16, 12.0, 19), (16, 14.0, 19), (16, 15.0, 19)]"
+erdos_renyi,"n=15, p=0.5",256,15,59,baseline,False,False,trivial,11,0.006028,733,363,15,0,0,0,0,True,[]
+erdos_renyi,"n=15, p=0.5",256,15,59,improved,True,True,maximal_matching,11,0.000427,17,8,8,52,24,16,7,True,[]
+erdos_renyi,"n=15, p=0.5",256,15,59,raw_emulation,False,False,trivial,11,0.14172,2595,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 2.0, 11), (16, 2.0, 11), (16, 3.0, 20), (32, 4.0, 36), (64, 4.0, 36), (64, 6.0, 87), (128, 8.0, 171), (256, 8.0, 171), (256, 10.0, 301), (512, 8.0, 171), (512, 12.0, 473), (512, 14.0, 550), (512, 15.0, 551)]"
+erdos_renyi,"n=15, p=0.5",256,15,59,ablation_prep,True,True,trivial,11,0.024314,294,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 4.0, 10), (8, 5.0, 12), (16, 8.0, 24), (32, 8.0, 24), (32, 10.0, 41), (64, 8.0, 24), (64, 12.0, 51), (64, 14.0, 51), (64, 15.0, 51)]"
+erdos_renyi,"n=15, p=0.5",256,15,59,ablation_prep_lb,True,True,maximal_matching,11,0.01493,105,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (2, 4.0, 1), (2, 6.0, 1), (2, 7.0, 2), (4, 8.0, 6), (8, 8.0, 6), (8, 9.0, 10), (16, 8.0, 6), (16, 10.0, 18), (32, 8.0, 6), (32, 12.0, 47)]"
+erdos_renyi,"n=15, p=0.5",256,15,59,enhanced_emulation,True,True,maximal_matching,11,0.009434,103,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (2, 4.0, 1), (2, 6.0, 1), (2, 7.0, 2), (4, 8.0, 6), (8, 8.0, 6), (8, 9.0, 10), (16, 8.0, 6), (16, 12.0, 23), (16, 14.0, 23), (16, 15.0, 23)]"
+erdos_renyi,"n=15, p=0.5",789,15,55,baseline,False,False,trivial,11,0.005689,767,380,15,0,0,0,0,True,[]
+erdos_renyi,"n=15, p=0.5",789,15,55,improved,True,True,maximal_matching,11,0.000423,17,8,8,50,26,16,7,True,[]
+erdos_renyi,"n=15, p=0.5",789,15,55,raw_emulation,False,False,trivial,11,0.129908,2759,0,0,0,0,0,0,True,"[(4, 1.0, 6), (8, 2.0, 11), (16, 2.0, 11), (16, 3.0, 18), (32, 4.0, 28), (32, 5.0, 42), (64, 4.0, 28), (64, 6.0, 67), (128, 8.0, 165), (256, 8.0, 165), (256, 10.0, 324), (512, 8.0, 165), (512, 12.0, 522), (512, 14.0, 603), (512, 15.0, 604)]"
+erdos_renyi,"n=15, p=0.5",789,15,55,ablation_prep,True,True,trivial,11,0.021684,213,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 4.0, 10), (8, 5.0, 12), (16, 8.0, 22), (32, 8.0, 22), (32, 12.0, 47), (32, 14.0, 47), (32, 15.0, 47)]"
+erdos_renyi,"n=15, p=0.5",789,15,55,ablation_prep_lb,True,True,maximal_matching,11,0.018853,205,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (2, 4.0, 1), (2, 6.0, 1), (4, 4.0, 1), (4, 6.0, 1), (4, 7.0, 4), (8, 8.0, 8), (8, 9.0, 12), (16, 8.0, 8), (16, 10.0, 20), (32, 8.0, 8), (32, 12.0, 45), (32, 14.0, 47), (32, 15.0, 47)]"
+erdos_renyi,"n=15, p=0.5",789,15,55,enhanced_emulation,True,True,maximal_matching,11,0.008636,99,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (2, 4.0, 1), (2, 6.0, 1), (4, 4.0, 1), (4, 6.0, 1), (4, 7.0, 4), (8, 8.0, 8), (8, 9.0, 10), (16, 8.0, 8), (16, 12.0, 21), (16, 14.0, 21), (16, 15.0, 21)]"
+erdos_renyi,"n=15, p=0.5",1024,15,51,baseline,False,False,trivial,10,0.005937,815,403,15,0,0,0,0,True,[]
+erdos_renyi,"n=15, p=0.5",1024,15,51,improved,True,True,maximal_matching,10,0.000318,11,5,5,36,17,9,7,True,[]
+erdos_renyi,"n=15, p=0.5",1024,15,51,raw_emulation,False,False,trivial,10,0.121577,3320,0,0,0,0,0,0,True,"[(8, 1.0, 8), (16, 2.0, 14), (16, 3.0, 23), (32, 4.0, 37), (64, 4.0, 37), (64, 6.0, 94), (128, 4.0, 37), (128, 6.0, 94), (128, 7.0, 144), (256, 8.0, 216), (256, 9.0, 300), (512, 8.0, 216), (512, 12.0, 643), (512, 14.0, 728), (512, 15.0, 729)]"
+erdos_renyi,"n=15, p=0.5",1024,15,51,ablation_prep,True,True,trivial,10,0.014472,208,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 4.0, 11), (16, 4.0, 11), (16, 6.0, 17), (16, 7.0, 21), (32, 8.0, 25), (32, 12.0, 39), (32, 14.0, 39), (32, 15.0, 39)]"
+erdos_renyi,"n=15, p=0.5",1024,15,51,ablation_prep_lb,True,True,maximal_matching,10,0.007329,48,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (2, 4.0, 1), (2, 6.0, 1), (4, 4.0, 1), (4, 6.0, 1), (4, 7.0, 4), (8, 8.0, 8), (16, 8.0, 8), (16, 10.0, 22)]"
+erdos_renyi,"n=15, p=0.5",1024,15,51,enhanced_emulation,True,True,maximal_matching,10,0.005445,29,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (2, 4.0, 1), (2, 6.0, 1), (2, 7.0, 2), (4, 4.0, 1), (4, 6.0, 1), (4, 7.0, 2), (8, 8.0, 8), (8, 10.0, 11)]"
+erdos_renyi,"n=20, p=0.2",42,20,37,baseline,False,False,trivial,11,0.030298,4559,2271,20,0,0,0,0,True,[]
+erdos_renyi,"n=20, p=0.2",42,20,37,improved,True,True,maximal_matching,11,0.000287,9,4,4,19,43,26,9,True,[]
+erdos_renyi,"n=20, p=0.2",42,20,37,raw_emulation,False,False,trivial,11,0.538456,8529,0,0,0,0,0,0,True,"[(8, 1.0, 10), (16, 1.0, 10), (32, 2.0, 31), (64, 2.0, 31), (64, 3.0, 73), (128, 4.0, 140), (256, 4.0, 140), (256, 6.0, 341), (512, 8.0, 725), (1024, 8.0, 725), (1024, 9.0, 1115), (2048, 8.0, 725), (2048, 10.0, 1725), (2048, 11.0, 2738)]"
+erdos_renyi,"n=20, p=0.2",42,20,37,ablation_prep,True,True,trivial,11,0.00979,107,0,0,0,0,0,0,True,"[(2, 2.0, 3), (4, 4.0, 6), (8, 8.0, 11), (8, 9.0, 12), (16, 16.0, 15), (16, 24.0, 15), (16, 28.0, 15), (16, 30.0, 15), (16, 31.0, 15)]"
+erdos_renyi,"n=20, p=0.2",42,20,37,ablation_prep_lb,True,True,maximal_matching,11,0.005001,30,0,0,0,0,0,0,True,"[(1, 8.0, 1), (2, 8.0, 1), (4, 8.0, 1), (4, 9.0, 6), (8, 8.0, 1), (8, 10.0, 8), (8, 11.0, 12)]"
+erdos_renyi,"n=20, p=0.2",42,20,37,enhanced_emulation,True,True,maximal_matching,11,0.00604,53,0,0,0,0,0,0,True,"[(1, 8.0, 1), (2, 8.0, 1), (4, 8.0, 1), (4, 9.0, 5), (8, 16.0, 9), (8, 24.0, 9), (8, 28.0, 9), (8, 30.0, 9), (8, 31.0, 9)]"
+erdos_renyi,"n=20, p=0.2",123,20,43,baseline,False,False,trivial,11,0.038238,5213,2598,20,0,0,0,0,True,[]
+erdos_renyi,"n=20, p=0.2",123,20,43,improved,True,True,maximal_matching,11,0.000331,9,4,4,21,42,25,9,True,[]
+erdos_renyi,"n=20, p=0.2",123,20,43,raw_emulation,False,False,trivial,11,0.558552,8186,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 18), (32, 2.0, 18), (32, 3.0, 39), (64, 4.0, 79), (128, 4.0, 79), (128, 5.0, 151), (256, 4.0, 79), (256, 6.0, 273), (512, 8.0, 723), (1024, 8.0, 723), (1024, 9.0, 1083), (2048, 8.0, 723), (2048, 10.0, 1635), (2048, 11.0, 2556)]"
+erdos_renyi,"n=20, p=0.2",123,20,43,ablation_prep,True,True,trivial,11,0.013097,119,0,0,0,0,0,0,True,"[(2, 1.0, 2), (4, 2.0, 4), (4, 3.0, 6), (8, 8.0, 12), (16, 16.0, 19), (16, 24.0, 19), (16, 28.0, 19), (16, 30.0, 19), (16, 31.0, 19)]"
+erdos_renyi,"n=20, p=0.2",123,20,43,ablation_prep_lb,True,True,maximal_matching,11,0.011986,113,0,0,0,0,0,0,True,"[(1, 8.0, 1), (2, 8.0, 1), (2, 9.0, 2), (4, 8.0, 1), (4, 10.0, 6), (8, 8.0, 1), (8, 10.0, 6), (16, 16.0, 19), (16, 24.0, 19), (16, 28.0, 19), (16, 30.0, 19), (16, 31.0, 19)]"
+erdos_renyi,"n=20, p=0.2",123,20,43,enhanced_emulation,True,True,maximal_matching,11,0.007275,55,0,0,0,0,0,0,True,"[(1, 8.0, 1), (2, 8.0, 1), (2, 9.0, 2), (4, 8.0, 1), (4, 10.0, 5), (8, 16.0, 9), (8, 24.0, 9), (8, 28.0, 9), (8, 30.0, 9), (8, 31.0, 9)]"
+erdos_renyi,"n=20, p=0.2",256,20,45,baseline,False,False,trivial,11,0.064008,8763,4373,20,0,0,0,0,True,[]
+erdos_renyi,"n=20, p=0.2",256,20,45,improved,True,True,maximal_matching,11,0.000307,7,3,3,18,30,17,8,True,[]
+erdos_renyi,"n=20, p=0.2",256,20,45,raw_emulation,False,False,trivial,11,1.123631,14084,0,0,0,0,0,0,True,"[(16, 1.0, 17), (32, 2.0, 38), (64, 2.0, 38), (64, 3.0, 77), (128, 4.0, 150), (256, 4.0, 150), (256, 5.0, 281), (512, 4.0, 150), (512, 6.0, 508), (1024, 8.0, 1337), (2048, 8.0, 1337), (2048, 10.0, 2828), (4096, 8.0, 1337), (4096, 12.0, 5836)]"
+erdos_renyi,"n=20, p=0.2",256,20,45,ablation_prep,True,True,trivial,11,0.020013,216,0,0,0,0,0,0,True,"[(2, 1.0, 2), (4, 2.0, 4), (8, 4.0, 10), (8, 6.0, 12), (16, 8.0, 19), (16, 10.0, 24), (32, 16.0, 29), (32, 24.0, 29), (32, 28.0, 29), (32, 30.0, 29), (32, 31.0, 29)]"
+erdos_renyi,"n=20, p=0.2",256,20,45,ablation_prep_lb,True,True,maximal_matching,11,0.009427,57,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (1, 7.0, 1), (2, 8.0, 2), (4, 8.0, 2), (4, 9.0, 5), (8, 8.0, 2), (8, 10.0, 9), (16, 8.0, 2), (16, 10.0, 9), (16, 11.0, 23)]"
+erdos_renyi,"n=20, p=0.2",256,20,45,enhanced_emulation,True,True,maximal_matching,11,0.009432,68,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (1, 7.0, 1), (2, 8.0, 2), (4, 8.0, 2), (4, 10.0, 6), (8, 16.0, 11), (8, 24.0, 11), (8, 28.0, 11), (8, 30.0, 11), (8, 31.0, 11)]"
+erdos_renyi,"n=20, p=0.2",789,20,37,baseline,False,False,trivial,10,0.062007,9519,4750,20,0,0,0,0,True,[]
+erdos_renyi,"n=20, p=0.2",789,20,37,improved,True,True,maximal_matching,10,0.000227,5,2,2,11,33,18,8,True,[]
+erdos_renyi,"n=20, p=0.2",789,20,37,raw_emulation,False,False,trivial,10,0.920943,17681,0,0,0,0,0,0,True,"[(16, 1.0, 19), (32, 1.0, 19), (64, 2.0, 53), (128, 2.0, 53), (128, 3.0, 127), (256, 4.0, 257), (512, 4.0, 257), (512, 6.0, 731), (1024, 4.0, 257), (1024, 6.0, 731), (1024, 7.0, 1122), (2048, 8.0, 1636), (2048, 9.0, 2337), (4096, 8.0, 1636), (4096, 10.0, 3404), (4096, 11.0, 5042)]"
+erdos_renyi,"n=20, p=0.2",789,20,37,ablation_prep,True,True,trivial,10,0.025063,308,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 4.0, 11), (16, 4.0, 11), (16, 6.0, 21), (16, 7.0, 24), (32, 16.0, 47), (32, 24.0, 47), (32, 28.0, 47), (32, 30.0, 47), (32, 31.0, 47)]"
+erdos_renyi,"n=20, p=0.2",789,20,37,ablation_prep_lb,True,True,maximal_matching,10,0.010782,59,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (1, 7.0, 1), (2, 8.0, 2), (4, 8.0, 2), (4, 9.0, 4), (8, 8.0, 2), (8, 9.0, 4), (16, 8.0, 2), (16, 10.0, 16), (16, 11.0, 24)]"
+erdos_renyi,"n=20, p=0.2",789,20,37,enhanced_emulation,True,True,maximal_matching,10,0.003188,13,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (1, 7.0, 1), (2, 8.0, 2), (4, 8.0, 2), (4, 12.0, 6)]"
+erdos_renyi,"n=20, p=0.2",1024,20,40,baseline,False,False,trivial,12,0.048692,7239,3612,20,0,0,0,0,True,[]
+erdos_renyi,"n=20, p=0.2",1024,20,40,improved,True,True,maximal_matching,12,0.000324,9,4,4,19,40,22,9,True,[]
+erdos_renyi,"n=20, p=0.2",1024,20,40,raw_emulation,False,False,trivial,12,0.969684,11924,0,0,0,0,0,0,True,"[(16, 1.0, 19), (32, 2.0, 47), (64, 2.0, 47), (64, 3.0, 90), (128, 4.0, 150), (256, 4.0, 150), (256, 5.0, 245), (512, 4.0, 150), (512, 6.0, 408), (512, 7.0, 679), (1024, 8.0, 1082), (2048, 8.0, 1082), (2048, 10.0, 2294), (4096, 8.0, 1082), (4096, 12.0, 4399)]"
+erdos_renyi,"n=20, p=0.2",1024,20,40,ablation_prep,True,True,trivial,12,0.021568,237,0,0,0,0,0,0,True,"[(4, 4.0, 6), (8, 4.0, 6), (8, 6.0, 10), (8, 7.0, 12), (16, 8.0, 16), (16, 9.0, 22), (32, 16.0, 33), (32, 24.0, 33), (32, 28.0, 33), (32, 30.0, 33), (32, 31.0, 33)]"
+erdos_renyi,"n=20, p=0.2",1024,20,40,ablation_prep_lb,True,True,maximal_matching,12,0.009874,41,0,0,0,0,0,0,True,"[(1, 8.0, 1), (2, 8.0, 1), (2, 9.0, 2), (4, 8.0, 1), (4, 9.0, 2), (8, 8.0, 1), (8, 10.0, 8), (16, 8.0, 1), (16, 12.0, 24)]"
+erdos_renyi,"n=20, p=0.2",1024,20,40,enhanced_emulation,True,True,maximal_matching,12,0.005449,24,0,0,0,0,0,0,True,"[(1, 8.0, 1), (2, 8.0, 1), (2, 9.0, 2), (4, 8.0, 1), (4, 10.0, 6), (8, 8.0, 1), (8, 12.0, 12)]"
+erdos_renyi,"n=20, p=0.3",42,20,67,baseline,False,False,trivial,13,0.024048,2529,1258,20,0,0,0,0,True,[]
+erdos_renyi,"n=20, p=0.3",42,20,67,improved,True,True,maximal_matching,13,0.000971,17,8,7,51,53,32,9,True,[]
+erdos_renyi,"n=20, p=0.3",42,20,67,raw_emulation,False,False,trivial,13,0.385564,4380,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 16), (32, 2.0, 16), (32, 3.0, 32), (64, 4.0, 57), (128, 4.0, 57), (128, 6.0, 149), (256, 8.0, 302), (512, 8.0, 302), (512, 10.0, 571), (1024, 8.0, 302), (1024, 12.0, 1072), (1024, 13.0, 1497)]"
+erdos_renyi,"n=20, p=0.3",42,20,67,ablation_prep,True,True,trivial,13,0.049244,486,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 4.0, 10), (16, 4.0, 10), (16, 6.0, 17), (16, 7.0, 21), (32, 8.0, 25), (32, 10.0, 42), (64, 16.0, 71), (64, 24.0, 71), (64, 28.0, 71), (64, 30.0, 71), (64, 31.0, 71)]"
+erdos_renyi,"n=20, p=0.3",42,20,67,ablation_prep_lb,True,True,maximal_matching,13,0.020893,102,0,0,0,0,0,0,True,"[(1, 8.0, 1), (2, 8.0, 1), (2, 9.0, 2), (4, 8.0, 1), (4, 10.0, 6), (8, 8.0, 1), (8, 10.0, 6), (8, 11.0, 11), (16, 8.0, 1), (16, 12.0, 17), (32, 8.0, 1), (32, 12.0, 17), (32, 13.0, 37)]"
+erdos_renyi,"n=20, p=0.3",42,20,67,enhanced_emulation,True,True,maximal_matching,13,0.019719,141,0,0,0,0,0,0,True,"[(1, 8.0, 1), (2, 8.0, 1), (2, 9.0, 2), (4, 8.0, 1), (4, 10.0, 4), (8, 8.0, 1), (8, 10.0, 4), (8, 11.0, 12), (16, 16.0, 23), (16, 24.0, 23), (16, 28.0, 23), (16, 30.0, 23), (16, 31.0, 23)]"
+erdos_renyi,"n=20, p=0.3",123,20,56,baseline,False,False,trivial,12,0.033898,4233,2109,20,0,0,0,0,True,[]
+erdos_renyi,"n=20, p=0.3",123,20,56,improved,True,True,maximal_matching,12,0.00035,9,4,4,30,44,24,9,True,[]
+erdos_renyi,"n=20, p=0.3",123,20,56,raw_emulation,False,False,trivial,12,0.618589,6231,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 18), (32, 2.0, 18), (32, 3.0, 39), (64, 4.0, 77), (128, 4.0, 77), (128, 5.0, 138), (256, 4.0, 77), (256, 6.0, 232), (256, 7.0, 372), (512, 8.0, 567), (1024, 8.0, 567), (1024, 10.0, 1175), (2048, 8.0, 567), (2048, 12.0, 2300)]"
+erdos_renyi,"n=20, p=0.3",123,20,56,ablation_prep,True,True,trivial,12,0.026928,256,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 4.0, 10), (8, 5.0, 12), (16, 8.0, 23), (32, 16.0, 41), (32, 24.0, 41), (32, 28.0, 41), (32, 30.0, 41), (32, 31.0, 41)]"
+erdos_renyi,"n=20, p=0.3",123,20,56,ablation_prep_lb,True,True,maximal_matching,12,0.022891,250,0,0,0,0,0,0,True,"[(1, 8.0, 1), (2, 8.0, 1), (4, 8.0, 1), (4, 9.0, 4), (8, 8.0, 1), (8, 10.0, 10), (16, 8.0, 1), (16, 10.0, 10), (16, 11.0, 16), (32, 16.0, 41), (32, 24.0, 41), (32, 28.0, 41), (32, 30.0, 41), (32, 31.0, 41)]"
+erdos_renyi,"n=20, p=0.3",123,20,56,enhanced_emulation,True,True,maximal_matching,12,0.009401,62,0,0,0,0,0,0,True,"[(1, 8.0, 1), (2, 8.0, 1), (4, 8.0, 1), (4, 9.0, 4), (8, 16.0, 11), (8, 24.0, 11), (8, 28.0, 11), (8, 30.0, 11), (8, 31.0, 11)]"
+erdos_renyi,"n=20, p=0.3",256,20,65,baseline,False,False,trivial,13,0.031218,3599,1793,20,0,0,0,0,True,[]
+erdos_renyi,"n=20, p=0.3",256,20,65,improved,True,True,maximal_matching,13,0.000554,15,7,7,48,49,28,9,True,[]
+erdos_renyi,"n=20, p=0.3",256,20,65,raw_emulation,False,False,trivial,13,0.615666,8334,0,0,0,0,0,0,True,"[(16, 1.0, 17), (32, 2.0, 37), (64, 2.0, 37), (64, 3.0, 67), (128, 4.0, 108), (128, 5.0, 159), (256, 4.0, 108), (256, 6.0, 223), (256, 7.0, 307), (512, 8.0, 421), (512, 10.0, 740), (1024, 8.0, 421), (1024, 12.0, 1370), (2048, 8.0, 421), (2048, 12.0, 1370), (2048, 14.0, 2528)]"
+erdos_renyi,"n=20, p=0.3",256,20,65,ablation_prep,True,True,trivial,13,0.054379,490,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 4.0, 10), (16, 4.0, 10), (16, 6.0, 18), (16, 7.0, 23), (32, 8.0, 27), (32, 10.0, 43), (32, 11.0, 48), (64, 16.0, 61), (64, 24.0, 61), (64, 28.0, 61), (64, 30.0, 61), (64, 31.0, 61)]"
+erdos_renyi,"n=20, p=0.3",256,20,65,ablation_prep_lb,True,True,maximal_matching,13,0.025292,116,0,0,0,0,0,0,True,"[(1, 8.0, 1), (2, 8.0, 1), (2, 9.0, 2), (4, 8.0, 1), (4, 10.0, 4), (8, 8.0, 1), (8, 10.0, 4), (8, 11.0, 11), (16, 8.0, 1), (16, 12.0, 21), (32, 8.0, 1), (32, 12.0, 21), (32, 14.0, 47)]"
+erdos_renyi,"n=20, p=0.3",256,20,65,enhanced_emulation,True,True,maximal_matching,13,0.020401,129,0,0,0,0,0,0,True,"[(1, 8.0, 1), (2, 8.0, 1), (2, 9.0, 2), (4, 8.0, 1), (4, 10.0, 6), (8, 8.0, 1), (8, 12.0, 12), (16, 16.0, 21), (16, 24.0, 21), (16, 28.0, 21), (16, 30.0, 21), (16, 31.0, 21)]"
+erdos_renyi,"n=20, p=0.3",789,20,53,baseline,False,False,trivial,12,0.068173,8981,4483,20,0,0,0,0,True,[]
+erdos_renyi,"n=20, p=0.3",789,20,53,improved,True,True,maximal_matching,12,0.000328,9,4,4,27,26,14,8,True,[]
+erdos_renyi,"n=20, p=0.3",789,20,53,raw_emulation,False,False,trivial,12,1.128538,19006,0,0,0,0,0,0,True,"[(16, 1.0, 19), (32, 1.0, 19), (64, 2.0, 49), (128, 2.0, 49), (128, 3.0, 105), (256, 4.0, 199), (256, 5.0, 339), (512, 4.0, 199), (512, 6.0, 535), (1024, 8.0, 1148), (2048, 8.0, 1148), (2048, 10.0, 2125), (2048, 11.0, 2879), (4096, 8.0, 1148), (4096, 12.0, 3892), (4096, 13.0, 5153)]"
+erdos_renyi,"n=20, p=0.3",789,20,53,ablation_prep,True,True,trivial,12,0.047276,547,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 4.0, 10), (16, 4.0, 10), (16, 6.0, 21), (32, 8.0, 32), (32, 9.0, 43), (64, 16.0, 85), (64, 24.0, 85), (64, 28.0, 85), (64, 30.0, 85), (64, 31.0, 85)]"
+erdos_renyi,"n=20, p=0.3",789,20,53,ablation_prep_lb,True,True,maximal_matching,12,0.018584,101,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (1, 7.0, 1), (2, 8.0, 2), (4, 8.0, 2), (4, 9.0, 4), (8, 8.0, 2), (8, 10.0, 10), (16, 8.0, 2), (16, 10.0, 10), (16, 11.0, 23), (32, 8.0, 2), (32, 12.0, 41)]"
+erdos_renyi,"n=20, p=0.3",789,20,53,enhanced_emulation,True,True,maximal_matching,12,0.006313,18,0,0,0,0,0,0,True,"[(1, 4.0, 1), (1, 6.0, 1), (1, 7.0, 1), (2, 8.0, 2), (4, 8.0, 2), (8, 8.0, 2), (8, 12.0, 9)]"
+erdos_renyi,"n=20, p=0.3",1024,20,58,baseline,False,False,trivial,13,0.044791,5611,2799,20,0,0,0,0,True,[]
+erdos_renyi,"n=20, p=0.3",1024,20,58,improved,True,True,maximal_matching,13,0.00058,15,7,6,41,36,21,9,True,[]
+erdos_renyi,"n=20, p=0.3",1024,20,58,raw_emulation,False,False,trivial,13,0.646174,9301,0,0,0,0,0,0,True,"[(16, 1.0, 19), (32, 2.0, 47), (64, 2.0, 47), (64, 3.0, 89), (128, 4.0, 143), (256, 4.0, 143), (256, 6.0, 316), (512, 8.0, 670), (1024, 8.0, 670), (1024, 10.0, 1276), (2048, 8.0, 670), (2048, 12.0, 2264), (2048, 13.0, 2947)]"
+erdos_renyi,"n=20, p=0.3",1024,20,58,ablation_prep,True,True,trivial,13,0.043977,348,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 2.0, 6), (8, 3.0, 9), (16, 4.0, 13), (16, 6.0, 20), (32, 8.0, 35), (32, 9.0, 45), (64, 8.0, 35), (64, 12.0, 85), (64, 13.0, 94)]"
+erdos_renyi,"n=20, p=0.3",1024,20,58,ablation_prep_lb,True,True,maximal_matching,13,0.036609,203,0,0,0,0,0,0,True,"[(1, 8.0, 1), (2, 8.0, 1), (4, 8.0, 1), (4, 9.0, 4), (8, 8.0, 1), (8, 10.0, 11), (16, 8.0, 1), (16, 10.0, 11), (16, 11.0, 19), (32, 8.0, 1), (32, 12.0, 33), (64, 8.0, 1), (64, 12.0, 33), (64, 14.0, 85)]"
+erdos_renyi,"n=20, p=0.3",1024,20,58,enhanced_emulation,True,True,maximal_matching,13,0.012218,67,0,0,0,0,0,0,True,"[(1, 8.0, 1), (2, 8.0, 1), (2, 9.0, 2), (4, 8.0, 1), (4, 10.0, 6), (8, 8.0, 1), (8, 10.0, 6), (8, 11.0, 12), (16, 8.0, 1), (16, 12.0, 14), (16, 13.0, 22)]"
+erdos_renyi,"n=20, p=0.5",42,20,98,baseline,False,False,trivial,15,0.025261,2045,1018,20,0,0,0,0,True,[]
+erdos_renyi,"n=20, p=0.5",42,20,98,improved,True,True,maximal_matching,15,0.000872,23,11,11,89,57,34,10,True,[]
+erdos_renyi,"n=20, p=0.5",42,20,98,raw_emulation,False,False,trivial,15,0.514394,4163,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 16), (32, 2.0, 16), (32, 3.0, 30), (64, 4.0, 50), (64, 5.0, 82), (128, 4.0, 50), (128, 6.0, 122), (128, 7.0, 167), (256, 8.0, 222), (256, 10.0, 373), (512, 8.0, 222), (512, 12.0, 611), (512, 13.0, 766), (1024, 16.0, 1429)]"
+erdos_renyi,"n=20, p=0.5",42,20,98,ablation_prep,True,True,trivial,15,0.095651,911,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 4.0, 10), (8, 5.0, 12), (16, 8.0, 19), (16, 9.0, 23), (32, 8.0, 19), (32, 10.0, 30), (32, 11.0, 41), (64, 8.0, 19), (64, 12.0, 55), (64, 14.0, 86), (128, 16.0, 115), (128, 24.0, 119), (128, 28.0, 119), (128, 30.0, 119), (128, 31.0, 119)]"
+erdos_renyi,"n=20, p=0.5",42,20,98,ablation_prep_lb,True,True,maximal_matching,15,0.050795,189,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 9.0, 1), (2, 8.0, 1), (2, 9.0, 1), (4, 8.0, 1), (4, 10.0, 4), (8, 8.0, 1), (8, 12.0, 12), (16, 8.0, 1), (16, 12.0, 12), (16, 13.0, 17), (32, 8.0, 1), (32, 12.0, 12), (32, 14.0, 29), (64, 16.0, 95)]"
+erdos_renyi,"n=20, p=0.5",42,20,98,enhanced_emulation,True,True,maximal_matching,15,0.029194,201,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 9.0, 1), (2, 8.0, 1), (2, 9.0, 1), (4, 8.0, 1), (4, 10.0, 4), (8, 8.0, 1), (8, 10.0, 4), (8, 11.0, 8), (16, 8.0, 1), (16, 12.0, 14), (16, 14.0, 20), (32, 16.0, 28), (32, 24.0, 29), (32, 28.0, 29), (32, 30.0, 29), (32, 31.0, 29)]"
+erdos_renyi,"n=20, p=0.5",123,20,101,baseline,False,False,trivial,15,0.020105,1659,825,20,0,0,0,0,True,[]
+erdos_renyi,"n=20, p=0.5",123,20,101,improved,True,True,maximal_matching,15,0.000793,21,10,10,89,45,27,10,True,[]
+erdos_renyi,"n=20, p=0.5",123,20,101,raw_emulation,False,False,trivial,15,0.500566,5241,0,0,0,0,0,0,True,"[(4, 1.0, 5), (8, 2.0, 10), (16, 2.0, 10), (16, 3.0, 18), (32, 4.0, 31), (64, 4.0, 31), (64, 6.0, 75), (128, 8.0, 151), (256, 8.0, 151), (256, 10.0, 269), (256, 11.0, 347), (512, 8.0, 151), (512, 12.0, 448), (512, 14.0, 760), (1024, 16.0, 1277), (1024, 17.0, 1507)]"
+erdos_renyi,"n=20, p=0.5",123,20,101,ablation_prep,True,True,trivial,15,0.054842,475,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 4.0, 10), (8, 5.0, 12), (16, 8.0, 19), (16, 9.0, 23), (32, 8.0, 19), (32, 12.0, 38), (32, 13.0, 44), (64, 16.0, 60), (64, 24.0, 61), (64, 28.0, 61), (64, 30.0, 61), (64, 31.0, 61)]"
+erdos_renyi,"n=20, p=0.5",123,20,101,ablation_prep_lb,True,True,maximal_matching,15,0.032646,141,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 9.0, 1), (2, 8.0, 1), (2, 9.0, 1), (4, 8.0, 1), (4, 10.0, 4), (8, 8.0, 1), (8, 12.0, 12), (16, 8.0, 1), (16, 12.0, 12), (16, 13.0, 20), (32, 8.0, 1), (32, 12.0, 12), (32, 14.0, 30), (32, 15.0, 43)]"
+erdos_renyi,"n=20, p=0.5",123,20,101,enhanced_emulation,True,True,maximal_matching,15,0.018493,79,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 9.0, 1), (2, 8.0, 1), (2, 9.0, 1), (4, 8.0, 1), (4, 10.0, 4), (8, 8.0, 1), (8, 10.0, 4), (8, 11.0, 8), (16, 8.0, 1), (16, 12.0, 14), (16, 14.0, 20), (16, 15.0, 22)]"
+erdos_renyi,"n=20, p=0.5",256,20,102,baseline,False,False,trivial,15,0.018311,1623,807,20,0,0,0,0,True,[]
+erdos_renyi,"n=20, p=0.5",256,20,102,improved,True,True,maximal_matching,15,0.000935,23,11,11,91,48,27,9,True,[]
+erdos_renyi,"n=20, p=0.5",256,20,102,raw_emulation,False,False,trivial,15,0.526653,8910,0,0,0,0,0,0,True,"[(4, 1.0, 5), (8, 2.0, 11), (16, 2.0, 11), (16, 3.0, 20), (32, 4.0, 36), (64, 4.0, 36), (64, 6.0, 84), (128, 8.0, 146), (128, 9.0, 186), (256, 8.0, 146), (256, 12.0, 367), (512, 8.0, 146), (512, 12.0, 367), (512, 14.0, 645), (1024, 16.0, 1068), (1024, 24.0, 1409), (1024, 28.0, 1409), (1024, 30.0, 1409), (1024, 31.0, 1409)]"
+erdos_renyi,"n=20, p=0.5",256,20,102,ablation_prep,True,True,trivial,15,0.049569,431,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 4.0, 10), (8, 5.0, 12), (16, 8.0, 18), (16, 10.0, 21), (32, 8.0, 18), (32, 12.0, 31), (32, 13.0, 40), (64, 16.0, 55), (64, 24.0, 55), (64, 28.0, 55), (64, 30.0, 55), (64, 31.0, 55)]"
+erdos_renyi,"n=20, p=0.5",256,20,102,ablation_prep_lb,True,True,maximal_matching,15,0.026039,147,0,0,0,0,0,0,True,"[(1, 8.0, 1), (2, 8.0, 1), (2, 9.0, 2), (4, 8.0, 1), (4, 10.0, 6), (8, 8.0, 1), (8, 10.0, 6), (8, 11.0, 10), (16, 8.0, 1), (16, 12.0, 14), (16, 13.0, 19), (32, 8.0, 1), (32, 12.0, 14), (32, 14.0, 26), (32, 15.0, 44)]"
+erdos_renyi,"n=20, p=0.5",256,20,102,enhanced_emulation,True,True,maximal_matching,15,0.035665,210,0,0,0,0,0,0,True,"[(1, 8.0, 1), (2, 8.0, 1), (2, 9.0, 2), (4, 8.0, 1), (4, 10.0, 6), (8, 8.0, 1), (8, 10.0, 6), (8, 11.0, 10), (16, 8.0, 1), (16, 12.0, 14), (16, 14.0, 22), (32, 16.0, 29), (32, 24.0, 29), (32, 28.0, 29), (32, 30.0, 29), (32, 31.0, 29)]"
+erdos_renyi,"n=20, p=0.5",789,20,105,baseline,False,False,trivial,15,0.021278,1813,902,20,0,0,0,0,True,[]
+erdos_renyi,"n=20, p=0.5",789,20,105,improved,True,True,maximal_matching,15,0.001003,21,10,10,91,30,16,9,True,[]
+erdos_renyi,"n=20, p=0.5",789,20,105,raw_emulation,False,False,trivial,15,0.539366,8860,0,0,0,0,0,0,True,"[(8, 1.0, 7), (16, 2.0, 14), (16, 3.0, 24), (32, 4.0, 41), (64, 4.0, 41), (64, 5.0, 65), (128, 8.0, 185), (256, 8.0, 185), (256, 10.0, 312), (512, 8.0, 185), (512, 12.0, 490), (512, 14.0, 738), (1024, 16.0, 1065), (1024, 24.0, 1377), (1024, 28.0, 1377), (1024, 30.0, 1377), (1024, 31.0, 1377)]"
+erdos_renyi,"n=20, p=0.5",789,20,105,ablation_prep,True,True,trivial,15,0.057276,369,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 4.0, 10), (8, 5.0, 12), (16, 8.0, 19), (16, 9.0, 23), (32, 8.0, 19), (32, 12.0, 45), (64, 8.0, 19), (64, 12.0, 45), (64, 14.0, 76), (64, 15.0, 95)]"
+erdos_renyi,"n=20, p=0.5",789,20,105,ablation_prep_lb,True,True,maximal_matching,15,0.026322,153,0,0,0,0,0,0,True,"[(1, 8.0, 1), (2, 8.0, 1), (2, 9.0, 2), (4, 8.0, 1), (4, 10.0, 6), (8, 8.0, 1), (8, 10.0, 6), (8, 11.0, 10), (16, 8.0, 1), (16, 12.0, 14), (16, 13.0, 19), (32, 8.0, 1), (32, 12.0, 14), (32, 14.0, 29), (32, 15.0, 47)]"
+erdos_renyi,"n=20, p=0.5",789,20,105,enhanced_emulation,True,True,maximal_matching,15,0.020375,80,0,0,0,0,0,0,True,"[(1, 8.0, 1), (2, 8.0, 1), (2, 9.0, 2), (4, 8.0, 1), (4, 10.0, 6), (8, 8.0, 1), (8, 12.0, 12), (16, 8.0, 1), (16, 12.0, 12), (16, 14.0, 21), (16, 15.0, 22)]"
+erdos_renyi,"n=20, p=0.5",1024,20,104,baseline,False,False,trivial,15,0.023044,2151,1071,20,0,0,0,0,True,[]
+erdos_renyi,"n=20, p=0.5",1024,20,104,improved,True,True,maximal_matching,15,0.000931,23,11,11,95,50,30,10,True,[]
+erdos_renyi,"n=20, p=0.5",1024,20,104,raw_emulation,False,False,trivial,15,0.48986,3443,0,0,0,0,0,0,True,"[(8, 1.0, 8), (16, 2.0, 16), (32, 2.0, 16), (32, 3.0, 31), (64, 4.0, 54), (64, 5.0, 84), (128, 4.0, 54), (128, 6.0, 124), (128, 7.0, 177), (256, 8.0, 245), (256, 9.0, 330), (512, 8.0, 245), (512, 12.0, 674), (1024, 16.0, 1385)]"
+erdos_renyi,"n=20, p=0.5",1024,20,104,ablation_prep,True,True,trivial,15,0.067835,568,0,0,0,0,0,0,True,"[(4, 2.0, 6), (8, 4.0, 10), (8, 5.0, 12), (16, 8.0, 21), (32, 8.0, 21), (32, 10.0, 33), (32, 11.0, 42), (64, 16.0, 83), (64, 24.0, 85), (64, 28.0, 85), (64, 30.0, 85), (64, 31.0, 85)]"
+erdos_renyi,"n=20, p=0.5",1024,20,104,ablation_prep_lb,True,True,maximal_matching,15,0.058688,523,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 9.0, 1), (2, 8.0, 1), (2, 9.0, 1), (4, 8.0, 1), (4, 10.0, 4), (8, 8.0, 1), (8, 10.0, 4), (8, 11.0, 8), (16, 8.0, 1), (16, 12.0, 13), (16, 13.0, 22), (32, 8.0, 1), (32, 12.0, 13), (32, 14.0, 38), (64, 16.0, 73), (64, 24.0, 85), (64, 28.0, 85), (64, 30.0, 85), (64, 31.0, 85)]"
+erdos_renyi,"n=20, p=0.5",1024,20,104,enhanced_emulation,True,True,maximal_matching,15,0.019535,87,0,0,0,0,0,0,True,"[(1, 8.0, 1), (1, 9.0, 1), (2, 8.0, 1), (2, 9.0, 1), (4, 8.0, 1), (4, 10.0, 6), (8, 8.0, 1), (8, 10.0, 6), (8, 11.0, 10), (16, 8.0, 1), (16, 12.0, 14), (16, 14.0, 20), (16, 15.0, 24)]"

@@ -4,11 +4,12 @@ generate_plots.py
 WP2 — Generates paper-ready plots from the batch experiment CSV data.
 
 Plots produced:
-    1. Runtime: baseline vs improved solver
-    2. Explored nodes: baseline vs improved
-    3. Pruning ratio vs graph family / density
-    4. Effect of preprocessing/propagation on runtime and nodes
-    5. (Bonus) Runtime vs optimal cover size
+    1. Runtime versus number of vertices (Baseline, Raw Montanaro, Enhanced Montanaro)
+    2. Number of explored tree nodes versus number of vertices
+    3. Pruning effect plot (nodes before/after rules)
+    4. Ablation study (incremental effect of rules)
+    5. Runtime/node count vs graph density
+    6. Threshold-search behavior (C vs tree size)
 """
 
 import os
@@ -17,6 +18,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib
 import numpy as np
+import ast
 
 matplotlib.rcParams.update({
     'font.size': 11,
@@ -33,252 +35,255 @@ def load_data(results_dir='results'):
     """Load the merged CSV."""
     path = os.path.join(results_dir, 'results_all.csv')
     df = pd.read_csv(path)
-    # Only finished runs
     df = df[df['finished'] == True].copy()
+    
+    # Pre-parse threshold trajectory if present
+    if 'threshold_trajectory' in df.columns:
+        df['threshold_trajectory'] = df['threshold_trajectory'].apply(
+            lambda x: ast.literal_eval(x) if isinstance(x, str) and x.startswith('[') else []
+        )
     return df
 
 
-def prepare_comparison(df):
-    """
-    Pivot so that each instance has both baseline and improved results
-    side by side.
-    """
-    # Create a unique instance key
-    df['instance_key'] = df['family'] + '|' + df['params'] + '|' + df['seed'].astype(str)
-
-    baseline = df[df['solver_type'] == 'baseline'].set_index('instance_key')
-    improved = df[df['solver_type'] == 'improved'].set_index('instance_key')
-
-    # Only keep instances where both solvers finished
-    common = baseline.index.intersection(improved.index)
-    baseline = baseline.loc[common]
-    improved = improved.loc[common]
-
-    return baseline, improved
-
-
 # ──────────────────────────────────────────────────────────────────
-# Plot 1: Runtime — baseline vs improved
+# Plot 1 & 2: Runtime and Nodes vs Number of Vertices
 # ──────────────────────────────────────────────────────────────────
 
-def plot_runtime_comparison(df, output_dir):
-    baseline, improved = prepare_comparison(df)
-
-    fig, ax = plt.subplots(figsize=(8, 6))
-
-    families = baseline['family'].unique()
-    colors = plt.cm.Set2(np.linspace(0, 1, len(families)))
-    family_colors = dict(zip(families, colors))
-
-    for fam in families:
-        mask = baseline['family'] == fam
-        ax.scatter(
-            baseline.loc[mask, 'runtime_seconds'],
-            improved.loc[mask, 'runtime_seconds'],
-            label=fam.replace('_', ' ').title(),
-            color=family_colors[fam],
-            alpha=0.7, edgecolors='k', linewidth=0.3, s=40
-        )
-
-    # Identity line
-    max_val = max(baseline['runtime_seconds'].max(), improved['runtime_seconds'].max()) * 1.1
-    min_val = min(baseline['runtime_seconds'].min(), improved['runtime_seconds'].min())
-    min_val = max(min_val, 1e-6)  # avoid log(0)
-    ax.plot([min_val, max_val], [min_val, max_val], 'k--', alpha=0.4, label='Equal')
-
-    ax.set_xlabel('Baseline runtime (s)')
-    ax.set_ylabel('Improved runtime (s)')
-    ax.set_title('Plot 1: Runtime — Baseline vs Improved Solver')
-    ax.set_xscale('log')
-    ax.set_yscale('log')
-    ax.legend(loc='upper left', framealpha=0.9)
-    ax.grid(True, alpha=0.3)
-
-    path = os.path.join(output_dir, 'plot1_runtime_comparison.png')
-    fig.savefig(path)
-    plt.close(fig)
-    print(f"Saved: {path}")
-
-
-# ──────────────────────────────────────────────────────────────────
-# Plot 2: Explored nodes — baseline vs improved
-# ──────────────────────────────────────────────────────────────────
-
-def plot_nodes_comparison(df, output_dir):
-    baseline, improved = prepare_comparison(df)
-
-    fig, ax = plt.subplots(figsize=(8, 6))
-
-    families = baseline['family'].unique()
-    colors = plt.cm.Set2(np.linspace(0, 1, len(families)))
-    family_colors = dict(zip(families, colors))
-
-    for fam in families:
-        mask = baseline['family'] == fam
-        ax.scatter(
-            baseline.loc[mask, 'nodes_explored'],
-            improved.loc[mask, 'nodes_explored'],
-            label=fam.replace('_', ' ').title(),
-            color=family_colors[fam],
-            alpha=0.7, edgecolors='k', linewidth=0.3, s=40
-        )
-
-    max_val = max(baseline['nodes_explored'].max(), improved['nodes_explored'].max()) * 1.1
-    min_val = max(1, min(baseline['nodes_explored'].min(), improved['nodes_explored'].min()))
-    ax.plot([min_val, max_val], [min_val, max_val], 'k--', alpha=0.4, label='Equal')
-
-    ax.set_xlabel('Baseline nodes explored')
-    ax.set_ylabel('Improved nodes explored')
-    ax.set_title('Plot 2: Explored Nodes — Baseline vs Improved Solver')
-    ax.set_xscale('log')
-    ax.set_yscale('log')
-    ax.legend(loc='upper left', framealpha=0.9)
-    ax.grid(True, alpha=0.3)
-
-    path = os.path.join(output_dir, 'plot2_nodes_comparison.png')
-    fig.savefig(path)
-    plt.close(fig)
-    print(f"Saved: {path}")
-
-
-# ──────────────────────────────────────────────────────────────────
-# Plot 3: Pruning ratio vs graph family or density
-# ──────────────────────────────────────────────────────────────────
-
-def plot_pruning_ratio(df, output_dir):
+def plot_vs_vertices(df, output_dir):
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
+    
+    solvers_to_plot = ['baseline', 'raw_emulation', 'enhanced_emulation']
+    labels = {
+        'baseline': 'Baseline B&B',
+        'raw_emulation': 'Raw Montanaro-inspired',
+        'enhanced_emulation': 'Enhanced Montanaro-inspired'
+    }
+    colors = {'baseline': '#1f77b4', 'raw_emulation': '#ff7f0e', 'enhanced_emulation': '#2ca02c'}
+    markers = {'baseline': 'o', 'raw_emulation': 's', 'enhanced_emulation': '^'}
+    
+    # Group by n and solver type
+    # We use median to be robust to outliers from hard instances
+    grouped = df.groupby(['n', 'solver_type'])[['runtime_seconds', 'nodes_explored']].median().reset_index()
 
-    # ── 3a: Pruning ratio by family ──
+    # Runtime vs Vertices
     ax = axes[0]
-    for solver_type, marker, offset in [('baseline', 's', -0.15), ('improved', 'o', 0.15)]:
-        sub = df[df['solver_type'] == solver_type].copy()
-        sub['pruning_ratio'] = sub['nodes_pruned'] / sub['nodes_explored'].clip(lower=1)
-
-        families = sorted(sub['family'].unique())
-        means = [sub[sub['family'] == f]['pruning_ratio'].mean() for f in families]
-        stds = [sub[sub['family'] == f]['pruning_ratio'].std() for f in families]
-
-        x = np.arange(len(families))
-        ax.bar(x + offset, means, width=0.3, label=solver_type.title(),
-               alpha=0.8, yerr=stds, capsize=3)
-
-    ax.set_xticks(np.arange(len(families)))
-    ax.set_xticklabels([f.replace('_', '\n') for f in families], fontsize=9)
-    ax.set_ylabel('Pruning ratio (pruned / explored)')
-    ax.set_title('3a: Pruning Ratio by Graph Family')
-    ax.legend()
-    ax.grid(axis='y', alpha=0.3)
-
-    # ── 3b: Pruning ratio vs density (Erdos-Renyi only) ──
-    ax = axes[1]
-    er = df[df['family'] == 'erdos_renyi'].copy()
-    if not er.empty:
-        # Extract p from params string
-        er['p'] = er['params'].str.extract(r'p=([0-9.]+)').astype(float)
-        er['pruning_ratio'] = er['nodes_pruned'] / er['nodes_explored'].clip(lower=1)
-
-        for solver_type in ['baseline', 'improved']:
-            sub = er[er['solver_type'] == solver_type]
-            grouped = sub.groupby('p')['pruning_ratio'].agg(['mean', 'std'])
-            ax.errorbar(grouped.index, grouped['mean'], yerr=grouped['std'],
-                       marker='o', label=solver_type.title(), capsize=3)
-
-    ax.set_xlabel('Edge probability p')
-    ax.set_ylabel('Pruning ratio')
-    ax.set_title('3b: Pruning Ratio vs Density (Erdos-Renyi)')
-    ax.legend()
-    ax.grid(alpha=0.3)
-
-    fig.tight_layout()
-    path = os.path.join(output_dir, 'plot3_pruning_ratio.png')
-    fig.savefig(path)
-    plt.close(fig)
-    print(f"Saved: {path}")
-
-
-# ──────────────────────────────────────────────────────────────────
-# Plot 4: Effect of preprocessing/propagation
-# ──────────────────────────────────────────────────────────────────
-
-def plot_preprocessing_effect(df, output_dir):
-    baseline, improved = prepare_comparison(df)
-
-    fig, axes = plt.subplots(1, 2, figsize=(14, 5))
-
-    # ── 4a: Speedup ratio by family ──
-    ax = axes[0]
-    speedup = baseline['runtime_seconds'] / improved['runtime_seconds'].clip(lower=1e-9)
-    combined = pd.DataFrame({
-        'family': baseline['family'].values,
-        'n': baseline['n'].values,
-        'speedup': speedup.values,
-    })
-
-    families = sorted(combined['family'].unique())
-    x = np.arange(len(families))
-    means = [combined[combined['family'] == f]['speedup'].mean() for f in families]
-    stds = [combined[combined['family'] == f]['speedup'].std() for f in families]
-
-    bars = ax.bar(x, means, yerr=stds, capsize=4, color=plt.cm.Paired(np.linspace(0.1, 0.9, len(families))),
-                  edgecolor='k', linewidth=0.5, alpha=0.85)
-    ax.axhline(y=1.0, color='red', linestyle='--', alpha=0.5, label='No improvement')
-    ax.set_xticks(x)
-    ax.set_xticklabels([f.replace('_', '\n') for f in families], fontsize=9)
-    ax.set_ylabel('Speedup (baseline / improved runtime)')
-    ax.set_title('4a: Runtime Speedup by Graph Family')
-    ax.legend()
-    ax.grid(axis='y', alpha=0.3)
-
-    # ── 4b: Node reduction ratio by n ──
-    ax = axes[1]
-    node_reduction = baseline['nodes_explored'] / improved['nodes_explored'].clip(lower=1)
-    combined2 = pd.DataFrame({
-        'family': baseline['family'].values,
-        'n': baseline['n'].values,
-        'node_reduction': node_reduction.values,
-    })
-
-    # Group by n
-    grouped = combined2.groupby('n')['node_reduction'].agg(['mean', 'std'])
-    ax.errorbar(grouped.index, grouped['mean'], yerr=grouped['std'],
-               marker='s', color='darkblue', capsize=4, linewidth=1.5)
-    ax.axhline(y=1.0, color='red', linestyle='--', alpha=0.5, label='No improvement')
+    for solver in solvers_to_plot:
+        sub = grouped[grouped['solver_type'] == solver]
+        if not sub.empty:
+            ax.plot(sub['n'], sub['runtime_seconds'], marker=markers[solver], 
+                    color=colors[solver], label=labels[solver], linewidth=2, markersize=8)
+    
+    ax.set_yscale('log')
     ax.set_xlabel('Number of vertices (n)')
-    ax.set_ylabel('Node reduction ratio (baseline / improved)')
-    ax.set_title('4b: Explored Nodes Reduction vs Graph Size')
+    ax.set_ylabel('Median Runtime (seconds)')
+    ax.set_title('Runtime vs Number of Vertices')
     ax.legend()
-    ax.grid(alpha=0.3)
+    ax.grid(True, alpha=0.3)
 
-    fig.tight_layout()
-    path = os.path.join(output_dir, 'plot4_preprocessing_effect.png')
+    # Nodes vs Vertices
+    ax = axes[1]
+    for solver in solvers_to_plot:
+        sub = grouped[grouped['solver_type'] == solver]
+        if not sub.empty:
+            ax.plot(sub['n'], sub['nodes_explored'], marker=markers[solver], 
+                    color=colors[solver], label=labels[solver], linewidth=2, markersize=8)
+    
+    ax.set_yscale('log')
+    ax.set_xlabel('Number of vertices (n)')
+    ax.set_ylabel('Median Explored Nodes')
+    ax.set_title('Explored Nodes vs Number of Vertices')
+    ax.legend()
+    ax.grid(True, alpha=0.3)
+
+    path = os.path.join(output_dir, 'plot1_2_vs_vertices.png')
     fig.savefig(path)
     plt.close(fig)
     print(f"Saved: {path}")
 
 
 # ──────────────────────────────────────────────────────────────────
-# Plot 5 (bonus): Runtime vs optimal cover size
+# Plot 3: Pruning Effect
 # ──────────────────────────────────────────────────────────────────
 
-def plot_runtime_vs_cover(df, output_dir):
+def plot_pruning_effect(df, output_dir):
     fig, ax = plt.subplots(figsize=(8, 6))
-
-    for solver_type, marker in [('baseline', 's'), ('improved', 'o')]:
-        sub = df[df['solver_type'] == solver_type]
-        ax.scatter(
-            sub['optimal_cover_size'], sub['runtime_seconds'],
-            marker=marker, alpha=0.5, label=solver_type.title(),
-            edgecolors='k', linewidth=0.3, s=35
-        )
-
-    ax.set_xlabel('Optimal cover size')
-    ax.set_ylabel('Runtime (s)')
-    ax.set_title('Plot 5: Runtime vs Optimal Cover Size')
+    
+    # Compare raw_emulation vs enhanced_emulation
+    raw = df[df['solver_type'] == 'raw_emulation'].set_index(['family', 'params', 'seed'])
+    enh = df[df['solver_type'] == 'enhanced_emulation'].set_index(['family', 'params', 'seed'])
+    
+    common = raw.index.intersection(enh.index)
+    raw = raw.loc[common].reset_index()
+    enh = enh.loc[common].reset_index()
+    
+    families = raw['family'].unique()
+    colors = plt.cm.Set2(np.linspace(0, 1, len(families)))
+    family_colors = dict(zip(families, colors))
+    
+    for fam in families:
+        mask = raw['family'] == fam
+        ax.scatter(raw.loc[mask, 'nodes_explored'], enh.loc[mask, 'nodes_explored'],
+                   label=fam.replace('_', ' ').title(), color=family_colors[fam],
+                   alpha=0.7, edgecolors='k')
+                   
+    # Identity line
+    max_val = max(raw['nodes_explored'].max(), enh['nodes_explored'].max()) * 1.5
+    min_val = min(raw['nodes_explored'].min(), enh['nodes_explored'].min()) * 0.5
+    ax.plot([min_val, max_val], [min_val, max_val], 'k--', alpha=0.5, label='No Improvement')
+    
+    ax.set_xscale('log')
     ax.set_yscale('log')
+    ax.set_xlabel('Explored Nodes (Raw Montanaro-inspired)')
+    ax.set_ylabel('Explored Nodes (Enhanced Montanaro-inspired)')
+    ax.set_title('Pruning Effect: Search Space Reduction')
     ax.legend()
-    ax.grid(alpha=0.3)
+    ax.grid(True, alpha=0.3)
+    
+    path = os.path.join(output_dir, 'plot3_pruning_effect.png')
+    fig.savefig(path)
+    plt.close(fig)
+    print(f"Saved: {path}")
 
-    path = os.path.join(output_dir, 'plot5_runtime_vs_cover.png')
+
+# ──────────────────────────────────────────────────────────────────
+# Plot 4: Ablation Study
+# ──────────────────────────────────────────────────────────────────
+
+def plot_ablation_study(df, output_dir):
+    solvers = ['raw_emulation', 'ablation_prep', 'ablation_prep_lb', 'enhanced_emulation']
+    labels = ['Raw', '+ Prep', '+ LB', '+ Branching']
+    
+    # Take median nodes across all instances for each solver
+    medians = []
+    for s in solvers:
+        sub = df[df['solver_type'] == s]
+        if not sub.empty:
+            medians.append(sub['nodes_explored'].median())
+        else:
+            medians.append(0)
+            
+    if sum(medians) == 0:
+        print("No ablation data found.")
+        return
+        
+    fig, ax = plt.subplots(figsize=(8, 6))
+    
+    x = np.arange(len(labels))
+    ax.bar(x, medians, color='skyblue', edgecolor='black')
+    
+    # Add text labels on bars
+    for i, v in enumerate(medians):
+        ax.text(i, v * 1.05, f"{int(v)}", ha='center', fontweight='bold')
+        
+    ax.set_xticks(x)
+    ax.set_xticklabels(labels)
+    ax.set_ylabel('Median Explored Nodes (Log Scale)')
+    ax.set_yscale('log')
+    ax.set_title('Ablation Study: Impact of Classical Rules')
+    ax.grid(axis='y', alpha=0.3)
+    
+    path = os.path.join(output_dir, 'plot4_ablation_study.png')
+    fig.savefig(path)
+    plt.close(fig)
+    print(f"Saved: {path}")
+
+
+# ──────────────────────────────────────────────────────────────────
+# Plot 5: Density Study
+# ──────────────────────────────────────────────────────────────────
+
+def plot_density_study(df, output_dir):
+    density_df = df[df['family'] == 'erdos_renyi_density'].copy()
+    if density_df.empty:
+        print("No density data found.")
+        return
+        
+    # Extract p from params
+    density_df['p'] = density_df['params'].str.extract(r'p=([0-9.]+)').astype(float)
+    
+    fig, axes = plt.subplots(1, 2, figsize=(14, 5))
+    solvers = ['baseline', 'raw_emulation', 'enhanced_emulation']
+    labels = {
+        'baseline': 'Baseline B&B',
+        'raw_emulation': 'Raw Montanaro',
+        'enhanced_emulation': 'Enhanced Montanaro'
+    }
+    
+    grouped = density_df.groupby(['p', 'solver_type'])[['nodes_explored', 'runtime_seconds']].median().reset_index()
+    
+    ax = axes[0]
+    for s in solvers:
+        sub = grouped[grouped['solver_type'] == s]
+        if not sub.empty:
+            ax.plot(sub['p'], sub['nodes_explored'], marker='o', label=labels[s])
+    ax.set_yscale('log')
+    ax.set_xlabel('Edge Probability (p)')
+    ax.set_ylabel('Median Explored Nodes')
+    ax.set_title('Difficulty by Density (n=20)')
+    ax.legend()
+    ax.grid(True, alpha=0.3)
+    
+    ax = axes[1]
+    for s in solvers:
+        sub = grouped[grouped['solver_type'] == s]
+        if not sub.empty:
+            ax.plot(sub['p'], sub['runtime_seconds'], marker='o', label=labels[s])
+    ax.set_yscale('log')
+    ax.set_xlabel('Edge Probability (p)')
+    ax.set_ylabel('Median Runtime (s)')
+    ax.set_title('Runtime by Density (n=20)')
+    ax.legend()
+    ax.grid(True, alpha=0.3)
+    
+    path = os.path.join(output_dir, 'plot5_density_study.png')
+    fig.savefig(path)
+    plt.close(fig)
+    print(f"Saved: {path}")
+
+
+# ──────────────────────────────────────────────────────────────────
+# Plot 6: Threshold-Search Behavior
+# ──────────────────────────────────────────────────────────────────
+
+def plot_threshold_behavior(df, output_dir):
+    # Find a representative hard instance for raw_emulation
+    raw_runs = df[df['solver_type'] == 'raw_emulation']
+    if raw_runs.empty or 'threshold_trajectory' not in raw_runs.columns:
+        print("No threshold trajectory data found.")
+        return
+        
+    # Pick a run that had many explored nodes to show a nice trajectory
+    raw_runs = raw_runs.sort_values('nodes_explored', ascending=False)
+    rep_run = raw_runs.iloc[0]
+    
+    traj = rep_run['threshold_trajectory']
+    if not traj:
+        return
+        
+    # traj is a list of (T, C, tree_size)
+    c_values = [x[1] for x in traj]
+    tree_sizes = [x[2] for x in traj]
+    iterations = list(range(len(traj)))
+    
+    fig, ax1 = plt.subplots(figsize=(8, 6))
+    
+    color = 'tab:red'
+    ax1.set_xlabel('Algorithm Iteration')
+    ax1.set_ylabel('Cost Threshold $C$', color=color)
+    ax1.plot(iterations, c_values, marker='o', color=color, linewidth=2)
+    ax1.tick_params(axis='y', labelcolor=color)
+    
+    ax2 = ax1.twinx()  
+    color = 'tab:blue'
+    ax2.set_ylabel(r'Built Tree Size $|\mathcal{T}_C|$', color=color)  
+    ax2.plot(iterations, tree_sizes, marker='s', color=color, linestyle='--', linewidth=2)
+    ax2.tick_params(axis='y', labelcolor=color)
+    ax2.set_yscale('log')
+    
+    fig.tight_layout()
+    plt.title(f"Threshold Behavior (Instance: {rep_run['family']} {rep_run['params']})")
+    
+    path = os.path.join(output_dir, 'plot6_threshold_behavior.png')
     fig.savefig(path)
     plt.close(fig)
     print(f"Saved: {path}")
@@ -293,11 +298,11 @@ def generate_all_plots(results_dir='results', plots_dir='plots'):
     df = load_data(results_dir)
     print(f"Loaded {len(df)} rows from results_all.csv")
 
-    plot_runtime_comparison(df, plots_dir)
-    plot_nodes_comparison(df, plots_dir)
-    plot_pruning_ratio(df, plots_dir)
-    plot_preprocessing_effect(df, plots_dir)
-    plot_runtime_vs_cover(df, plots_dir)
+    plot_vs_vertices(df, plots_dir)
+    plot_pruning_effect(df, plots_dir)
+    plot_ablation_study(df, plots_dir)
+    plot_density_study(df, plots_dir)
+    plot_threshold_behavior(df, plots_dir)
 
     print(f"\nAll plots saved to: {plots_dir}/")
 
